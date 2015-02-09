@@ -12,17 +12,70 @@
     <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/icons/favicon.ico">
     <!-- WebFonts -->
+    <!-- VIDEO JS -->
+    <link href="//vjs.zencdn.net/4.10/video-js.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/4.10/video.js"></script>
     <!-- APP STYLES 
       *Run grunt build when ready
       <link rel="stylesheet" href="assets/css/style.pkgd.min.css">
     -->
-    <link href="assets/css/ebm.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/ebm.css" rel="stylesheet">
   </head>
   <body>
     <div class="site-wrapper">
       <div class="site-menu"></div>
-      <div class="site-content"></div>
+      <div class="site-content">
+        <div class="hero-unit size lg video-bg"> <!-- HERO-UNIT -->
+          <header class="flex-space-between minh-70 normalize-text ph-14 pv-14">
+            <div class="left flex-middle text-center logo-header ml-21">
+              <img src="assets/img/logo_telefonica.png" class="img-responsive" alt="">
+            </div>
+            <div class="right flex-middle text-white mr-35">
+              <nav class="ml-ch-14">
+                <a href="#" class="border-right-white ph-14 light">Inicio</a>
+                <a href="#" class="ph-14 light">La Beca</a>
+                <a href="" class="border-left-white ph-14 light">Jurado</a>
+                <a class="btn btn-primary btn-outline btn-white ml-14 ph-49 pv-14">Postula</a>
+              </nav>
+            </div>
+          </header>
+          <video
+            id="videocover"
+            autoplay
+            loop
+            class="video-js videocover vjs-default-skin"
+            controls="false"
+            muted
+            preload="none">
+              <source src="assets/video/*.webm" type='video/webm' />
+              <source src="assets/video/*.mp4" type='video/mp4' />
+              <source src="assets/video/*.ogv" type='video/ogv' />
+              <source src="assets/video/*.ogg" type='video/ogg' />
+              <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
+          </video>
+          <!-- <div class="video-placeholder" style="background: url(assets/img/project-bg-1.jpg) no-repeat center top;"></div> -->
+          <div class="video-overlay flex-middle-center text-white">
+            <div class="container-sm text-center mb-ch-35 hero-text-shadow">
+            <!-- content -->
+              <div>
+                <h1 class="mb-7 p-0 lead">Gastón Acurio<br> &amp; Telefónica</h1>
+                <h3 class="m-0 p-0 book-italic">Juntos para transformar</h3>
+              </div>
+              <p class="lead light">La alianza de Gastón Acurio y Telefonica considera un programa de becas que le brinda a jóvenes la oportunidad de crecer personal y profesionalmente.</p>
+            </div>
+          </div>
+        </div> <!-- END:Hero-unit -->
+        <div class="minhp-100 bg-blue">
+          <div class="container border-left-white border-top-white border-right-white border-bottom-white">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et molestias, officiis officia nisi reiciendis tempora, labore, possimus iure dolores aperiam ut beatae rem. Dolorum earum ipsam voluptatem, inventore quos.</p>
+          </div>
+        </div>
+      </div>
     </div>
     
     <!-- APP SCRIPTS -->

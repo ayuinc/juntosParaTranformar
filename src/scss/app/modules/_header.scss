@@ -1,0 +1,14 @@
+header {
+	@include position(absolute,0 0 null 0);
+	width: 100%;
+	z-index: 1000;
+}
+
+.logo-header img {
+	width: 140px;
+	height: auto;
+}
+
+nav a {
+	font-size: 1.4em;
+}
