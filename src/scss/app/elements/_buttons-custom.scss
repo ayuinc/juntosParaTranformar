@@ -38,7 +38,7 @@ input[type="submit"].btn {
 			color: #{lighten(nth($brand-colors-list, $i), 21%)};
 			&:hover {
 				background: none;
-				border-radius: 0;
+				border-radius: $border-radius-base;
 				border: 2px solid #{nth($brand-colors-list, $i)};
 				color: #{nth($brand-colors-list, $i)};
 			}
@@ -52,7 +52,7 @@ input[type="submit"].btn {
 			color: #{lighten(nth($grayscale-list, $i), 21%)};
 			&:hover {
 				background: none;
-				border-radius: 0;
+				border-radius: $border-radius-base;
 				border: 2px solid #{nth($grayscale-list, $i)};
 				color: #{nth($grayscale-list, $i)};
 			}

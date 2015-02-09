@@ -116,3 +116,9 @@ $video-bg-height: 491px;
 		}
 	}
 }
+
+// CUSTOM FRAME
+.custom-frame {
+	@include border-image(url(../img/frame.png) 21% repeat);
+	border-width: 56px;
+}

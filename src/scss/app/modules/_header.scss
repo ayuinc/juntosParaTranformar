@@ -1,7 +1,29 @@
-header {
-	@include position(absolute,0 0 null 0);
-	width: 100%;
+header,
+.header {
+	@include position(absolute, 0 0 null 0);
+	// @include position(fixed, 0 0 null 0);
 	z-index: 1000;
+	@include flex-space-between;
+	@include normalize-text;
+	@include make-row;
+	width: 100%;
+	padding: 0 $container-fluid;
+	min-height: $header-height-control;
+	.left,
+	.center,
+	.right {
+		min-height: $header-height-control;
+		@include flex-middle;
+	}
+	.left {
+
+	}
+	.center {
+		text-align: center;
+	}
+	.right {
+
+	}
 }
 
 .logo-header img {
@@ -10,5 +32,7 @@ header {
 }
 
 nav a {
-	font-size: 1.4em;
+	font-size: 21px;
+	font-size: rem(21px);
+	// font-size: 1.4em;
 }

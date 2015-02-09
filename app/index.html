@@ -27,17 +27,27 @@
       <div class="site-menu"></div>
       <div class="site-content">
         <div class="hero-unit size lg video-bg"> <!-- HERO-UNIT -->
-          <header class="flex-space-between minh-70 normalize-text ph-14 pv-14">
-            <div class="left flex-middle text-center logo-header ml-21">
-              <img src="assets/img/logo_telefonica.png" class="img-responsive" alt="">
+          <header class="header pv-14">
+            <div class="left col-sm-6 col-xs-8">
+              <a href="#" class="logo-header"><img src="assets/img/logo_telefonica.png" alt=""></a>
             </div>
-            <div class="right flex-middle text-white mr-35">
-              <nav class="ml-ch-14">
-                <a href="#" class="border-right-white ph-14 light">Inicio</a>
-                <a href="#" class="ph-14 light">La Beca</a>
-                <a href="" class="border-left-white ph-14 light">Jurado</a>
-                <a class="btn btn-primary btn-outline btn-white ml-14 ph-49 pv-14">Postula</a>
-              </nav>
+            <div class="right col-sm-6 col-xs-4">
+              <div class="row">
+                <div class="col-sm-9 minh-70 flex-middle">
+                  <nav class="text-white text-right">
+                    <span class="pv-14 ml-ch-14">
+                      <a href="#">Inicio</a>
+                      <span class="text-white lead">|</span>
+                      <a href="#">La Beca</a>
+                      <span class="text-white lead">|</span>
+                      <a href="">Jurado</a>
+                    </span>
+                  </nav>
+                </div>
+                <div class="col-sm-3 text-right minh-70 flex-middle">
+                  <a class="ml-14 btn btn-outline btn-lg btn-white">Postula</a>
+                </div>
+              </div>
             </div>
           </header>
           <video
@@ -48,10 +58,12 @@
             controls="false"
             muted
             preload="none">
-              <source src="assets/video/*.webm" type='video/webm' />
+              <!-- <source src="assets/video/*.webm" type='video/webm' />
               <source src="assets/video/*.mp4" type='video/mp4' />
               <source src="assets/video/*.ogv" type='video/ogv' />
-              <source src="assets/video/*.ogg" type='video/ogg' />
+              <source src="assets/video/*.ogg" type='video/ogg' /> -->
+              <source src="http://mazwai.com/system/posts/videos/000/000/145/original/james-look_up.mp4?1419185366" type="video/mp4">
+              <source src="http://mazwai.com/system/posts/videos/000/000/145/webm/james-look_up.webm?1419185366" type="video/webm">
               <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
           </video>
           <!-- <div class="video-placeholder" style="background: url(assets/img/project-bg-1.jpg) no-repeat center top;"></div> -->
@@ -66,13 +78,12 @@
             </div>
           </div>
         </div> <!-- END:Hero-unit -->
-        <div class="minhp-100 bg-blue">
-          <div class="container border-left-white border-top-white border-right-white border-bottom-white">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et molestias, officiis officia nisi reiciendis tempora, labore, possimus iure dolores aperiam ut beatae rem. Dolorum earum ipsam voluptatem, inventore quos.</p>
+        <div class="bg-blue pv-42 flex-middle-center">
+          <!-- TOMA PAPI :P -->
+          <div class="container-fluid">
+            <div class="custom-frame minh-630">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi et molestias, officiis officia nisi reiciendis tempora, labore, possimus iure dolores aperiam ut beatae rem. Dolorum earum ipsam voluptatem, inventore quos.</p>
+            </div>
           </div>
         </div>
       </div>
