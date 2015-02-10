@@ -167,6 +167,7 @@ module.exports = function (grunt) {
             '<%= project.src %>/js/lib/jquery.scrollmagic.min.js',
             '<%= project.src %>/js/lib/imagesloaded.pkgd.min.js',
             '<%= project.src %>/js/lib/isotope.pkgd.min.js',
+            '<%= project.src %>/js/lib/transformicons.js',
             '<%= project.src %>/js/lib/coffeeCompile.js'
           ]
         }

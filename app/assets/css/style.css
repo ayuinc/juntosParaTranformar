@@ -3193,6 +3193,71 @@ input[type="button"].btn-block {
 }
 
 /*========================================
+=                TRANSFORMICONS         =
+========================================*/
+.tcon {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  transition: 0.3s;
+  user-select: none;
+  width: 40px;
+  background: transparent;
+}
+.tcon > * {
+  display: block;
+}
+.tcon:focus {
+  outline: 1px dotted #1E1C3D;
+}
+
+.tcon-visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.tcon-visuallyhidden:active, .tcon-visuallyhidden:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.tcon-vid--play {
+  height: 40px;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 40px;
+  transition: 0.375s all ease-in-out;
+  transform-origin: center center;
+}
+.tcon-vid--play:after {
+  border-style: solid;
+  border-width: 20px 0 20px 20px;
+  border-color: transparent transparent transparent white;
+  content: "";
+  display: block;
+  height: 0;
+  transform: translateX(25%);
+  width: 40px;
+}
+.tcon-vid--play.tcon-transform {
+  background: white;
+  transform: rotate(-360deg);
+}
+
+/*========================================
 =             APP CUSTOM                 =
 ========================================*/
 /*========================================

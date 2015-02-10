@@ -16,4 +16,7 @@ $(document).ready ->
 		return
 		)
 	
+	# TRANSFORM ICONS INITIALIZE
+	transformicons.add('.tcon')
+
 	return # END ON READY

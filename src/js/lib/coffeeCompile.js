@@ -14,6 +14,7 @@
       window.history.pushState(pathObj, '', lastPath);
       document.location.replace($(this).data('href'));
     });
+    transformicons.add('.tcon');
   });
 
 }).call(this);
