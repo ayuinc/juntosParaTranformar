@@ -23,11 +23,11 @@ $brand-danger:          #d9534f !default;
 
 $blue-base: #3A4959;
 
-$blue-darker:            lighten($blue-base, 0%) !default; // #222
-$blue-dark:              lighten($blue-base, 21%) !default;   // #333
+$blue-darker:            #01586B !default; // #222
+$blue-dark:              #24B9C5 !default;   // #333
 $blue:                   #179FB1 !default; // #555
-$blue-light:             #6AB5C1 !default;   // #999
-$blue-lighter:           lighten($blue-base, 70%) !default; // #eee
+$blue-light:             #23B6C5  !default;   // #999
+$blue-lighter:           #01C6D7 !default; // #eee
 
 // EBM:REF
 $brand-inverse: 				#081A26 !default;
