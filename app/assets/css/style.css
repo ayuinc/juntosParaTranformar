@@ -4732,4 +4732,15 @@ nav a {
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
 
+img.border-images-big {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  width: 210px;
+  height: auto;
+}
+
+a.btn-home {
+  font-size: 2em;
+}
+
 /*# sourceMappingURL=style.css.map */

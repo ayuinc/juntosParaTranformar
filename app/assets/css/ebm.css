@@ -15881,7 +15881,7 @@ hr {
 
 hr.hr-primary, hr.hr-custom-primary {
   border-top: 2px solid #085A6B !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-primary:before {
   width: 140px;
@@ -15893,7 +15893,7 @@ hr.hr-custom-primary:before {
 
 hr.hr-success, hr.hr-custom-success {
   border-top: 2px solid #5cb85c !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-success:before {
   width: 140px;
@@ -15905,7 +15905,7 @@ hr.hr-custom-success:before {
 
 hr.hr-info, hr.hr-custom-info {
   border-top: 2px solid #01C6D7 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-info:before {
   width: 140px;
@@ -15917,7 +15917,7 @@ hr.hr-custom-info:before {
 
 hr.hr-warning, hr.hr-custom-warning {
   border-top: 2px solid #f0ad4e !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-warning:before {
   width: 140px;
@@ -15929,7 +15929,7 @@ hr.hr-custom-warning:before {
 
 hr.hr-danger, hr.hr-custom-danger {
   border-top: 2px solid #d9534f !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-danger:before {
   width: 140px;
@@ -15941,7 +15941,7 @@ hr.hr-custom-danger:before {
 
 hr.hr-blue-darker, hr.hr-custom-blue-darker {
   border-top: 2px solid #3a4959 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-blue-darker:before {
   width: 140px;
@@ -15953,7 +15953,7 @@ hr.hr-custom-blue-darker:before {
 
 hr.hr-blue-dark, hr.hr-custom-blue-dark {
   border-top: 2px solid #647e9a !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-blue-dark:before {
   width: 140px;
@@ -15965,7 +15965,7 @@ hr.hr-custom-blue-dark:before {
 
 hr.hr-blue, hr.hr-custom-blue {
   border-top: 2px solid #179FB1 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-blue:before {
   width: 140px;
@@ -15977,7 +15977,7 @@ hr.hr-custom-blue:before {
 
 hr.hr-blue-light, hr.hr-custom-blue-light {
   border-top: 2px solid #6AB5C1 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-blue-light:before {
   width: 140px;
@@ -15989,7 +15989,7 @@ hr.hr-custom-blue-light:before {
 
 hr.hr-blue-lighter, hr.hr-custom-blue-lighter {
   border-top: 2px solid #fbfcfd !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-blue-lighter:before {
   width: 140px;
@@ -16001,7 +16001,7 @@ hr.hr-custom-blue-lighter:before {
 
 hr.hr-gray-darker, hr.hr-custom-gray-darker {
   border-top: 2px solid #222222 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-gray-darker:before {
   width: 140px;
@@ -16013,7 +16013,7 @@ hr.hr-custom-gray-darker:before {
 
 hr.hr-gray-dark, hr.hr-custom-gray-dark {
   border-top: 2px solid #333333 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-gray-dark:before {
   width: 140px;
@@ -16025,7 +16025,7 @@ hr.hr-custom-gray-dark:before {
 
 hr.hr-gray, hr.hr-custom-gray {
   border-top: 2px solid #555555 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-gray:before {
   width: 140px;
@@ -16037,7 +16037,7 @@ hr.hr-custom-gray:before {
 
 hr.hr-gray-light, hr.hr-custom-gray-light {
   border-top: 2px solid #777777 !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-gray-light:before {
   width: 140px;
@@ -16049,7 +16049,7 @@ hr.hr-custom-gray-light:before {
 
 hr.hr-gray-lighter, hr.hr-custom-gray-lighter {
   border-top: 2px solid #eeeeee !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-gray-lighter:before {
   width: 140px;
@@ -16061,7 +16061,7 @@ hr.hr-custom-gray-lighter:before {
 
 hr.hr-white, hr.hr-custom-white {
   border-top: 2px solid #fff !important;
-  margin: 15px 0;
+  margin: 14px 0;
 }
 hr.hr-custom-white:before {
   width: 140px;
@@ -16076,7 +16076,7 @@ hr.hr-custom-white:before {
 }
 
 .hr-custom-right:before {
-  right: 15px;
+  right: 14px;
 }
 
 /* EBM Borders */
@@ -20902,8 +20902,8 @@ ul.grid-list:after {
 }
 ul.grid-list > li {
   float: left;
-  padding: 15px;
-  padding: 1.07143rem;
+  padding: 14px;
+  padding: 1rem;
 }
 ul.grid-list.grid-list-item-height > li {
   min-height: 350px;
@@ -21200,7 +21200,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-primary {
   border-top: 2px solid #085A6B !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21225,7 +21225,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-success {
   border-top: 2px solid #5cb85c !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21250,7 +21250,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-info {
   border-top: 2px solid #01C6D7 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21275,7 +21275,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-warning {
   border-top: 2px solid #f0ad4e !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21300,7 +21300,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-danger {
   border-top: 2px solid #d9534f !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21325,7 +21325,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-blue-darker {
   border-top: 2px solid #3a4959 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21350,7 +21350,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-blue-dark {
   border-top: 2px solid #647e9a !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21375,7 +21375,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-blue {
   border-top: 2px solid #179FB1 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21400,7 +21400,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-blue-light {
   border-top: 2px solid #6AB5C1 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21425,7 +21425,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-blue-lighter {
   border-top: 2px solid #fbfcfd !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21450,7 +21450,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-gray-darker {
   border-top: 2px solid #222222 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21475,7 +21475,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-gray-dark {
   border-top: 2px solid #333333 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21500,7 +21500,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-gray {
   border-top: 2px solid #555555 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21525,7 +21525,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-gray-light {
   border-top: 2px solid #777777 !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21550,7 +21550,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-gray-lighter {
   border-top: 2px solid #eeeeee !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21575,7 +21575,7 @@ ul.grid-list.grid-list-anchors > li a {
 
 .separator-white {
   border-top: 2px solid #fff !important;
-  margin: 15px 0;
+  margin: 14px 0;
   width: 28px;
   width: 2rem;
   height: 4px;
@@ -21600,31 +21600,31 @@ ul.grid-list.grid-list-anchors > li a {
 
 @media only screen and (min-width: 768px) {
   .container-xs {
-    width: 510px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 508px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto;
   }
 
   .container-sm {
-    width: 750px;
-    padding-left: 15px;
-    padding-right: 15px;
+    width: 748px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto;
   }
 }
 @media only screen and (max-width: 480px) {
   .container-xs {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto;
   }
 
   .container-sm {
     width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 14px;
+    padding-right: 14px;
     margin: 0 auto;
   }
 }
