@@ -18,3 +18,26 @@
   });
 
 }).call(this);
+
+(function() {
+  'use-strict';
+  $(document).ready(function() {
+    var parallaxController, parallaxScene, tween;
+    parallaxController = new ScrollMagic();
+    tween = TweenMax.fromTo(".on-scroll", 1, {
+      bottom: 0,
+      opacity: 1
+    }, {
+      bottom: -140,
+      opacity: 0.3
+    }, {
+      ease: Linear.easeNone
+    });
+    parallaxScene = new ScrollScene({
+      triggerElement: '.site-content',
+      triggerHook: 'onEnter',
+      duration: 300
+    }).setTween(tween).addTo(parallaxController);
+  });
+
+}).call(this);

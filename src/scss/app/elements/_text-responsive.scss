@@ -182,6 +182,9 @@ $text-elements-list:
     #{nth($headings-list, $i)} {
       font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
       font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
+      em, a, span {
+        font-size: inherit !important;
+      }
       @media #{$xs-only} {
         font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} !important;
         font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} !important;
@@ -200,6 +203,9 @@ $text-elements-list:
     #{nth($headings-class-list, $i)} {
       font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
       font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
+      em, a, span {
+        font-size: inherit !important;
+      }
       @media #{$xs-only} {
         font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} !important;
         font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} !important;

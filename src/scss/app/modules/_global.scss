@@ -122,3 +122,9 @@ $video-bg-height: 491px;
 	@include border-image(url(../img/frame.png) 21% repeat);
 	border-width: 56px;
 }
+
+// BOX SHARE 
+.box-share {
+	@include position(absolute, null 0 0 0);
+	z-index: 30;
+}
