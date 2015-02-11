@@ -11,7 +11,8 @@ $grid-o-sizes: xs, sm, md, lg;
 }
 
 .container.gbo,
-.container-fluid.gbo {
+.container-fluid.gbo,
+.gbo {
 	> .row,
 	> .clearfix {
 		@include gbo(bottom);

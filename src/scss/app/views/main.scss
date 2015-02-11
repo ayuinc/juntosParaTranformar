@@ -1,0 +1,35 @@
+.contenedor-categoria {
+	position: relative;
+}
+
+.descripcion-categoria {
+	position: absolute;
+	background: $blue-darker;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+}
+
+div.papa-contenedor:hover .descripcion-categoria {
+	visibility: visible;
+}
+
+
+.plain-section {
+	background: $blue-lighter;
+}
+
+
+.plain-section-light {
+	background: #CDF3F8;
+}
+
+.cronograma .clearfix div {
+	min-height: 70px;
+}
+
+div.cronograma {
+	padding: 14px 56px;
+}

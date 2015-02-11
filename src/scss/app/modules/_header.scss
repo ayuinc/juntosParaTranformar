@@ -5,7 +5,7 @@ header,
 	z-index: 1000;
 	@include flex-space-between;
 	@include normalize-text;
-	@include make-row;
+	@include clearfix;
 	width: 100%;
 	padding: 0 $container-fluid;
 	min-height: $header-height-control;
@@ -35,4 +35,12 @@ nav a {
 	font-size: 21px;
 	font-size: rem(21px);
 	// font-size: 1.4em;
+}
+
+.not-absolute {
+	position: static;
+}
+
+.header-internas {
+	background: #013244;
 }

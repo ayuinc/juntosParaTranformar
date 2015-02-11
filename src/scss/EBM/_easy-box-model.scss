@@ -131,7 +131,7 @@ $box-model-ch-abbr-percentage:
 }
 
 // PADDING VERTICAL & HORIZONTAL
-@for $i from 0 through 10 {
+@for $i from 0 through 20 {
   .pv-#{$i*$times} {
     padding-top: ($i*$times) + px ;
     padding-bottom: ($i*$times) + px ;
