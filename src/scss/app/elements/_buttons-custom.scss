@@ -11,11 +11,13 @@ input[type="submit"].btn {
 	}
 	&.btn-xl {
 		font-size: $font-size-h3;
+		font-size: rem($font-size-h3);
 		padding: 12px 21px;
 		padding: rem(12px) rem(21px);
 	}
 	&.btn-xxl {
 		font-size: $font-size-h1;
+		font-size: rem($font-size-h1);
 		padding: 14px 24px;
 		padding: rem(14px) rem(24px);
 		@include light;

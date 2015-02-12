@@ -4326,6 +4326,7 @@ a.btn.btn-xl,
 button.btn.btn-xl,
 input[type="submit"].btn.btn-xl {
   font-size: 24px;
+  font-size: 1.71429rem;
   padding: 12px 21px;
   padding: 0.85714rem 1.5rem;
 }
@@ -4333,6 +4334,7 @@ a.btn.btn-xxl,
 button.btn.btn-xxl,
 input[type="submit"].btn.btn-xxl {
   font-size: 36px;
+  font-size: 2.57143rem;
   padding: 14px 24px;
   padding: 1rem 1.71429rem;
   font-family: 'telefonica_headline_lightRg' !important;
