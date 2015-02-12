@@ -1,5 +1,7 @@
 {embed="includes/head"}
 
+  {exp:channel:entries channel="home"}
+
   <div class="hero-unit minhp-100 video-bg"> <!-- HERO-UNIT -->
     {embed="includes/header"}
     <video
@@ -26,7 +28,7 @@
           <h1 class="mb-7 p-0 lead">Gastón Acurio<br> &amp; Telefónica</h1>
           <h3 class="m-0 p-0 book-italic">Juntos para transformar</h3>
         </div>
-        <p class="lead light">La alianza de Gastón Acurio y Telefonica considera un programa de becas que le brinda a jóvenes la oportunidad de crecer personal y profesionalmente.</p>
+        <p class="lead light">{intro_home}</p>
         <div class="pv-21 flex-middle-center">
           <button type="button" class="tcon tcon-vid--play" role="button" aria-label="play video">
             <span class="tcon-visuallyhidden">play video</span>
@@ -64,7 +66,7 @@
           <div class="clearfix p-ch-0 normalize-text">
             <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center" data-href="#">
               <div class="text-center">
-                <img class="pv-21" src="assets/img/flecha.png" alt="">
+                <img class="pv-21" src="{site_url}app/assets/img/flecha.png" alt="">
                 <h3>Conoce a nuestros</h3>
                 <h2 class="lead">Becarios</h2>
               </div>
@@ -178,5 +180,7 @@
       </div>
     </footer> <!-- END:Footer -->
   </div>
+
+  {/exp:channel:entries}
 
 {embed="includes/footer"}
