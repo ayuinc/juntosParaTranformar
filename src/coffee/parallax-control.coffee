@@ -3,7 +3,7 @@ $(document).ready ->
 	parallaxController = new ScrollMagic()
 
 	# FOLD OVERLAY PARALLAX
-	tween = TweenMax.fromTo(".on-scroll", 1, {bottom: 0, opacity: 1}, {bottom: -140, opacity: 0.3}, ease: Linear.easeNone)
+	tween = TweenMax.fromTo(".on-scroll", 1, {bottom: 0, opacity: 1}, {bottom: -98, opacity: 0.3}, ease: Linear.easeNone)
 	parallaxScene = new ScrollScene({
 		triggerElement: '.site-content'
 		triggerHook: 'onEnter'

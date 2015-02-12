@@ -28,7 +28,7 @@
       bottom: 0,
       opacity: 1
     }, {
-      bottom: -140,
+      bottom: -98,
       opacity: 0.3
     }, {
       ease: Linear.easeNone
