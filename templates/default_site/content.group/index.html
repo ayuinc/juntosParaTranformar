@@ -124,42 +124,19 @@
           <p class="pv-21 light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eligendi veniam inventore fugit officiis illo, sequi sed nesciunt labore, necessitatibus itaque non repellendus autem hic quis possimus et, a fuga!</p>
         </div>
         <ul class="grid-list grid-list-4 isotope-grid grid-list-1-xs text-center">
+        {exp:channel:entries channel="miembros_del_jurado" limit="21"}
           <li>
             <div>
-              <img src="{site_url}app/assets/img/user.jpg" alt="" style="width: 112px; height: auto; " class="img-circle">
+            {imagen_miembro_del_jurado}
+              <img src="{image:url:medium}" alt="" style="width: 112px; height: auto; " class="img-circle">
+            {/imagen_miembro_del_jurado}
             </div>
             <div>
               <h3 class="text-white">Gastón Acurio</h3>
               <span class="text-blue-light h4">Chef</span>
             </div>
           </li>
-          <li>
-            <div>
-              <img src="{site_url}app/assets/img/user.jpg" alt="" style="width: 112px; height: auto; " class="img-circle">
-            </div>
-            <div>
-              <h3 class="text-white">Gastón Acurio</h3>
-              <span class="text-blue-light h4">Chef</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="{site_url}app/assets/img/user.jpg" alt="" style="width: 112px; height: auto; " class="img-circle">
-            </div>
-            <div>
-              <h3 class="text-white">Gastón Acurio</h3>
-              <span class="text-blue-light h4">Chef</span>
-            </div>
-          </li>
-          <li>
-            <div>
-              <img src="{site_url}app/assets/img/user.jpg" alt="" style="width: 112px; height: auto; " class="img-circle">
-            </div>
-            <div>
-              <h3 class="text-white">Gastón Acurio</h3>
-              <span class="text-blue-light h4">Chef</span>
-            </div>
-          </li>
+        {/exp:channel:entries}
         </ul>
       </div>
     </div>
