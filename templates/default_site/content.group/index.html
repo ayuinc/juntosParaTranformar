@@ -128,12 +128,12 @@
           <li>
             <div>
             {imagen_miembro_del_jurado limit="1"}
-              <img src="{image:url}" alt="" style="width: 112px; height: auto; " class="img-circle">
+              <img src="{image:url}" alt="" style="width: 112px; height: auto; " class="img-circle" alt="{nombre_del_juez}">
             {/imagen_miembro_del_jurado}
             </div>
             <div>
-              <h3 class="text-white">Gastón Acurio</h3>
-              <span class="text-blue-light h4">Chef</span>
+              <h3 class="text-white">{nombre_del_juez}</h3>
+              <span class="text-blue-light h4">{titulo_del_juez}</span>
             </div>
           </li>
         {/exp:channel:entries}
