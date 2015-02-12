@@ -1,0 +1,84 @@
+#progress-wizard {
+	position: relative;
+	min-height: 1200px;
+}
+
+[id*="step-panel"] {
+	@include position(absolute, null null null null);
+	width: 100%;
+}
+
+.step-counters {
+	counter-reset: step;
+	@include normalize-text;
+	li {
+		position: relative;
+		&:before,
+		&:after {
+			display: block;
+		}
+		h3 {
+			position: relative;
+			color: white;
+			&:before {
+				@include position(absolute, 11px null null 56%);
+				content: "";
+				width: 100%;
+				height: 2px;
+				background-color: white;
+			}
+		}
+		&:before {
+			@include position(absolute, 5px null null 48%);
+			content: counter(step);
+			counter-increment: step;
+			z-index: 30;
+			margin-bottom: 21px;
+			color: $blue-light;
+			@include book;
+		}
+		&:after {
+			content: "";
+			@include position(absolute, 0 null null 43%);
+			width: 49px;
+			height: 49px;
+			border-radius: 50%;
+			background-color: white;
+			z-index: 20;
+		}
+		&:hover,
+		&.active {
+			cursor: pointer;
+			h3 {
+				color: $blue-darker;
+			}
+			&:after {
+				background-color: $blue-darker;
+			}
+			&:before {
+				color: $blue-light;
+			}
+		}
+		&:last-child {
+			h3 {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.step-panels {
+	.step-panel {
+		&.active {
+			z-index: 30;
+		}
+	}
+}
+
+.step-actions {
+	@include position(absolute, null 0 0 0);
+	width: 100%;
+	padding: 21px 0;
+}

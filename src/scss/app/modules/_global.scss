@@ -121,6 +121,7 @@ $video-bg-height: 491px;
 .custom-frame {
 	@include border-image(url(../img/frame.png) 21% repeat);
 	border-width: 56px;
+	position: relative;
 }
 
 // BOX SHARE 

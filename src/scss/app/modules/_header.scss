@@ -1,7 +1,7 @@
 header,
 .header {
-	@include position(absolute, 0 0 null 0);
-	// @include position(fixed, 0 0 null 0);
+	// @include position(absolute, 0 0 null 0);
+	@include position(fixed, 0 0 null 0);
 	z-index: 1000;
 	@include flex-space-between;
 	@include normalize-text;
@@ -42,5 +42,5 @@ nav a {
 }
 
 .header-internas {
-	background: #013244;
+	background: rgba($brand-primary, 0.7);
 }
