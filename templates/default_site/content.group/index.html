@@ -124,11 +124,11 @@
           <p class="pv-21 light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eligendi veniam inventore fugit officiis illo, sequi sed nesciunt labore, necessitatibus itaque non repellendus autem hic quis possimus et, a fuga!</p>
         </div>
         <ul class="grid-list grid-list-4 isotope-grid grid-list-1-xs text-center">
-        {exp:channel:entries channel="miembros_del_jurado" limit="21"}
+        {exp:channel:entries channel="miembros_del_jurado" limit="21" dynamic="off"}
           <li>
             <div>
             {imagen_miembro_del_jurado limit="1"}
-              <img src="{image:url:small}" alt="" style="width: 112px; height: auto; " class="img-circle">
+              <img src="{image:url}" alt="" style="width: 112px; height: auto; " class="img-circle">
             {/imagen_miembro_del_jurado}
             </div>
             <div>
