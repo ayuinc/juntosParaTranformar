@@ -1,0 +1,33 @@
+{embed="includes/head"}
+
+  {exp:channel:entries channel="postula" dynamic="off"}
+
+  <div class="site-content">
+		{embed="includes/header"}
+      <div class="bg-blue-light minhp-100">
+        <div class="container ph-56 pv-70">
+          <div class="text-center text-white pv-42 lead-ch">
+            <h1>Postulación</h1>
+            <h3 class="light step-wizard-instructions">Postula en <span class="h1">3</span> simples pasos</h3>
+          </div>
+          <div id="progress-wizard">
+            <!-- Step Counters -->
+            {embed="postula/step-counters"}
+            <!-- Step panels -->
+            <div class="step-panels">
+              <div id="step-panel-3" class="step-panel active bg-blue-darker p-14">
+                <div class="text-white custom-frame minh-630">
+                  <h1>Step panel 3</h1>
+                  <div class="step-actions text-center">
+                    <button class="finish btn btn-xxl btn-outline btn-gray-lighter">Finalizar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  {/exp:channel:entries}
+
+{embed="includes/footer"}

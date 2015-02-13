@@ -3489,6 +3489,10 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+a:hover, a:focus, a:active {
+  text-decoration: none !important;
+}
+
 .normalize-text h1, .normalize-text h2, .normalize-text h3, .normalize-text h4, .normalize-text h5, .normalize-text h6,
 .normalize-text .h1, .normalize-text .h2, .normalize-text .h3, .normalize-text .h4, .normalize-text .h5, .normalize-text .h6,
 .normalize-text p, .normalize-text .p {
@@ -4965,12 +4969,6 @@ img.flipped {
 
 #progress-wizard {
   position: relative;
-  min-height: 2000px;
-}
-
-[id*="step-panel"] {
-  position: absolute;
-  width: 100%;
 }
 
 .step-counters {

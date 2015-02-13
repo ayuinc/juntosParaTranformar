@@ -1,12 +1,12 @@
 #progress-wizard {
 	position: relative;
-	min-height: 2000px;
+	// min-height: 2000px;
 }
 
-[id*="step-panel"] {
-	@include position(absolute, null null null null);
-	width: 100%;
-}
+// [id*="step-panel"] {
+// 	@include position(absolute, null null null null);
+// 	width: 100%;
+// }
 
 .step-counters {
 	counter-reset: step;
