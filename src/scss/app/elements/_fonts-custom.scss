@@ -45,7 +45,39 @@
   font-style: normal;
 }
 
+$font-styles-list: 
+  "thin",
+  "extra-light",
+  "light",
+  "light-italic",
+  "book",
+  "book-italic",
+  "medium",
+  "medium-italic",
+  "bold",
+  "bold-italic",
+  "serif-light",
+  "serif-light-italic",
+  "serif-book",
+  "serif-book-italic",
+  "serif-medium",
+  "serif-medium-italic",
+  "serif-bold",
+  "serif-bold-italic",
+  "alt-light",
+  "alt-book",
+  "alt-medium",
+  "alt-bold";
+
+
 // SANS-SERIFS
+// @mixin ebm-font-styles($style) {
+//   @for $i from 1 through length($font-styles-list) {
+//     @if ($style == #{nth($font-styles-list, $i)}) {
+      
+//     }
+//   }
+// }
 // @mixin thin { font-family: $font-family-base !important; font-weight: 100; font-style: normal;}
 // .thin {@include thin;}
 // @mixin extra-light { font-family: $font-family-base !important; font-weight: 200; font-style: normal;}
