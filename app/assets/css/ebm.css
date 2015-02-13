@@ -19597,7 +19597,7 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix,
 .gbo > .row,
 .gbo > .clearfix {
-  border-bottom: 1px solid #777777;
+  border-bottom: 1px solid white;
 }
 .container.gbo > .row:last-child,
 .container.gbo > .clearfix:last-child,
@@ -19613,8 +19613,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-1"],
 .gbo > .row > [class*="xs-1"],
 .gbo > .clearfix > [class*="xs-1"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-1"]:first-child,
@@ -19669,8 +19669,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-1"],
 .gbo > .row > [class*="sm-1"],
 .gbo > .clearfix > [class*="sm-1"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-1"]:first-child,
@@ -19725,8 +19725,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-1"],
 .gbo > .row > [class*="md-1"],
 .gbo > .clearfix > [class*="md-1"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-1"]:first-child,
@@ -19781,8 +19781,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-1"],
 .gbo > .row > [class*="lg-1"],
 .gbo > .clearfix > [class*="lg-1"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-1"]:first-child,
@@ -19837,8 +19837,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-2"],
 .gbo > .row > [class*="xs-2"],
 .gbo > .clearfix > [class*="xs-2"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-2"]:first-child,
@@ -19893,8 +19893,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-2"],
 .gbo > .row > [class*="sm-2"],
 .gbo > .clearfix > [class*="sm-2"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-2"]:first-child,
@@ -19949,8 +19949,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-2"],
 .gbo > .row > [class*="md-2"],
 .gbo > .clearfix > [class*="md-2"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-2"]:first-child,
@@ -20005,8 +20005,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-2"],
 .gbo > .row > [class*="lg-2"],
 .gbo > .clearfix > [class*="lg-2"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-2"]:first-child,
@@ -20061,8 +20061,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-3"],
 .gbo > .row > [class*="xs-3"],
 .gbo > .clearfix > [class*="xs-3"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-3"]:first-child,
@@ -20117,8 +20117,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-3"],
 .gbo > .row > [class*="sm-3"],
 .gbo > .clearfix > [class*="sm-3"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-3"]:first-child,
@@ -20173,8 +20173,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-3"],
 .gbo > .row > [class*="md-3"],
 .gbo > .clearfix > [class*="md-3"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-3"]:first-child,
@@ -20229,8 +20229,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-3"],
 .gbo > .row > [class*="lg-3"],
 .gbo > .clearfix > [class*="lg-3"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-3"]:first-child,
@@ -20285,8 +20285,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-4"],
 .gbo > .row > [class*="xs-4"],
 .gbo > .clearfix > [class*="xs-4"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-4"]:first-child,
@@ -20341,8 +20341,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-4"],
 .gbo > .row > [class*="sm-4"],
 .gbo > .clearfix > [class*="sm-4"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-4"]:first-child,
@@ -20397,8 +20397,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-4"],
 .gbo > .row > [class*="md-4"],
 .gbo > .clearfix > [class*="md-4"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-4"]:first-child,
@@ -20453,8 +20453,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-4"],
 .gbo > .row > [class*="lg-4"],
 .gbo > .clearfix > [class*="lg-4"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-4"]:first-child,
@@ -20509,8 +20509,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-5"],
 .gbo > .row > [class*="xs-5"],
 .gbo > .clearfix > [class*="xs-5"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-5"]:first-child,
@@ -20565,8 +20565,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-5"],
 .gbo > .row > [class*="sm-5"],
 .gbo > .clearfix > [class*="sm-5"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-5"]:first-child,
@@ -20621,8 +20621,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-5"],
 .gbo > .row > [class*="md-5"],
 .gbo > .clearfix > [class*="md-5"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-5"]:first-child,
@@ -20677,8 +20677,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-5"],
 .gbo > .row > [class*="lg-5"],
 .gbo > .clearfix > [class*="lg-5"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-5"]:first-child,
@@ -20733,8 +20733,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-6"],
 .gbo > .row > [class*="xs-6"],
 .gbo > .clearfix > [class*="xs-6"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-6"]:first-child,
@@ -20789,8 +20789,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-6"],
 .gbo > .row > [class*="sm-6"],
 .gbo > .clearfix > [class*="sm-6"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-6"]:first-child,
@@ -20845,8 +20845,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-6"],
 .gbo > .row > [class*="md-6"],
 .gbo > .clearfix > [class*="md-6"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-6"]:first-child,
@@ -20901,8 +20901,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-6"],
 .gbo > .row > [class*="lg-6"],
 .gbo > .clearfix > [class*="lg-6"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-6"]:first-child,
@@ -20957,8 +20957,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-7"],
 .gbo > .row > [class*="xs-7"],
 .gbo > .clearfix > [class*="xs-7"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-7"]:first-child,
@@ -21013,8 +21013,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-7"],
 .gbo > .row > [class*="sm-7"],
 .gbo > .clearfix > [class*="sm-7"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-7"]:first-child,
@@ -21069,8 +21069,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-7"],
 .gbo > .row > [class*="md-7"],
 .gbo > .clearfix > [class*="md-7"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-7"]:first-child,
@@ -21125,8 +21125,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-7"],
 .gbo > .row > [class*="lg-7"],
 .gbo > .clearfix > [class*="lg-7"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-7"]:first-child,
@@ -21181,8 +21181,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-8"],
 .gbo > .row > [class*="xs-8"],
 .gbo > .clearfix > [class*="xs-8"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-8"]:first-child,
@@ -21237,8 +21237,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-8"],
 .gbo > .row > [class*="sm-8"],
 .gbo > .clearfix > [class*="sm-8"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-8"]:first-child,
@@ -21293,8 +21293,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-8"],
 .gbo > .row > [class*="md-8"],
 .gbo > .clearfix > [class*="md-8"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-8"]:first-child,
@@ -21349,8 +21349,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-8"],
 .gbo > .row > [class*="lg-8"],
 .gbo > .clearfix > [class*="lg-8"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-8"]:first-child,
@@ -21405,8 +21405,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-9"],
 .gbo > .row > [class*="xs-9"],
 .gbo > .clearfix > [class*="xs-9"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-9"]:first-child,
@@ -21461,8 +21461,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-9"],
 .gbo > .row > [class*="sm-9"],
 .gbo > .clearfix > [class*="sm-9"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-9"]:first-child,
@@ -21517,8 +21517,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-9"],
 .gbo > .row > [class*="md-9"],
 .gbo > .clearfix > [class*="md-9"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-9"]:first-child,
@@ -21573,8 +21573,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-9"],
 .gbo > .row > [class*="lg-9"],
 .gbo > .clearfix > [class*="lg-9"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-9"]:first-child,
@@ -21629,8 +21629,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-10"],
 .gbo > .row > [class*="xs-10"],
 .gbo > .clearfix > [class*="xs-10"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-10"]:first-child,
@@ -21685,8 +21685,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-10"],
 .gbo > .row > [class*="sm-10"],
 .gbo > .clearfix > [class*="sm-10"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-10"]:first-child,
@@ -21741,8 +21741,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-10"],
 .gbo > .row > [class*="md-10"],
 .gbo > .clearfix > [class*="md-10"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-10"]:first-child,
@@ -21797,8 +21797,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-10"],
 .gbo > .row > [class*="lg-10"],
 .gbo > .clearfix > [class*="lg-10"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-10"]:first-child,
@@ -21853,8 +21853,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="xs-11"],
 .gbo > .row > [class*="xs-11"],
 .gbo > .clearfix > [class*="xs-11"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="xs-11"]:first-child,
@@ -21909,8 +21909,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="sm-11"],
 .gbo > .row > [class*="sm-11"],
 .gbo > .clearfix > [class*="sm-11"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="sm-11"]:first-child,
@@ -21965,8 +21965,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="md-11"],
 .gbo > .row > [class*="md-11"],
 .gbo > .clearfix > [class*="md-11"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="md-11"]:first-child,
@@ -22021,8 +22021,8 @@ a.bg-hover-linkedin:hover,
 .container-fluid.gbo > .clearfix > [class*="lg-11"],
 .gbo > .row > [class*="lg-11"],
 .gbo > .clearfix > [class*="lg-11"] {
-  border-left: 1px solid #777777;
-  border-right: 1px solid #777777;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
   margin-left: -1px;
 }
 .container.gbo > .row > [class*="lg-11"]:first-child,
