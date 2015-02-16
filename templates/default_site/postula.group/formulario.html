@@ -1,0 +1,32 @@
+{embed="includes/head"}
+	
+	{if logged_in} 
+  <div class="site-content">
+		{embed="includes/header"}
+      <div class="bg-blue-light minhp-100">
+        <div class="container ph-56 pv-70">
+          <div class="text-center text-white pv-42 lead-ch">
+            <h1>Postulación</h1>
+            <h3 class="light step-wizard-instructions">Postula en <span class="h1">3</span> simples pasos</h3>
+          </div>
+          <div id="progress-wizard">
+            <!-- Step Counters -->
+						{embed="postula/step-counters"}
+            <!-- Step panels -->
+            <div class="step-panels">
+              <div id="step-panel-1" class="step-panel active bg-blue-darker p-14">
+                <div class="custom-frame minh-630 pbp-14">
+								{exp:freeform:composer
+								    form_name="postulacion"
+								    composer_template_name="postulacion"
+								    return="contact_us/thank_you"
+								}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  {/if}
+
+{embed="includes/footer"}
