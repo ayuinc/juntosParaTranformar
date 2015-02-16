@@ -1,4 +1,8 @@
 // Bootstrap 3 Custom Buttons
+$buttons-custom-border-size: 2px;
+$buttons-custom-border-style: solid;
+$buttons-custom-color-control: 18%;
+
 a.btn,
 button.btn,
 input[type="submit"].btn {
@@ -41,28 +45,28 @@ input[type="submit"].btn {
 	@for $i from 1 through length($brand-colors-sufix-list) {
 		&.btn-#{nth($brand-colors-sufix-list, $i)}.btn-outline {
 			background: none;
-			border: 2px solid #{lighten(nth($brand-colors-list, $i), 21%)};
+			border: $buttons-custom-border-size $buttons-custom-border-style #{nth($brand-colors-list, $i)};
 			border-radius: $border-radius-base;
-			color: #{lighten(nth($brand-colors-list, $i), 21%)};
+			color: #{nth($brand-colors-list, $i)};
 			&:hover {
 				background: none;
 				border-radius: $border-radius-base;
-				border: 2px solid #{nth($brand-colors-list, $i)};
-				color: #{nth($brand-colors-list, $i)};
+				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
+				color: #{darken(nth($brand-colors-list, $i), $buttons-custom-color-control)};
 			}
 		}
 	}
 	@for $i from 1 through length($grayscale-sufix-list) {
 		&.btn-#{nth($grayscale-sufix-list, $i)}.btn-outline {
 			background: none;
-			border: 2px solid #{lighten(nth($grayscale-list, $i), 21%)};
+			border: $buttons-custom-border-size $buttons-custom-border-style #{nth($grayscale-list, $i)};;
 			border-radius: $border-radius-base;
-			color: #{lighten(nth($grayscale-list, $i), 21%)};
+			color: #{nth($grayscale-list, $i)};
 			&:hover {
 				background: none;
 				border-radius: $border-radius-base;
-				border: 2px solid #{nth($grayscale-list, $i)};
-				color: #{nth($grayscale-list, $i)};
+				border: $buttons-custom-border-size $buttons-custom-border-style #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
+				color: #{darken(nth($grayscale-list, $i), $buttons-custom-color-control)};
 			}
 		}
 	}

@@ -4497,257 +4497,257 @@ a.btn.btn-primary.btn-outline,
 button.btn.btn-primary.btn-outline,
 input[type="submit"].btn.btn-primary.btn-outline {
   background: none;
-  border: 2px solid #0faecf;
+  border: 2px solid #085A6B;
   border-radius: 4px;
-  color: #0faecf;
+  color: #085A6B;
 }
 a.btn.btn-primary.btn-outline:hover,
 button.btn.btn-primary.btn-outline:hover,
 input[type="submit"].btn.btn-primary.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #085A6B;
-  color: #085A6B;
+  border: 2px solid #021216;
+  color: #021216;
 }
 a.btn.btn-success.btn-outline,
 button.btn.btn-success.btn-outline,
 input[type="submit"].btn.btn-success.btn-outline {
   background: none;
-  border: 2px solid #a7d8a7;
+  border: 2px solid #5cb85c;
   border-radius: 4px;
-  color: #a7d8a7;
+  color: #5cb85c;
 }
 a.btn.btn-success.btn-outline:hover,
 button.btn.btn-success.btn-outline:hover,
 input[type="submit"].btn.btn-success.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #5cb85c;
-  color: #5cb85c;
+  border: 2px solid #388038;
+  color: #388038;
 }
 a.btn.btn-info.btn-outline,
 button.btn.btn-info.btn-outline,
 input[type="submit"].btn.btn-info.btn-outline {
   background: none;
-  border: 2px solid #45effe;
+  border: 2px solid #01C6D7;
   border-radius: 4px;
-  color: #45effe;
+  color: #01C6D7;
 }
 a.btn.btn-info.btn-outline:hover,
 button.btn.btn-info.btn-outline:hover,
 input[type="submit"].btn.btn-info.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #01C6D7;
-  color: #01C6D7;
+  border: 2px solid #01727c;
+  color: #01727c;
 }
 a.btn.btn-warning.btn-outline,
 button.btn.btn-warning.btn-outline,
 input[type="submit"].btn.btn-warning.btn-outline {
   background: none;
-  border: 2px solid #f8dbb1;
+  border: 2px solid #f0ad4e;
   border-radius: 4px;
-  color: #f8dbb1;
+  color: #f0ad4e;
 }
 a.btn.btn-warning.btn-outline:hover,
 button.btn.btn-warning.btn-outline:hover,
 input[type="submit"].btn.btn-warning.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #f0ad4e;
-  color: #f0ad4e;
+  border: 2px solid #d18212;
+  color: #d18212;
 }
 a.btn.btn-danger.btn-outline,
 button.btn.btn-danger.btn-outline,
 input[type="submit"].btn.btn-danger.btn-outline {
   background: none;
-  border: 2px solid #eca9a7;
+  border: 2px solid #d9534f;
   border-radius: 4px;
-  color: #eca9a7;
+  color: #d9534f;
 }
 a.btn.btn-danger.btn-outline:hover,
 button.btn.btn-danger.btn-outline:hover,
 input[type="submit"].btn.btn-danger.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #d9534f;
-  color: #d9534f;
+  border: 2px solid #a82824;
+  color: #a82824;
 }
 a.btn.btn-blue-darker.btn-outline,
 button.btn.btn-blue-darker.btn-outline,
 input[type="submit"].btn.btn-blue-darker.btn-outline {
   background: none;
-  border: 2px solid #02afd5;
+  border: 2px solid #01586B;
   border-radius: 4px;
-  color: #02afd5;
+  color: #01586B;
 }
 a.btn.btn-blue-darker.btn-outline:hover,
 button.btn.btn-blue-darker.btn-outline:hover,
 input[type="submit"].btn.btn-blue-darker.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #01586B;
-  color: #01586B;
+  border: 2px solid #000d10;
+  color: #000d10;
 }
 a.btn.btn-blue-dark.btn-outline,
 button.btn.btn-blue-dark.btn-outline,
 input[type="submit"].btn.btn-blue-dark.btn-outline {
   background: none;
-  border: 2px solid #6fdce5;
+  border: 2px solid #24B9C5;
   border-radius: 4px;
-  color: #6fdce5;
+  color: #24B9C5;
 }
 a.btn.btn-blue-dark.btn-outline:hover,
 button.btn.btn-blue-dark.btn-outline:hover,
 input[type="submit"].btn.btn-blue-dark.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #24B9C5;
-  color: #24B9C5;
+  border: 2px solid #167077;
+  color: #167077;
 }
 a.btn.btn-blue.btn-outline,
 button.btn.btn-blue.btn-outline,
 input[type="submit"].btn.btn-blue.btn-outline {
   background: none;
-  border: 2px solid #4bd5e8;
+  border: 2px solid #179FB1;
   border-radius: 4px;
-  color: #4bd5e8;
+  color: #179FB1;
 }
 a.btn.btn-blue.btn-outline:hover,
 button.btn.btn-blue.btn-outline:hover,
 input[type="submit"].btn.btn-blue.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #179FB1;
-  color: #179FB1;
+  border: 2px solid #0c5660;
+  color: #0c5660;
 }
 a.btn.btn-blue-light.btn-outline,
 button.btn.btn-blue-light.btn-outline,
 input[type="submit"].btn.btn-blue-light.btn-outline {
   background: none;
-  border: 2px solid #6edae5;
+  border: 2px solid #23B6C5;
   border-radius: 4px;
-  color: #6edae5;
+  color: #23B6C5;
 }
 a.btn.btn-blue-light.btn-outline:hover,
 button.btn.btn-blue-light.btn-outline:hover,
 input[type="submit"].btn.btn-blue-light.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #23B6C5;
-  color: #23B6C5;
+  border: 2px solid #156e77;
+  color: #156e77;
 }
 a.btn.btn-blue-lighter.btn-outline,
 button.btn.btn-blue-lighter.btn-outline,
 input[type="submit"].btn.btn-blue-lighter.btn-outline {
   background: none;
-  border: 2px solid #45effe;
+  border: 2px solid #01C6D7;
   border-radius: 4px;
-  color: #45effe;
+  color: #01C6D7;
 }
 a.btn.btn-blue-lighter.btn-outline:hover,
 button.btn.btn-blue-lighter.btn-outline:hover,
 input[type="submit"].btn.btn-blue-lighter.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #01C6D7;
-  color: #01C6D7;
+  border: 2px solid #01727c;
+  color: #01727c;
 }
 a.btn.btn-gray-darker.btn-outline,
 button.btn.btn-gray-darker.btn-outline,
 input[type="submit"].btn.btn-gray-darker.btn-outline {
   background: none;
-  border: 2px solid #585858;
+  border: 2px solid #222222;
   border-radius: 4px;
-  color: #585858;
+  color: #222222;
 }
 a.btn.btn-gray-darker.btn-outline:hover,
 button.btn.btn-gray-darker.btn-outline:hover,
 input[type="submit"].btn.btn-gray-darker.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #222222;
-  color: #222222;
+  border: 2px solid black;
+  color: black;
 }
 a.btn.btn-gray-dark.btn-outline,
 button.btn.btn-gray-dark.btn-outline,
 input[type="submit"].btn.btn-gray-dark.btn-outline {
   background: none;
-  border: 2px solid dimgray;
+  border: 2px solid #333333;
   border-radius: 4px;
-  color: dimgray;
+  color: #333333;
 }
 a.btn.btn-gray-dark.btn-outline:hover,
 button.btn.btn-gray-dark.btn-outline:hover,
 input[type="submit"].btn.btn-gray-dark.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #333333;
-  color: #333333;
+  border: 2px solid #050505;
+  color: #050505;
 }
 a.btn.btn-gray.btn-outline,
 button.btn.btn-gray.btn-outline,
 input[type="submit"].btn.btn-gray.btn-outline {
   background: none;
-  border: 2px solid #8b8b8b;
+  border: 2px solid #555555;
   border-radius: 4px;
-  color: #8b8b8b;
+  color: #555555;
 }
 a.btn.btn-gray.btn-outline:hover,
 button.btn.btn-gray.btn-outline:hover,
 input[type="submit"].btn.btn-gray.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #555555;
-  color: #555555;
+  border: 2px solid #282828;
+  color: #282828;
 }
 a.btn.btn-gray-light.btn-outline,
 button.btn.btn-gray-light.btn-outline,
 input[type="submit"].btn.btn-gray-light.btn-outline {
   background: none;
-  border: 2px solid #adadad;
+  border: 2px solid #777777;
   border-radius: 4px;
-  color: #adadad;
+  color: #777777;
 }
 a.btn.btn-gray-light.btn-outline:hover,
 button.btn.btn-gray-light.btn-outline:hover,
 input[type="submit"].btn.btn-gray-light.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #777777;
-  color: #777777;
+  border: 2px solid #494949;
+  color: #494949;
 }
 a.btn.btn-gray-lighter.btn-outline,
 button.btn.btn-gray-lighter.btn-outline,
 input[type="submit"].btn.btn-gray-lighter.btn-outline {
   background: none;
-  border: 2px solid white;
+  border: 2px solid #eeeeee;
   border-radius: 4px;
-  color: white;
+  color: #eeeeee;
 }
 a.btn.btn-gray-lighter.btn-outline:hover,
 button.btn.btn-gray-lighter.btn-outline:hover,
 input[type="submit"].btn.btn-gray-lighter.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #eeeeee;
-  color: #eeeeee;
+  border: 2px solid #c1c1c1;
+  color: #c1c1c1;
 }
 a.btn.btn-white.btn-outline,
 button.btn.btn-white.btn-outline,
 input[type="submit"].btn.btn-white.btn-outline {
   background: none;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 4px;
-  color: white;
+  color: #fff;
 }
 a.btn.btn-white.btn-outline:hover,
 button.btn.btn-white.btn-outline:hover,
 input[type="submit"].btn.btn-white.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #d1d1d1;
+  color: #d1d1d1;
 }
 
 .select-override {
