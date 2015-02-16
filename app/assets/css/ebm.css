@@ -23257,6 +23257,11 @@ ul.grid-list.grid-list-anchors > li a {
     padding-right: 14px;
     margin: 0 auto;
   }
+
+  /* Make containers 100% on mobile for flexbox flex middle */
+  .container {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=ebm.css.map */

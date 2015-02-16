@@ -25,5 +25,10 @@
 		padding-right: $container-fluid;
 		margin: 0 auto;
 	}		
+/* Make containers 100% on mobile for flexbox flex middle */
+	.container {
+		width: 100%;
+	}
 }
+
 

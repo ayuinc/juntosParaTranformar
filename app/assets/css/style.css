@@ -846,7 +846,7 @@ address {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1168px;
+    width: 968px;
   }
 }
 
@@ -1784,7 +1784,7 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #eeeeee;
 }
 
 .form-control {
@@ -1794,7 +1794,7 @@ output {
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #eeeeee;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -1806,10 +1806,10 @@ output {
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #eeeeee;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(238, 238, 238, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(238, 238, 238, 0.6);
 }
 .form-control::-moz-placeholder {
   color: #999;
@@ -2067,8 +2067,8 @@ select[multiple].input-lg {
 }
 .has-success .form-control:focus {
   border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #67b168;
 }
 .has-success .input-group-addon {
   color: #3c763d;
@@ -2094,8 +2094,8 @@ select[multiple].input-lg {
 }
 .has-warning .form-control:focus {
   border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #c0a16b;
 }
 .has-warning .input-group-addon {
   color: #8a6d3b;
@@ -2121,8 +2121,8 @@ select[multiple].input-lg {
 }
 .has-error .form-control:focus {
   border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #ce8483;
 }
 .has-error .input-group-addon {
   color: #a94442;
@@ -3668,8 +3668,8 @@ html {
 
 /* TEXT IN REMS */
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px !important;
+  font-size: 1.64286rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3688,8 +3688,8 @@ p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul
 }
 
 .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px !important;
+  font-size: 1.64286rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3711,8 +3711,8 @@ h1 {
   font-size: 2.57143rem;
 }
 h1.lead {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px !important;
+  font-size: 3.21429rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3734,8 +3734,8 @@ h2 {
   font-size: 2.14286rem;
 }
 h2.lead {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px !important;
+  font-size: 2.78571rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3757,8 +3757,8 @@ h3 {
   font-size: 1.71429rem;
 }
 h3.lead {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px !important;
+  font-size: 2.35714rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3780,8 +3780,8 @@ h4 {
   font-size: 1.28571rem;
 }
 h4.lead {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px !important;
+  font-size: 1.92857rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3803,8 +3803,8 @@ h5 {
   font-size: 1rem;
 }
 h5.lead {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px !important;
+  font-size: 1.64286rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3826,8 +3826,8 @@ h6 {
   font-size: 0.85714rem;
 }
 h6.lead {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3849,8 +3849,8 @@ h6.lead {
   font-size: 2.57143rem;
 }
 .h1.lead {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px !important;
+  font-size: 3.21429rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3872,8 +3872,8 @@ h6.lead {
   font-size: 2.14286rem;
 }
 .h2.lead {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px !important;
+  font-size: 2.78571rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3895,8 +3895,8 @@ h6.lead {
   font-size: 1.71429rem;
 }
 .h3.lead {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px !important;
+  font-size: 2.35714rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3918,8 +3918,8 @@ h6.lead {
   font-size: 1.28571rem;
 }
 .h4.lead {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px !important;
+  font-size: 1.92857rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3941,8 +3941,8 @@ h6.lead {
   font-size: 1rem;
 }
 .h5.lead {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px !important;
+  font-size: 1.64286rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3964,8 +3964,8 @@ h6.lead {
   font-size: 0.85714rem;
 }
 .h6.lead {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
@@ -3984,8 +3984,8 @@ h6.lead {
 }
 
 .lead-ch h1 {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px !important;
+  font-size: 3.21429rem !important;
 }
 .lead-ch h1 em, .lead-ch h1 a, .lead-ch h1 span {
   font-size: inherit !important;
@@ -4005,8 +4005,8 @@ h6.lead {
   }
 }
 .lead-ch h2 {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px !important;
+  font-size: 2.78571rem !important;
 }
 .lead-ch h2 em, .lead-ch h2 a, .lead-ch h2 span {
   font-size: inherit !important;
@@ -4026,8 +4026,8 @@ h6.lead {
   }
 }
 .lead-ch h3 {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px !important;
+  font-size: 2.35714rem !important;
 }
 .lead-ch h3 em, .lead-ch h3 a, .lead-ch h3 span {
   font-size: inherit !important;
@@ -4047,8 +4047,8 @@ h6.lead {
   }
 }
 .lead-ch h4 {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px !important;
+  font-size: 1.92857rem !important;
 }
 .lead-ch h4 em, .lead-ch h4 a, .lead-ch h4 span {
   font-size: inherit !important;
@@ -4068,8 +4068,8 @@ h6.lead {
   }
 }
 .lead-ch h5 {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px !important;
+  font-size: 1.64286rem !important;
 }
 .lead-ch h5 em, .lead-ch h5 a, .lead-ch h5 span {
   font-size: inherit !important;
@@ -4089,8 +4089,8 @@ h6.lead {
   }
 }
 .lead-ch h6 {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
 }
 .lead-ch h6 em, .lead-ch h6 a, .lead-ch h6 span {
   font-size: inherit !important;
@@ -4111,8 +4111,8 @@ h6.lead {
 }
 
 .lead-ch .h1 {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px !important;
+  font-size: 3.21429rem !important;
 }
 .lead-ch .h1 em, .lead-ch .h1 a, .lead-ch .h1 span {
   font-size: inherit !important;
@@ -4132,8 +4132,8 @@ h6.lead {
   }
 }
 .lead-ch .h2 {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px !important;
+  font-size: 2.78571rem !important;
 }
 .lead-ch .h2 em, .lead-ch .h2 a, .lead-ch .h2 span {
   font-size: inherit !important;
@@ -4153,8 +4153,8 @@ h6.lead {
   }
 }
 .lead-ch .h3 {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px !important;
+  font-size: 2.35714rem !important;
 }
 .lead-ch .h3 em, .lead-ch .h3 a, .lead-ch .h3 span {
   font-size: inherit !important;
@@ -4174,8 +4174,8 @@ h6.lead {
   }
 }
 .lead-ch .h4 {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px !important;
+  font-size: 1.92857rem !important;
 }
 .lead-ch .h4 em, .lead-ch .h4 a, .lead-ch .h4 span {
   font-size: inherit !important;
@@ -4195,8 +4195,8 @@ h6.lead {
   }
 }
 .lead-ch .h5 {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px !important;
+  font-size: 1.64286rem !important;
 }
 .lead-ch .h5 em, .lead-ch .h5 a, .lead-ch .h5 span {
   font-size: inherit !important;
@@ -4216,8 +4216,8 @@ h6.lead {
   }
 }
 .lead-ch .h6 {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px !important;
+  font-size: 1.5rem !important;
 }
 .lead-ch .h6 em, .lead-ch .h6 a, .lead-ch .h6 span {
   font-size: inherit !important;
@@ -4750,6 +4750,57 @@ input[type="submit"].btn.btn-white.btn-outline:hover {
   color: #fff;
 }
 
+.select-override {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.select-override.input-lg {
+  line-height: 28px;
+}
+
+/* Custom Forms */
+input[type="text"].input-xl,
+input[type="email"].input-xl,
+input[type="password"].input-xl {
+  height: 56px;
+  height: 4rem;
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+.form-custom input[type="text"],
+.form-custom input[type="email"],
+.form-custom input[type="password"] {
+  background-color: transparent;
+  font-family: 'telefonica_headline_lightRg' !important;
+  font-style: normal;
+}
+.form-custom input[type="text"]::-webkit-input-placeholder,
+.form-custom input[type="email"]::-webkit-input-placeholder,
+.form-custom input[type="password"]::-webkit-input-placeholder {
+  color: white;
+}
+.form-custom input[type="text"]::-moz-placeholder,
+.form-custom input[type="email"]::-moz-placeholder,
+.form-custom input[type="password"]::-moz-placeholder {
+  color: white;
+}
+.form-custom input[type="text"]:-moz-placeholder,
+.form-custom input[type="email"]:-moz-placeholder,
+.form-custom input[type="password"]:-moz-placeholder {
+  color: white;
+}
+.form-custom input[type="text"]:-ms-input-placeholder,
+.form-custom input[type="email"]:-ms-input-placeholder,
+.form-custom input[type="password"]:-ms-input-placeholder {
+  color: white;
+}
+
 header,
 .header {
   position: fixed;
@@ -5001,7 +5052,7 @@ img.flipped {
 .step-counters li:before {
   position: absolute;
   top: 5px;
-  left: 48%;
+  left: 49%;
   content: counter(step);
   counter-increment: step;
   z-index: 30;
@@ -5009,6 +5060,7 @@ img.flipped {
   color: #23B6C5;
   font-family: 'telefonica_textregular' !important;
   font-style: normal;
+  font-size: 28px;
 }
 .step-counters li:after {
   content: "";

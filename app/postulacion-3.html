@@ -55,10 +55,10 @@
             <div id="progress-wizard">
               <!-- Step Counters -->
               <ul class="grid-list grid-list-3 grid-list-centered step-counters lead-ch light">
-                <li data-panel-ref="step-panel-1">
+                <li data-panel-ref="step-panel-1" class="active">
                   <h3 class="pv-49">Bases de<br>postulación</h3>
                 </li>
-                <li data-panel-ref="step-panel-2">
+                <li data-panel-ref="step-panel-2" class="active">
                   <h3 class="pv-49">Crea tu<br>cuenta</h3>
                 </li>
                 <li data-panel-ref="step-panel-3" class="active">
@@ -68,12 +68,48 @@
               <!-- Step panels -->
               <div class="step-panels">
                 <div id="step-panel-3" class="step-panel active bg-blue-darker p-14">
-                  <div class="text-white custom-frame minh-630">
-                    <h1>Step panel 3</h1>
-                    <div class="step-actions text-center">
-                      <button class="finish btn btn-xxl btn-outline btn-gray-lighter">Finalizar</button>
+                  <form action="" class="form-custom">
+                    <div class="text-white custom-frame minh-630">
+                      <div class="text-center">
+                        <h1><em>Completa el formulario</em></h1>
+                      </div>
+                      <div class="ph-70-sm pv-42-sm pv-21-xs">
+                          <div class="form-group row">
+                            <div class="col-sm-6">
+                              <label for="Nombre" class="sr-only">Nombre</label>
+                              <input type="text" class="form-control input-xl" placeholder="Nombre">
+                            </div>
+                            <div class="col-sm-6">
+                              <label for="Apellido" class="sr-only">Apellido</label>
+                              <input type="text" class="form-control input-xl" placeholder="Apellido">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-6">
+                              <label for="DNI" class="sr-only">DNI</label>
+                              <input type="text" class="form-control input-xl" placeholder="DNI">
+                            </div>
+                            <div class="col-sm-6">
+                              <label for="Teléfono fijo" class="sr-only">Teléfono fijo</label>
+                              <input type="text" class="form-control input-xl" placeholder="Teléfono fijo">
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-6">
+                              <label for="Celular" class="sr-only">Celular</label>
+                              <input type="text" class="form-control input-xl" placeholder="Celular">
+                            </div>
+                            <div class="col-sm-6">
+                              <label for="Email" class="sr-only">Email</label>
+                              <input type="text" class="form-control input-xl" placeholder="Email">
+                            </div>
+                          </div>
+                      </div>
+                      <div class="step-actions text-center">
+                        <button type="submit" class="finish btn btn-xxl btn-outline btn-gray-lighter">Finalizar</button>
+                      </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
