@@ -4834,6 +4834,7 @@ header,
   width: 100%;
   padding: 0 14px;
   min-height: 70px;
+  background-color: rgba(8, 90, 107, 0.3);
 }
 header h1, header h2, header h3, header h4, header h5, header h6,
 header .h1, header .h2, header .h3, header .h4, header .h5, header .h6,
@@ -4915,7 +4916,7 @@ nav a {
 }
 
 .header-internas {
-  background: rgba(8, 90, 107, 0.7);
+  background-color: rgba(8, 90, 107, 0.7);
 }
 
 .videocover {
