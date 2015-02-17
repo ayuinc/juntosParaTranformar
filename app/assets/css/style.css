@@ -357,7 +357,7 @@ body {
   font-family: "telefonica_textregular", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #085A6B;
   background-color: #fff;
 }
 
@@ -2144,7 +2144,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #11bee2;
 }
 
 @media (min-width: 768px) {
