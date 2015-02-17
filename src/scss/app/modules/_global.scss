@@ -161,3 +161,13 @@ $video-bg-height: 491px;
 		}
 	}
 }
+
+// CUSTOM QUOTES 
+.custom-quotes {
+	&:before {
+		content: "\e001";
+	}
+	&:after {
+		content: "\e004";
+	}
+}
