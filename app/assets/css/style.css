@@ -3373,7 +3373,7 @@ body::-webkit-scrollbar {
 
 .beca-categories-list > li {
   position: relative;
-  min-height: 490px;
+  min-height: 420px;
 }
 .beca-categories-list > li > div {
   position: absolute;

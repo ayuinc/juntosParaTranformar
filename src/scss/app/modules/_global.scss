@@ -134,7 +134,7 @@ $video-bg-height: 491px;
 .beca-categories-list {
 	> li {
 		position: relative;
-		min-height: 490px;
+		min-height: 420px;
 		> div {
 			@include position(absolute, 0 0 0 0);
 			width: 100%;
