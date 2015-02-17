@@ -2398,23 +2398,23 @@ select[multiple].input-lg {
 
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #fb6533;
+  border-color: #fb521a;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #f64105;
+  border-color: #d33804;
 }
 .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
   background-image: none;
 }
 .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #fb6533;
+  border-color: #fb521a;
 }
 .btn-danger .badge {
-  color: #d9534f;
+  color: #fb6533;
   background-color: #fff;
 }
 
@@ -4613,17 +4613,17 @@ a.btn.btn-danger.btn-outline,
 button.btn.btn-danger.btn-outline,
 input[type="submit"].btn.btn-danger.btn-outline {
   background: none;
-  border: 2px solid #d9534f;
+  border: 2px solid #fb6533;
   border-radius: 4px;
-  color: #d9534f;
+  color: #fb6533;
 }
 a.btn.btn-danger.btn-outline:hover,
 button.btn.btn-danger.btn-outline:hover,
 input[type="submit"].btn.btn-danger.btn-outline:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #a82824;
-  color: #a82824;
+  border: 2px solid #ce3704;
+  color: #ce3704;
 }
 a.btn.btn-blue-darker.btn-outline,
 button.btn.btn-blue-darker.btn-outline,
