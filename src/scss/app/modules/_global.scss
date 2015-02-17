@@ -164,10 +164,16 @@ $video-bg-height: 491px;
 
 // CUSTOM QUOTES 
 .custom-quotes {
+	&:before,
+	&:after {
+		font-family: Flaticon;
+	}
 	&:before {
 		content: "\e001";
+		margin-right: $container-fluid / 2;
 	}
 	&:after {
 		content: "\e004";
+		margin-left: $container-fluid / 2;
 	}
 }

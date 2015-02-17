@@ -3435,11 +3435,16 @@ body::-webkit-scrollbar {
   z-index: 20;
 }
 
+.custom-quotes:before, .custom-quotes:after {
+  font-family: Flaticon;
+}
 .custom-quotes:before {
   content: "\e001";
+  margin-right: 7px;
 }
 .custom-quotes:after {
   content: "\e004";
+  margin-left: 7px;
 }
 
 /* PROJECT ESPECIFIC FONTS */
