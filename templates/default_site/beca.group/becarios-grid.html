@@ -1,25 +1,10 @@
-{exp:channel:categories channel="perfil_de_los_becarios" dynamic="off"}
-   {exp:channel:entries category="{category_id}" channel="perfil_de_los_becarios"}
-      {if count == 1 AND category_id=="1"}
-         <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
-      {/if}
-      {if category_id=="1"}
+{exp:channel:entries category_group="1" channel="perfil_de_los_becarios" dynamic="off"}
+   {categories}
+      {if absolute_count == 1 AND category_id=="1"}Cocina{/if}
+        {if category_id=="1"}
          {title}
-         {descripcion_del_becario}
-      {/if}
-      {if count == 1 AND category_id=="2"}
-         <h3 class="text-blue-light pv-21"><em>Categoría Servicios</em></h3>
-      {/if}
-      {if category_id=="2"}
-         {title}
-         {descripcion_del_becario}
-      {/if}
-      {if count == 1 AND category_id=="3"}
-         <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
-      {/if}
-      {if category_id=="3"}
-         {title}
-         {descripcion_del_becario}
-      {/if}
-   {/exp:channel:entries}
-{/exp:channel:categories}
+        {/if}
+      {if absolute_count == 1 AND category_id=="2"}Servicios{/if}
+        {if absolute_count == 1 AND category_id=="3"}Qaray{/if}
+    {/categories}
+{/exp:channel:entries}
