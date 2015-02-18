@@ -1,6 +1,6 @@
 {embed="includes/head"}
 
-  {exp:channel:entries channel="becarios" limit="1"}
+  {exp:channel:entries channel="becarios" limit="1" dynamic="off"}
   <div class="site-content">
     {embed="includes/header"}
     <div class="bg-white minh-420 pv-70 normalize-text flex-middle-center">
@@ -11,15 +11,15 @@
         </div>
         <div class="text-center">
           <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
-          {exp:channel:entries channel="perfil_de_los_becarios" category="1" dynamic="off" parse="inward"}
+          {exp:channel:entries channel="perfil_de_los_becarios" category="1"}
             {nombre_del_becario}
           {/exp:channel:entries}
           <h3 class="text-blue-light pv-21"><em>Categoría Servicios</em></h3>
-          {exp:channel:entries channel="perfil_de_los_becarios" category="2" dynamic="off" parse="inward"}
+          {exp:channel:entries channel="perfil_de_los_becarios" category="2"}
             {nombre_del_becario}
           {/exp:channel:entries}
           <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
-          {exp:channel:entries channel="perfil_de_los_becarios" category="3" dynamic="off" parse="inward"}
+          {exp:channel:entries channel="perfil_de_los_becarios" category="3"}
             {nombre_del_becario}
           {/exp:channel:entries}
         </div>
