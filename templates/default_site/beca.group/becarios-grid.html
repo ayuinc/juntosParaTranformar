@@ -1,9 +1,11 @@
 {exp:channel:entries channel="perfil_de_los_becarios" category="1|2|3" dynamic="off"}
-  {if category_id=="1"}
-    <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
-  {if:elseif category_id=="2"}
-    <h3 class="text-blue-light pv-21"><em>Categoría Servicio</em></h3>
-  {if:elseif category_id=="3"}
-    <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
-  {/if}
+  {categories}
+    {if category_id=="1"}
+      <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
+    {if:elseif category_id=="2"}
+      <h3 class="text-blue-light pv-21"><em>Categoría Servicio</em></h3>
+    {if:elseif category_id=="3"}
+      <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
+    {/if}
+  {/categories}
 {/exp:channel:entries}
