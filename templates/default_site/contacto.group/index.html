@@ -1,6 +1,6 @@
 {embed="includes/head"}
 
-  {exp:channel:entries channel="postula"}
+  {exp:channel:entries channel="contacto"}
 
   <div class="site-content">
 		{embed="includes/header"}
@@ -24,7 +24,21 @@
               <label for="Mensaje" class="sr-only">Mensaje</label>
               <textarea class="form-control input-xl" placeholder="Mensaje"></textarea>
             </div>
+            <div class="form-group text-right">
+              <button type="submit" class="btn btn-xl btn-outline btn-graylighter">Enviar</button>
+            </div>
           </form>
+          <ul class="grid-list grid-list-2 grid-list-1-xs">
+            <li>
+              <span class="icon-smartphone">{telefono}</span>
+            </li>
+            <li>
+              <span class="icon-envelope">{email}</span>
+            </li>
+            <li>
+              <span class="icon-location">{direccion}</span>
+            </li>
+          </ul>
         </div>
       </div>
   {/exp:channel:entries}
