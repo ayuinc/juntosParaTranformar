@@ -1,6 +1,6 @@
 {exp:channel:entries channel="perfil_de_los_becarios" category="1|2|3" dynamic="off"}
+  <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
   {categories}
-    <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
     {if category_id=="1"}
       {if count % 2 == 0}
         <div class="clearfix p-ch-0 normalize-text">
@@ -34,10 +34,14 @@
         </div>   
       {/if}
     {/if}
-    <h3 class="text-blue-light pv-21"><em>Categoría Servicio</em></h3>
+  {/categories}
+  <h3 class="text-blue-light pv-21"><em>Categoría Servicio</em></h3>
+  {categories}
     {if category_id=="2"}
     {/if}
-    <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
+  {/categories}
+  <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
+  {categories}
     {if category_id=="3"}
     {/if}
   {/categories}
