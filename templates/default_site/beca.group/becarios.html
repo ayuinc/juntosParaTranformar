@@ -1,0 +1,21 @@
+{embed="includes/head"}
+
+  {exp:channel:entries channel="becarios"}
+  <div class="site-content">
+    {embed="includes/header"}
+    <div class="bg-white minh-420 pv-70 normalize-text flex-middle-center">
+      <div class="container pv-70 ph-70-sm">
+        <div class="text-center pv-42 lead-ch">
+          <h3 class="light">{title}</h3>
+          <p class="pv-21">{becarios_intro}</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
+          {embed="becas/becarios-grid"}
+        </div>
+      </div>
+    </div>
+    {embed="includes/transforma-tu-vida"}
+  {/exp:channel:entries}
+
+{embed="includes/footer"}

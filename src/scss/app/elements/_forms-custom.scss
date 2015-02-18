@@ -90,14 +90,17 @@
 /* Custom Forms */
 input[type="text"],
 input[type="email"],
-input[type="password"],
-textarea {
+input[type="password"]{
 	&.input-xl {
 		height: 56px;
 		height: rem(56px);
 		font-size: 24px;
 		font-size: rem(24px);
 	}
+}
+textarea {
+	font-size: 24px;
+	font-size: rem(24px);
 }
 
 .form-custom {
