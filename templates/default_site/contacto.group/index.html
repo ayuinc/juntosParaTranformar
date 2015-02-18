@@ -1,1 +1,32 @@
-Contacto
+{embed="includes/head"}
+
+  {exp:channel:entries channel="postula"}
+
+  <div class="site-content">
+		{embed="includes/header"}
+      <div class="bg-blue-light minhp-100">
+        <div class="container pv-70">
+          <div class="text-center text-white pv-42 lead-ch">
+            <h1>{title}</h1>
+          </div>
+        </div>
+        <div class="container-sm">
+          <form action="" class="form-custom">
+            <div class="form-group">
+              <label for="Nombre" class="sr-only">Nombre</label>
+              <input type="text" class="form-control input-xl" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="Email" class="sr-only">Email</label>
+              <input type="email" class="form-control input-xl" placeholder="Email">
+            </div>
+             <div class="form-group">
+              <label for="Mensaje" class="sr-only">Mensaje</label>
+              <textarea class="form-control input-xl" placeholder="Mensaje"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+  {/exp:channel:entries}
+
+{embed="includes/footer"}

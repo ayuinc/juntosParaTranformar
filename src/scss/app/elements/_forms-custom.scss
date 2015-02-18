@@ -90,7 +90,8 @@
 /* Custom Forms */
 input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+textarea {
 	&.input-xl {
 		height: 56px;
 		height: rem(56px);
@@ -102,7 +103,8 @@ input[type="password"] {
 .form-custom {
 	input[type="text"],
 	input[type="email"],
-	input[type="password"] {
+	input[type="password"],
+	textarea {
 		background-color: transparent;
 		@include light;
 		@include placeholder {

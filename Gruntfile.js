@@ -332,7 +332,7 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    'sass:ebm',
+    // 'sass:ebm',
     'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',
@@ -341,7 +341,7 @@ module.exports = function (grunt) {
     // 'concat:dev',
     'connect:livereload',
     'uglify',
-    'open',
+    // 'open',
     'watch'
   ]);
 

@@ -4879,7 +4879,8 @@ input[type="submit"].btn.btn-white.btn-outline:hover {
 /* Custom Forms */
 input[type="text"].input-xl,
 input[type="email"].input-xl,
-input[type="password"].input-xl {
+input[type="password"].input-xl,
+textarea.input-xl {
   height: 56px;
   height: 4rem;
   font-size: 24px;
@@ -4888,29 +4889,34 @@ input[type="password"].input-xl {
 
 .form-custom input[type="text"],
 .form-custom input[type="email"],
-.form-custom input[type="password"] {
+.form-custom input[type="password"],
+.form-custom textarea {
   background-color: transparent;
   font-family: 'telefonica_headline_lightRg' !important;
   font-style: normal;
 }
 .form-custom input[type="text"]::-webkit-input-placeholder,
 .form-custom input[type="email"]::-webkit-input-placeholder,
-.form-custom input[type="password"]::-webkit-input-placeholder {
+.form-custom input[type="password"]::-webkit-input-placeholder,
+.form-custom textarea::-webkit-input-placeholder {
   color: white;
 }
 .form-custom input[type="text"]::-moz-placeholder,
 .form-custom input[type="email"]::-moz-placeholder,
-.form-custom input[type="password"]::-moz-placeholder {
+.form-custom input[type="password"]::-moz-placeholder,
+.form-custom textarea::-moz-placeholder {
   color: white;
 }
 .form-custom input[type="text"]:-moz-placeholder,
 .form-custom input[type="email"]:-moz-placeholder,
-.form-custom input[type="password"]:-moz-placeholder {
+.form-custom input[type="password"]:-moz-placeholder,
+.form-custom textarea:-moz-placeholder {
   color: white;
 }
 .form-custom input[type="text"]:-ms-input-placeholder,
 .form-custom input[type="email"]:-ms-input-placeholder,
-.form-custom input[type="password"]:-ms-input-placeholder {
+.form-custom input[type="password"]:-ms-input-placeholder,
+.form-custom textarea:-ms-input-placeholder {
   color: white;
 }
 
