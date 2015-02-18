@@ -10,10 +10,18 @@
           <p class="pv-21">{becarios_intro}</p>
         </div>
         <div class="text-center">
-          <!-- <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3> -->
-          {embed="beca/becarios-grid"}
-          <!-- <h3 class="text-blue-light pv-21"><em>Categoría Servicios</em></h3> -->
-          <!-- <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3> -->
+          <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
+          {exp:channel:entries channel="perfil_de_los_becarios" category="1" dynamic="off"}
+            {title}
+          {/exp:channel:entries}
+          <h3 class="text-blue-light pv-21"><em>Categoría Servicios</em></h3>
+          {exp:channel:entries channel="perfil_de_los_becarios" category="2" dynamic="off"}
+            {title}
+          {/exp:channel:entries}
+          <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
+          {exp:channel:entries channel="perfil_de_los_becarios" category="3" dynamic="off"}
+            {title}
+          {/exp:channel:entries}
         </div>
       </div>
     </div>
