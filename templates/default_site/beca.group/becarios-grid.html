@@ -1,10 +1,10 @@
 {exp:channel:entries category_group="1" channel="perfil_de_los_becarios" dynamic="off"}
    {categories}
-      {if absolute_count == 1 AND category_id=="1"}Cocina{/if}
+      {if count == 1 AND category_id=="1"}Cocina{/if}
         {if category_id=="1"}
          {title}
         {/if}
-      {if absolute_count == 1 AND category_id=="2"}Servicios{/if}
-        {if absolute_count == 1 AND category_id=="3"}Qaray{/if}
+      {if count == 1 AND category_id=="2"}Servicios{/if}
+      {if count == 1 AND category_id=="3"}Qaray{/if}
     {/categories}
 {/exp:channel:entries}
