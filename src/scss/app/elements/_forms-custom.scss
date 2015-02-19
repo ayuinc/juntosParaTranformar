@@ -124,7 +124,7 @@ $inputs-list:
 	"select",
 	"password";
 
-#postulacion {
+.step-panel-form form {
 	@for $i from 1 through length($inputs-list) {
 		input[type="#{nth($inputs-list, $i)}"] {
 			@extend .form-control;
