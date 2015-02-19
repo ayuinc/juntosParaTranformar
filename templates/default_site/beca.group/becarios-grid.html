@@ -1,6 +1,40 @@
 <h3 class="text-blue-light pv-21"><em>Categoría Cocina</em></h3>
 {exp:channel:entries channel="perfil_de_los_becarios" category="1" dynamic="off"}
-  {title}
+  {if count % 2 == 0}
+  <div class="clearfix p-ch-0 normalize-text">
+    <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white" data-href="{site_url}beca/becarios">
+      <div class="text-center">
+        <span class="icon-arrow-right h1 block mb-14"></span>
+        <h1>{title}</h1>
+        <p>Becarios</p>
+      </div>
+    </div>
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
+      <div>
+        <button type="button" class="tcon tcon-vid--play" role="button" aria-label="play video">
+          <span class="tcon-visuallyhidden">play video</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  {if:else}
+  <div class="clearfix p-ch-0 normalize-text">
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
+      <div>
+        <button type="button" class="tcon tcon-vid--play" role="button" aria-label="play video">
+          <span class="tcon-visuallyhidden">play video</span>
+        </button>
+      </div>
+    </div>
+    <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white" data-href="{site_url}beca/becarios">
+      <div class="text-center">
+        <span class="icon-arrow-right h1 block mb-14"></span>
+        <h1>{title}</h1>
+        <p>Becarios</p>
+      </div>
+    </div>
+  </div>
+  {/if}
 {/exp:channel:entries}
 <h3 class="text-blue-light pv-21"><em>Categoría Servicios</em></h3>
 {exp:channel:entries channel="perfil_de_los_becarios" category="2" dynamic="off"}
