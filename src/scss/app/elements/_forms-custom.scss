@@ -121,7 +121,6 @@ $inputs-list:
 	"email",
 	"search",
 	"date",
-	"select",
 	"password";
 
 .step-panel-form form {
@@ -129,15 +128,22 @@ $inputs-list:
 		input[type="#{nth($inputs-list, $i)}"] {
 			@extend .form-control;
 			@include placeholder {
-				color: $brand-primary;
+				color: $brand-primary !important;
 			}
+			color: $brand-primary !important;
 		}
+	}
+	select {
+		@extend .select-override;
+		@extend .form-control;
+		color: $brand-primary !important;
 	}
 	textarea {
 		@extend .form-control;
 		@include placeholder {
 			color: $brand-primary;
 		}
+		color: $brand-primary !important;
 	}
 	button,
 	input[type="submit"] {
