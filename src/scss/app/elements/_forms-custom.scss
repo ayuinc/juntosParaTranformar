@@ -137,6 +137,9 @@ $inputs-list:
 		@extend .select-override;
 		@extend .form-control;
 		color: $brand-primary !important;
+		&[multiple] {
+			height: auto;
+		}
 	}
 	textarea {
 		@extend .form-control;
