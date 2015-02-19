@@ -116,7 +116,37 @@ textarea {
 	}
 }
 
+$inputs-list: 
+	"text",
+	"email",
+	"search",
+	"date",
+	"select",
+	"password";
 
+#postulacion {
+	@for $i from 1 through length($inputs-list) {
+		input[type="#{nth($inputs-list, $i)}"] {
+			@extend .form-control;
+			@include placeholder {
+				color: $brand-primary;
+			}
+		}
+	}
+	textarea {
+		@extend .form-control;
+		@include placeholder {
+			color: $brand-primary;
+		}
+	}
+	button,
+	input[type="submit"] {
+		@extend .btn;
+		@extend .btn-default;
+		@extend .btn-xl;
+		@extend .btn-outline;
+	}
+}
 
 
 
