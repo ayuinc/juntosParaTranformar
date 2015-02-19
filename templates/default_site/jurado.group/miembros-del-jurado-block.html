@@ -1,25 +1,299 @@
-{exp:channel:entries channel="miembros_del_jurado" limit="10" dynamic="off"}
-	<div class="pv-70 minhp-50 flex-middle-center bg-blue text-center lead-ch">
-	  <div class="container-sm pv-21 border-bottom-blue-light border-bottom-lg">
-	  	{imagen_miembro_del_jurado limit="1"}
-	    <div class="img-circle bg-img-block inline-block" style="width: 140px; height: 140px; background-image: url({image:url:small})"></div>
-	    {/imagen_miembro_del_jurado}
-	    <h3>{nombre_del_juez}</h3>
-	    <span class="light">{titulo_del_juez}</span>
-	    <nav class="pv-14">
-	    	{if link_facebook_del_juez}
-	      <a href="{link_facebook_del_juez}" class="icon-facebook"></a>
-	      {/if}
-	      {if link_twitter_del_juez}
-	      <a href="{link_twitter_del_juez}" class="icon-twitter"></a>
-	     	{/if}
-	    </nav>
-	  </div>
-	  <div class="container text-white">
-	    <p class="custom-quotes pv-21 light">{cita_textual_del_juez}</p>
-	  </div>
-	  <div class="container-sm border-top-blue-light border-top-lg pv-21 lead-ch">
-	    <p>{descripcion_del_juez}</p>
-	  </div>
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Categoría Cocina</em></h3>
+  </div>
+</div>
+{exp:channel:entries channel="miembros_del_jurado" category="4" limit="10" dynamic="off"}
+	<div class="minhp-70 clearfix jurado-blocks">
+		{if count == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:elseif count == 2}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:else}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{/if}
+	</div>
+{/exp:channel:entries}
+
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Categoría Pastelería</em></h3>
+  </div>
+</div>
+{exp:channel:entries channel="miembros_del_jurado" category="5" limit="10" dynamic="off"}
+	<div class="minhp-70 clearfix jurado-blocks">
+		{if count == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:elseif count == 2}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:else}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{/if}
+	</div>
+{/exp:channel:entries}
+
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Categoría Panadería</em></h3>
+  </div>
+</div>
+{exp:channel:entries channel="miembros_del_jurado" category="6" limit="10" dynamic="off"}
+	<div class="minhp-70 clearfix jurado-blocks">
+		{if count == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:elseif count == 2}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:else}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{/if}
+	</div>
+{/exp:channel:entries}
+
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Categoría Bar</em></h3>
+  </div>
+</div>
+{exp:channel:entries channel="miembros_del_jurado" category="7" limit="10" dynamic="off"}
+	<div class="minhp-70 clearfix jurado-blocks">
+		{if count == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:elseif count == 2}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:else}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{/if}
+	</div>
+{/exp:channel:entries}
+
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Categoría Chocolatería</em></h3>
+  </div>
+</div>
+{exp:channel:entries channel="miembros_del_jurado" category="8" limit="10" dynamic="off"}
+	<div class="minhp-70 clearfix jurado-blocks">
+		{if count == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:elseif count == 2}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:else}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{/if}
+	</div>
+{/exp:channel:entries}
+
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Categoría Sommelier</em></h3>
+  </div>
+</div>
+{exp:channel:entries channel="miembros_del_jurado" category="9" limit="10" dynamic="off"}
+	<div class="minhp-70 clearfix jurado-blocks">
+		{if count == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:elseif count == 2}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{if:else}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+		{/if}
 	</div>
 {/exp:channel:entries}

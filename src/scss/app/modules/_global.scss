@@ -177,3 +177,30 @@ $video-bg-height: 491px;
 		margin-left: $container-fluid / 2;
 	}
 }
+
+// JURADO BLOCKS 
+.jurado-blocks {
+	.overlay,
+	.custom-frame {
+		@include position(absolute, 0 0 0 0);
+	}
+	.overlay {
+		@include transition(all 0.2s ease-in-out);
+		background-color: rgba($brand-primary, 0.3);
+	}
+	[class*="col-"] {
+		&:hover {
+			.overlay {
+				@include transition(all 0.2s ease-in-out);
+				background-color: rgba($brand-primary, 0.5);
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
