@@ -1,5 +1,8 @@
 {embed="includes/head"}
 	
+  {if logged_in}
+    {redirect='postula/crea-una-cuenta'}  
+  {/if}
 	{if logged_in} 
   <div class="site-content">
 		{embed="includes/header"}
