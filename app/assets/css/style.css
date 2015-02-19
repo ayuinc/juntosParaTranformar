@@ -3679,6 +3679,10 @@ html {
 }
 
 /* TEXT IN REMS */
+.lead {
+  margin: 0;
+}
+
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
   font-size: 23px;
   font-size: 1.64286rem;

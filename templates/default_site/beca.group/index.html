@@ -12,7 +12,9 @@
         </div>
       </div>
     </div>
-    <div style="background-image: url({site_url}app/assets/img/categorias-img.png)" class="bg-img-block minhp-100 pv-70 normalize-text flex-middle-center">
+    {imagen_de_fondo_categorias limit="1"}
+    <div style="background-image: url({image:url:large})" class="bg-img-block minhp-100 pv-70 normalize-text flex-middle-center">
+    {/imagen_de_fondo_categorias}
       <div class="container text-center text-white">
         <h3 class="lead h1 pv-42">Categorías</h3>
         {embed="beca/categorias-de-la-beca"}
@@ -25,7 +27,9 @@
       </div>
       {embed="beca/beneficios-para-los-ganadores"}
     </div>
-    <div style="background-image: url({site_url}app/assets/img/cronograma-img.png)" class="bg-img-block minhp-100 pv-70 flex-middle-center">
+    {imagen_de_fondo_cronograma}
+    <div style="background-image: url({image:url:large})" class="bg-img-block minhp-100 pv-70 flex-middle-center">
+    {/imagen_de_fondo_cronograma}
       <div class="container ph-70-sm text-white text-center normalize-text">
         <h3 class="lead h1 pv-42">Cronograma</h3>
         <div class="bg-blue-darker-op p-21 light gbo">

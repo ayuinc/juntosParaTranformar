@@ -87,6 +87,10 @@ $text-elements-list:
   "ol",
   "li";
 
+.lead {
+  margin: 0;
+}
+
 // LEAD TEXT ELEMENTS
 #{$text-elements-list} {
   &.lead {
