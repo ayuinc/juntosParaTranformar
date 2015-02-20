@@ -19,11 +19,12 @@
       <video id="hIA49M_3OMo" width="640" height="360" style="display:none" data-uid="hIA49M_3OMo" data-youtube-id="hIA49M_3OMo" preload="none">
       </video>
       <script>
-      sublime.load();
-      sublime.ready(function(){
-        var lbx = sublime.lightbox('videoTrigger1');
-        console.log('Sublime ready');
-        lbx.open();
+      $(document).ready(function(){
+        sublime.ready(function(){
+          var lbx = sublime.lightbox('videoTrigger1');
+          console.log(lbx);
+          lbx.open();
+        });
       });
     </script>
     </div>
