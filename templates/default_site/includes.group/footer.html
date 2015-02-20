@@ -20,5 +20,11 @@
     <!-- APP SCRIPTS -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>    
     <script src="{site_url}app/assets/js/scripts.min.js"></script>    
+    <script>
+      $(document).ready(function(){
+        var lightbox = sublime('hIA49M_3OMo');
+        $('.tcon-vid--play').click(function(e){e.preventDefault(); lightbox.open();});
+      });
+    </script>
   </body>
 </html>
