@@ -11,7 +11,7 @@
     </div>
     <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
       <div>
-        <a id="hIA49M_3OMo" class="tcon tcon-vid--play" role="button" aria-label="play video" href="#hIA49M_3OMo" class="sublime" data-youtube-id="hIA49M_3OMo">
+        <a id="videoTrigger1" class="tcon tcon-vid--play" role="button" aria-label="play video" href="#hIA49M_3OMo" class="sublime" data-youtube-id="hIA49M_3OMo">
           <span class="tcon-visuallyhidden">play video</span>
         </a>
       </div>
@@ -24,11 +24,11 @@
         console.log('Sublime ready');
         // var sublimeVid = document.getElementById('hIA49M_3OMo');
         // console.log('hIA49M_3OMo');
-        sublime.prepare('hIA49M_3OMo', function(lightbox) {
-          console.log('lbx ready');
-          var lbx = sublime.lightbox('hIA49M_3OMo');
-          $('.tcon-vid--play').click(function(e){e.preventDefault(); lbx.open();});
-        });
+        console.log('lbx ready');
+        var lbx = sublime.lightbox('videoTrigger1');
+        $('.tcon-vid--play').click(function(e){e.preventDefault(); lbx.open();});
+        // sublime.prepare('hIA49M_3OMo', function(lightbox) {
+        // });
       });
     </script>
     </div>
