@@ -19,8 +19,10 @@
       <video id="hIA49M_3OMo" width="640" height="360" style="display:none" data-uid="hIA49M_3OMo" data-youtube-id="hIA49M_3OMo" preload="none">
       </video>
       <script>
-        var lightbox = sublime('#hIA49M_3OMo');
-        $('.tcon-vid--play').click(function(e){lightbox.open()});
+        $(document).ready(function(){
+          var lightbox = sublime('hIA49M_3OMo');
+          $('.tcon-vid--play').click(function(e){e.preventDefault(); lightbox.open();});
+        });
       </script>
     </div>
   </div>
