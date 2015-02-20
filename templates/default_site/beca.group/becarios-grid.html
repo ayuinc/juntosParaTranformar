@@ -18,6 +18,16 @@
       <!-- <a href="#hIA49M_3OMo" class="sublime" data-youtube-id="hIA49M_3OMo"></a> -->
       <video id="hIA49M_3OMo" width="640" height="360" style="display:none" data-uid="hIA49M_3OMo" data-youtube-id="hIA49M_3OMo" preload="none">
       </video>
+      <script>
+      sublime.load();
+      sublime.ready(function(){
+        console.log('Sublime ready');
+        // var sublimeVid = document.getElementById('hIA49M_3OMo');
+        // console.log('hIA49M_3OMo');
+        var lightbox = sublime.lightbox('hIA49M_3OMo');
+        $('.tcon-vid--play').click(function(e){e.preventDefault(); lightbox.open();});
+      });
+    </script>
     </div>
   </div>
   {if:else}
