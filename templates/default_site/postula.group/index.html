@@ -1,7 +1,8 @@
 {embed="includes/head"}
-
-  {exp:channel:entries channel="postula"}
-
+	{if logged_in}
+		{redirect='postula/formulario'}	 
+	{/if}
+	{if logged_out} 
   <div class="site-content">
 		{embed="includes/header"}
       <div class="bg-blue-light minhp-100">
@@ -16,34 +17,78 @@
             <!-- Step panels -->
             <div class="step-panels">
               <div id="step-panel-1" class="step-panel active bg-blue-darker p-14">
-                <form action="" class="form-terms-and-conditions">
                   <div class="custom-frame minh-630 pbp-14">
                     <div class="text-center lead-ch p-ch-white">
-                      <h1 class="text-blue-light pv-42">Bases de postulación</h1>
+	                    {exp:channel:entries channel="postula"}
+                      <h1 class="text-blue-light pv-42">Crea una cuenta</h1>
+                      <h4 class="text-center text-white">Bases de postulación</h4>
                       <p>{intro_bases_de_postulacion}</p>
+                      {/exp:channel:entries}
                     </div>
                     <div class="lead-ch p-ch-white">
                       <div class="form-group text-center pv-21">
                         <a href="#" class="btn btn-outline btn-xl btn-gray-lighter icon-pdf text-gray-lighter">Descargar bases de postulación</a>
                       </div>
-                      <p>Acepta los <a href="#" class="text-blue-lighter">términos y condiciones</a>:</p>
-                      <div class="form-group pv-21">
-                        <label for="accept-terms" class="text-white">
-                          <input type="checkbox" name="accept-terms"> Acepto los términos y condiciones
-                        </label>
-                      </div>
-                    </div>
-                    <div class="step-actions text-right">
-                      <button type="submit" class="next btn btn-xl btn-outline btn-gray-lighter">Continuar</button>
+	 										{exp:user:register 
+												group_id="5" 
+												return="postula/formulario" 
+											}	
+											<fieldset class="signin">
+				        				<div class="text-white p-42-sm">
+													<div class="form-group">
+													  <label class="control-label thin" for="user">Username</label>  
+													  <div class="">
+													  	<input id="user" name="username" type="text" class="form-control input-md" data-bv-notempty="true" data-bv-notempty-message="El username no puede estar vacio">
+													  </div>
+													</div>
+													<div class="form-group">
+													  <label class="control-label thin" for="user">E-mail</label>  
+													  <div class="">
+													  	<input id="user" name="email" type="text" class="form-control input-md" data-bv-notempty="true" data-bv-notempty-message="Dirección de correo no puede estar vacio" data-bv-emailaddress="true" data-bv-emailaddress-message="La dirección de correo no es válida">
+													  </div>
+													</div>
+													<div class="form-group">
+													  <label class="control-label thin" for="password">Contraseña</label>
+													  <div class="">
+													    <input id="password" name="password" type="password" class="form-control input-md" data-bv-notempty="true" data-bv-notempty-message="Password no puede estar vacio">
+													  </div>
+													</div>
+													<div class="form-group">
+													  <label class="control-label thin" for="repassword">Confirma contraseña</label>
+													  <div class="">
+													    <input id="repassword" name="password_confirm" type="password" class="form-control input-md" data-bv-notempty="true" data-bv-notempty-message="Password no puede estar vacio">
+													  </div>
+													</div>
+													<div class="form-group">
+													  <label class="control-label" for="checkbox"></label>
+													  <div class="">
+														  <div class="checkbox">
+														    <label for="checkbox-0">
+														      <input type="checkbox" name="accept_terms" id="checkbox-0" value="y" data-bv-notempty="true"
+	                                data-bv-notempty-message="Debes aceptar las condiciones">
+														      He leido y <a href="">acepto las condiciones</a>
+														    </label>
+															</div>
+													  </div>
+													</div>
+													<div class="form-group text-center mt-70">
+													  <label class="control-label" for="submit"></label>
+													  <button class="btn btn-outline btn-xl btn-gray-lighter" type="submit">Crear un cuenta</button>
+													</div>
+													<div class="form-group text-center">
+													  <div class="">
+													    <p>¿Ya tienes cuenta? <a href="{site_url}/postula/ingresa" class="thin" id="ingresa-boton">Ingresa aquí</a></p>
+													  </div>
+													</div>
+												</div>	
+											</fieldset>
+											{/exp:user:register}                
                     </div>
                   </div>
-                </form>
               </div>
             </div>
           </div>
         </div>
-      </div>
-
-  {/exp:channel:entries}
-
+      </div>  
+			{/if}
 {embed="includes/footer"}
