@@ -78,18 +78,15 @@
                 <a href="#" class="icon-twitter"></a>
               </div>
             </div>
-            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
-              <div>
-                <button type="button" class="tcon tcon-vid--play" role="button" aria-label="play video">
-                  <span class="tcon-visuallyhidden">play video</span>
-                </button>
-              </div>
+            {imagen_conoce_a_los_becarios limit="1"}
+            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})" data-href="{site_url}beca/becarios">
+            {/imagen_conoce_a_los_becarios}
             </div>
           </div>
           <div class="clearfix p-ch-0 normalize-text">
-            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
-              <div></div>
-            </div>
+            {imagen_conoce_al_jurado limit="1"}
+            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})" data-href="{site_url}jurado"></div>
+            {/imagen_conoce_al_jurado}
             <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
               <div class="text-center" data-href="{site_url}jurado">
                 <span class="icon-arrow-left h1 block mb-14"></span>
