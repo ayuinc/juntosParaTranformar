@@ -23,7 +23,7 @@
         sublime.ready(function(){
           var lbx = sublime.lightbox('videoTrigger1');
           console.log(lbx);
-          lbx.open();
+          $('.tcon-vid--play').click(function(e){lbx.open();});
         });
       });
     </script>
