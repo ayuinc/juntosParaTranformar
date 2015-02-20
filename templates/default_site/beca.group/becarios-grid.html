@@ -9,34 +9,48 @@
         <p>{descripcion_del_becario}</p>
       </div>
     </div>
-    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
+    {imagen_del_becario}
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})">
+    {/imagen_del_becario}
       <div>
-        <a id="videoTrigger1" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#hIA49M_3OMo" data-youtube-id="hIA49M_3OMo">
+        <a id="videoTrigger{count}" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#{youtube_id}" data-youtube-id="{youtube_id}">
           <span class="tcon-visuallyhidden">play video</span>
         </a>
       </div>
-      <!-- <a href="#hIA49M_3OMo" class="sublime" data-youtube-id="hIA49M_3OMo"></a> -->
-      <video id="hIA49M_3OMo" width="640" height="360" style="display:none" data-uid="hIA49M_3OMo" data-youtube-id="hIA49M_3OMo" preload="none">
+      <video id="{youtube_id}" 
+            width="640" 
+            height="360" 
+            style="display:none" 
+            data-uid="{youtube_id}" 
+            data-youtube-id="{youtube_id}" 
+            preload="none">
       </video>
       <script>
-      $(document).ready(function(){
-        sublime.ready(function(){
-          var lbx = sublime.lightbox('videoTrigger1');
-          console.log(lbx);
-          $('.tcon-vid--play').click(function(e){lbx.open();});
-        });
-      });
-    </script>
+        $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger{count}');$('.tcon-vid--play').click(function(e){lbx.open();});});});
+      </script>
     </div>
   </div>
   {if:else}
   <div class="clearfix p-ch-0 normalize-text">
-    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
+    {imagen_del_becario}
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})">
+    {/imagen_del_becario}
       <div>
-        <button type="button" class="tcon tcon-vid--play" role="button" aria-label="play video">
+        <a id="videoTrigger{count}" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#{youtube_id}" data-youtube-id="{youtube_id}">
           <span class="tcon-visuallyhidden">play video</span>
-        </button>
+        </a>
       </div>
+      <video id="{youtube_id}" 
+            width="640" 
+            height="360" 
+            style="display:none" 
+            data-uid="{youtube_id}" 
+            data-youtube-id="{youtube_id}" 
+            preload="none">
+      </video>
+      <script>
+        $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger{count}');$('.tcon-vid--play').click(function(e){lbx.open();});});});
+      </script>
     </div>
     <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
       <div class="text-center">
@@ -50,9 +64,129 @@
 {/exp:channel:entries}
 <h3 class="text-blue-light pv-21"><em>Categoría Servicios</em></h3>
 {exp:channel:entries channel="perfil_de_los_becarios" category="2" dynamic="off" sort="asc"}
-  {title}
+  {if count % 2 == 0}
+  <div class="clearfix p-ch-0 normalize-text">
+    <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
+      <div class="text-center">
+        <span class="icon-arrow-right h1 block mb-14"></span>
+        <h1>{title}</h1>
+        <p>{descripcion_del_becario}</p>
+      </div>
+    </div>
+    {imagen_del_becario}
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})">
+    {/imagen_del_becario}
+      <div>
+        <a id="videoTrigger{count}" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#{youtube_id}" data-youtube-id="{youtube_id}">
+          <span class="tcon-visuallyhidden">play video</span>
+        </a>
+      </div>
+      <video id="{youtube_id}" 
+            width="640" 
+            height="360" 
+            style="display:none" 
+            data-uid="{youtube_id}" 
+            data-youtube-id="{youtube_id}" 
+            preload="none">
+      </video>
+      <script>
+        $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger{count}');$('.tcon-vid--play').click(function(e){lbx.open();});});});
+      </script>
+    </div>
+  </div>
+  {if:else}
+  <div class="clearfix p-ch-0 normalize-text">
+    {imagen_del_becario}
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})">
+    {/imagen_del_becario}
+      <div>
+        <a id="videoTrigger{count}" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#{youtube_id}" data-youtube-id="{youtube_id}">
+          <span class="tcon-visuallyhidden">play video</span>
+        </a>
+      </div>
+      <video id="{youtube_id}" 
+            width="640" 
+            height="360" 
+            style="display:none" 
+            data-uid="{youtube_id}" 
+            data-youtube-id="{youtube_id}" 
+            preload="none">
+      </video>
+      <script>
+        $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger{count}');$('.tcon-vid--play').click(function(e){lbx.open();});});});
+      </script>
+    </div>
+    <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
+      <div class="text-center">
+        <span class="icon-arrow-left h1 block mb-14"></span>
+        <h1>{title}</h1>
+        <p>{descripcion_del_becario}</p>
+      </div>
+    </div>
+  </div>
+  {/if}
 {/exp:channel:entries}
 <h3 class="text-blue-light pv-21"><em>Categoría Qaray</em></h3>
 {exp:channel:entries channel="perfil_de_los_becarios" category="3" dynamic="off" sort="asc"}
-  {title}
+  {if count % 2 == 0}
+  <div class="clearfix p-ch-0 normalize-text">
+    <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
+      <div class="text-center">
+        <span class="icon-arrow-right h1 block mb-14"></span>
+        <h1>{title}</h1>
+        <p>{descripcion_del_becario}</p>
+      </div>
+    </div>
+    {imagen_del_becario}
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})">
+    {/imagen_del_becario}
+      <div>
+        <a id="videoTrigger{count}" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#{youtube_id}" data-youtube-id="{youtube_id}">
+          <span class="tcon-visuallyhidden">play video</span>
+        </a>
+      </div>
+      <video id="{youtube_id}" 
+            width="640" 
+            height="360" 
+            style="display:none" 
+            data-uid="{youtube_id}" 
+            data-youtube-id="{youtube_id}" 
+            preload="none">
+      </video>
+      <script>
+        $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger{count}');$('.tcon-vid--play').click(function(e){lbx.open();});});});
+      </script>
+    </div>
+  </div>
+  {if:else}
+  <div class="clearfix p-ch-0 normalize-text">
+    {imagen_del_becario}
+    <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})">
+    {/imagen_del_becario}
+      <div>
+        <a id="videoTrigger{count}" class="tcon tcon-vid--play sublime" role="button" aria-label="play video" href="#{youtube_id}" data-youtube-id="{youtube_id}">
+          <span class="tcon-visuallyhidden">play video</span>
+        </a>
+      </div>
+      <video id="{youtube_id}" 
+            width="640" 
+            height="360" 
+            style="display:none" 
+            data-uid="{youtube_id}" 
+            data-youtube-id="{youtube_id}" 
+            preload="none">
+      </video>
+      <script>
+        $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger{count}');$('.tcon-vid--play').click(function(e){lbx.open();});});});
+      </script>
+    </div>
+    <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
+      <div class="text-center">
+        <span class="icon-arrow-left h1 block mb-14"></span>
+        <h1>{title}</h1>
+        <p>{descripcion_del_becario}</p>
+      </div>
+    </div>
+  </div>
+  {/if}
 {/exp:channel:entries}
