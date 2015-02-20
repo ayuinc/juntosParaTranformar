@@ -22,7 +22,8 @@
     <script src="{site_url}app/assets/js/scripts.min.js"></script>    
     <script>
       $(document).ready(function(){
-        var lightbox = sublime('hIA49M_3OMo');
+      	var sublimeVid = document.getElementById('hIA49M_3OMo');
+        var lightbox = sublime(sublimeVid);
         $('.tcon-vid--play').click(function(e){e.preventDefault(); lightbox.open();});
       });
     </script>
