@@ -1,7 +1,11 @@
 {embed="includes/head"}
 
-  {exp:channel:entries channel="postula"}
+	{if logged_in}
+		{redirect='postula/formulario/page1'}	 
+	{/if}
 
+	{if logged_out} 
+  {exp:channel:entries channel="postula"}
   <div class="site-content">
 		{embed="includes/header"}
       <div class="bg-blue-light minhp-100">
@@ -54,7 +58,7 @@
           </div>
         </div>
       </div>
-
   {/exp:channel:entries}
+  {/if}
 
 {embed="includes/footer"}
