@@ -339,7 +339,7 @@ module.exports = function (grunt) {
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
-    'connect:livereload',
+    // 'connect:livereload',
     'uglify',
     // 'open',
     'watch'
