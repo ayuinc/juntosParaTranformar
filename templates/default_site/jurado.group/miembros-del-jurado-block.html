@@ -31,9 +31,22 @@
 	        </div>
 	      </div>
 	    </div>
-		{if:else}
+		{if:elseif absolute_results == 3}
 			{imagen_miembro_del_jurado limit="1"}
 			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="pv-63 lead-ch">
+	          <h3>{title}</h3>
+	          {categories}
+	          <p>{category_name}</p>
+	          {/categories}
+	        </div>
+	      </div>
+	    </div>
+	  {if:elseif absolute_results == 4}
+	  	{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-3 relative bg-img-block-top bg-img-block-center-x minh-630" style="background-image: url({image:url:large})">
 			{/imagen_miembro_del_jurado}
 	      <div class="overlay flex-middle-end text-center text-white">
 	        <div class="pv-63 lead-ch">
