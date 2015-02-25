@@ -19,7 +19,7 @@ $brand-primary:         #085A6B !default;
 $brand-success:         #5cb85c !default;
 $brand-info:            #01C6D7 !default;
 $brand-warning:         #f0ad4e !default;
-$brand-danger:          #d9534f !default;
+$brand-danger:          #fb6533 !default;
 
 $blue-base: #3A4959;
 
@@ -142,7 +142,7 @@ $text-elements-list:
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $brand-primary !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -299,7 +299,7 @@ $input-bg:                       #fff !default;
 $input-bg-disabled:              $gray-lighter !default;
 
 //** Text color for `<input>`s
-$input-color:                    $gray !default;
+$input-color:                    $gray-lighter !default;
 //** `<input>` border color
 $input-border:                   #ccc !default;
 
@@ -313,7 +313,7 @@ $input-border-radius-large:      $border-radius-large !default;
 $input-border-radius-small:      $border-radius-small !default;
 
 //** Border color for inputs on focus
-$input-border-focus:             #66afe9 !default;
+$input-border-focus:             $gray-lighter !default;
 
 //** Placeholder text color
 $input-color-placeholder:        #999 !default;
@@ -458,7 +458,7 @@ $container-md:                 $container-desktop !default;
 // Large screen / wide desktop
 $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
-$container-lg:                 $container-large-desktop !default;
+$container-lg:                 $container-desktop !default;
 
 
 //== Navbar

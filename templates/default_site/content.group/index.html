@@ -38,93 +38,94 @@
     </div>
   </div> <!-- END:Hero-unit -->
   <div class="site-content">
-    <div class="dark-gradient pt-42 flex-middle-center">
+    <div class="bg-blue-light pt-42 flex-middle-center">
       <!-- Borde con esquinas redondeadas -->
       <div class="container-fluid border-bottom-white pb-14">
         <div class="custom-frame minh-700 flex-middle-center">
-          <div class="container-sm text-center border-bottom-white pv-70">
+          <div class="container-sm text-center border-bottom-white text-white pv-70 lead-ch">
             <img src="{site_url}app/assets/img/photo1.jpg" class="border-images-big mb-28" alt="">
-            <p class="ph-14-sm mb-28 text-white light texto-home">{home_sobre_la_beca}</p>
-            <a href="" class="btn btn-outline btn-xxl btn-gray-lighter">Sobre la Beca</a>
-            <a href="#" class="block h3 text-center text-white pv-14">Bases de la postulación</a>
+            <h3 class="mb-14">{home_titulo_becas}</h3>
+            <p class="ph-14-sm mb-28 light">{home_sobre_la_beca}</p>
+            <a href="{site_url}beca" class="btn btn-outline btn-xl btn-gray-lighter">Sobre la Beca</a>
+            <a href="{site_url}images/documentos/Bases_Becas_Juntos_para_Transformar_12_02_15.doc" target="_blank" class="block pv-14 unlead icon-pdf">Descarga las bases de la postulación</a>
           </div>
-          <div class="container-sm text-center pv-70">
+          <div class="container-sm text-center pv-70 text-white lead-ch">
             <img src="{site_url}app/assets/img/gorro.png" class="mb-28" alt="">
-            <p class="ph-14-sm mb-28 text-white texto-home">{home_postula_ahora}</p>
-            <a href="" class="btn btn-outline btn-xxl btn-gray-lighter">Postula ahora</a>
-            <a href="#" class="block h3 text-center text-white pv-14">Bases de la postulación</a>
+            <p class="ph-14-sm mb-28">{home_postula_ahora}</p>
+            <a href="" class="btn btn-xl btn-danger">Postula ahora</a>
+            <a href="#" class="block pv-14 unlead icon-pdf">Bases de la postulación</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="bg-blue-light minh-700">
-      <div class="container text-center text-white thin pv-42">
-        <div class="ph-70">
+    <div class="bg-white minh-700">
+      <div class="container text-center thin pv-42">
+        <div>
           <div class="pv-42 lead-ch">
-            <h3>{home_programa_de_becas}</h3>
+            <h3>{home_seccion_videos}</h3>
             <p class="light">{home_programa_de_becas_descripci}</p>
           </div>
           <div class="clearfix p-ch-0 normalize-text">
-            <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center" data-href="#">
-              <div class="text-center">
-                <img class="pv-21" src="{site_url}app/assets/img/flecha.png" alt="">
+            <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
+              <div class="text-center" data-href="{site_url}beca/becarios">
+                <span class="icon-arrow-right h1 block mb-14"></span>
                 <h3>Conoce a nuestros</h3>
                 <h2 class="lead">Becarios</h2>
               </div>
               <div class="box-share h3 lead-ch pv-42">
                 <span class="light">Compártelo</span>
-                <a href="#">F</a>
-                <a href="#">T</a>
+                <a href="#" class="icon-facebook"></a>
+                <a href="#" class="icon-twitter"></a>
               </div>
             </div>
-            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
-              <div>
-                <button type="button" class="tcon tcon-vid--play" role="button" aria-label="play video">
-                  <span class="tcon-visuallyhidden">play video</span>
-                </button>
-              </div>
+            {imagen_conoce_a_los_becarios limit="1"}
+            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})" data-href="{site_url}beca/becarios">
+            {/imagen_conoce_a_los_becarios}
             </div>
           </div>
           <div class="clearfix p-ch-0 normalize-text">
-            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({site_url}app/assets/img/img.png)">
-              <div></div>
-            </div>
-            <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center" data-href="#">
-              <div class="text-center">
-                <img src="{site_url}app/assets/img/flecha.png" class="flipped pv-21" alt="">
+            {imagen_conoce_al_jurado limit="1"}
+            <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url:medium})" data-href="{site_url}jurado"></div>
+            {/imagen_conoce_al_jurado}
+            <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
+              <div class="text-center" data-href="{site_url}jurado">
+                <span class="icon-arrow-left h1 block mb-14"></span>
                 <h3>Conoce a nuestro</h3>
                 <h2 class="lead">Jurado</h2>
               </div>
               <div class="box-share h3 lead-ch pv-42">
                 <span class="light">Compártelo</span>
-                <a href="#">F</a>
-                <a href="#">T</a>
+                <a href="#" class="icon-facebook"></a>
+                <a href="#" class="icon-twitter"></a>
               </div>
             </div>
           </div>
           <div class="pv-42">
-            <a href="" class="btn btn-outline btn-xxl btn-gray-lighter">Ver más videos</a>
-            <a href="#" class="h3 text-white block pv-14">Bases de postulación</a>
-          </div>
-        </div>
-      </div>
-      <div class="container-fluid pv-21">
-        <div class="custom-frame minh-140 flex-middle-center">
-          <div class="container-sm text-center pv-70">
-            <p class="text-white lead pv-42">{home_mas_sobre_la_alianza}</p>
-            <a href="" class="btn btn-outline btn-xxl btn-gray-lighter">Más sobre la alianza</a>
+            <a href="#" class="btn btn-outline btn-xl btn-blue">Ver más videos</a>
+            <a href="#" class="icon-pdf block pv-14">Bases de postulación</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="dark-gradient pv-70 minhp-100 flex-middle-center">
-      <div class="container ph-70-sm">
-        <div class="lead-ch text-white normalize-text text-center mb-42">
+    <div class="bg-blue-light">
+      <div class="container-fluid pv-21">
+        <div class="custom-frame text-white minh-140 flex-middle-center">
+          <div class="container text-center pv-70 lead-ch">
+	          <h3 class="custom-quotes">{home_titulo_mas_sobre_la_alianza}</h3>
+            <p class="pv-42">{home_mas_sobre_la_alianza}</p>
+            <a href="#" class="btn btn-outline btn-xl btn-gray-lighter unlead">Más sobre la alianza</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-white pv-70 minhp-100 flex-middle-center">
+      <div class="container">
+        <div class="lead-ch normalize-text text-center mb-42">
           <h3>Aliados</h3>
           <h1><em>Juntos para transformar</em></h1>
           <p class="pv-21 light">{home_aliados}</p>
         </div>
-        {embed="jurado/miembros-del-jurado"}
+        {embed="includes/aliados"}
       </div>
     </div>
 

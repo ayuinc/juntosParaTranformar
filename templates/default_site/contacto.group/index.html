@@ -1,1 +1,44 @@
-Contacto
+{embed="includes/head"}
+
+  {exp:channel:entries channel="contacto"}
+
+  <div class="site-content">
+		{embed="includes/header"}
+      <div class="bg-blue-light minhp-100 pv-70">
+        <div class="container-sm">
+          <div class="text-center text-white pv-21 lead-ch">
+            <h1>{title}</h1>
+          </div>
+          <form action="" class="form-custom">
+            <div class="form-group">
+              <label for="Nombre" class="sr-only">Nombre</label>
+              <input type="text" class="form-control input-xl" placeholder="Nombre">
+            </div>
+            <div class="form-group">
+              <label for="Email" class="sr-only">Email</label>
+              <input type="email" class="form-control input-xl" placeholder="Email">
+            </div>
+             <div class="form-group">
+              <label for="Mensaje" class="sr-only">Mensaje</label>
+              <textarea rows="3" class="form-control input-xl" placeholder="Mensaje"></textarea>
+            </div>
+            <div class="form-group text-right">
+              <button type="submit" class="btn btn-xl btn-outline btn-gray-lighter">Enviar</button>
+            </div>
+          </form>
+          <ul class="grid-list grid-list-2 grid-list-1-xs ph-ch-0 lead-ch text-white light">
+            <li>
+              <span class="icon-smartphone mr-7-bf">{telefono}</span>
+            </li>
+            <li>
+              <a href="mailto:{email_de_contacto}" class="icon-envelope mr-7-bf">{email_de_contacto}</a>
+            </li>
+            <li>
+              <span class="icon-location mr-7-bf">{direccion}</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+  {/exp:channel:entries}
+
+{embed="includes/footer"}

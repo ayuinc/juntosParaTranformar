@@ -1,7 +1,6 @@
 {embed="includes/head"}
-	
 	{if logged_in}
-		{redirect='postula/formulario'}	 
+		{redirect='postula/formulario-edicion'}	 
 	{/if}
 	{if logged_out} 
   <div class="site-content">
@@ -9,52 +8,49 @@
       <div class="bg-blue-light minhp-100">
         <div class="container ph-56 pv-70">
           <div class="text-center text-white pv-42 lead-ch">
-            <h1>Postulación</h1>
-            <h3 class="light step-wizard-instructions">Postula en <span class="h1">3</span> simples pasos</h3>
+            <h1>Ingresa a tu cuenta</h1>
           </div>
           <div id="progress-wizard">
-            <!-- Step Counters -->
-						{embed="postula/step-counters"}
-            <!-- Step panels -->
             <div class="step-panels">
-              <div id="step-panel-1" class="step-panel active bg-blue-darker p-14">
-                <div class="custom-frame minh-630 pbp-14">
-									{exp:member:login_form return="postula/formulario"}
-									<fieldset class="">
-										<div class="col-md-4 bg-white pt-21 pb-21 pl-49 pr-49 mbp-7 center-block clearfix">
-											<h3 class="text-center mb-35">INGRESA A TU CUENTA</h3>
-											<div class="form-group">
-											  <label class="control-label thin" for="user">Usuario</label>  
-											  <div class="">
-											  <input id="user" name="username" type="text" placeholder="" class="form-control input-md" required="">
-											  </div>
-											</div>
-											<div class="form-group">
-											  <label class="control-label thin" for="password">Contraseña</label>
-											  <div class="">
-											    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
-											  </div>
-											</div>
-											<div class="form-group">
-											  <label class="control-label thin" for="submit"></label>
-											  <div class="">
-											    <button class="btn btn-primary clearfix form-control btn-tinis" type="submit">INGRESAR</button>
-											  </div>
-											</div>
-												<div class="form-group text-center">
-												  <div class="">
-												    ¿No tienes cuenta? <a href="{site_url}postula/crea-una-cuenta" class="thin">Creala aquí</a>
-												  </div>
-												</div>
-										</div>	
-									</fieldset>
-									{/exp:member:login_form}
-                </div>
+              <div id="step-panel-1" class="step-panel step-panel-form active bg-blue-darker p-14">
+                  <div class="custom-frame minh-530 pbp-14">
+                    <div class="lead-ch p-ch-white">
+											{exp:member:login_form return="postula/formulario-edicion" form_name="login"}
+											<fieldset class="signin">
+				        				<div class="text-white p-42-sm">
+													<!--<h3 class="text-center mb-35">Ingresa a tu cuenta</h3>-->
+													<div class="form-group">
+													  <label class="control-label thin" for="user">Usuario</label>  
+													  <div class="">
+													  <input id="user" name="username" type="text" placeholder="" class="form-control input-md" required="">
+													  </div>
+													</div>
+													<div class="form-group">
+													  <label class="control-label thin" for="password">Contraseña</label>
+													  <div class="">
+													    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
+													  </div>
+													</div>
+													<div class="form-group">
+													  <label class="control-label thin" for="submit"></label>
+													  <div class="text-center">
+													    <button class="btn btn-outline btn-xl btn-gray-lighter" type="submit">INGRESAR</button>
+													  </div>
+													</div>
+														<div class="form-group text-center">
+														  <div class="">
+														    <p>¿No tienes cuenta? <a href="{site_url}postula" class="thin" id="crea-boton">Creala aquí</a></p>
+														  </div>
+														</div>
+												</div>	
+											</fieldset>
+											{/exp:member:login_form}											           
+                    </div>
+                  </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-  {/if}
-
+      </div>  
+			{/if}
 {embed="includes/footer"}

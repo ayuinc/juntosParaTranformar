@@ -1,0 +1,8 @@
+{exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id='{embed:miembro}'"}
+	{exp:freeform:composer_edit
+	    entry_id="{entry_id}"
+	    form_name="postulacion"
+	    composer_template_name="postulacion"
+	    return="postula/gracias"
+	}			
+{/exp:query}

@@ -1,0 +1,26 @@
+{embed="includes/head"}
+	
+	{if logged_in} 
+  <div class="site-content">
+		{embed="includes/header"}
+      <div class="bg-blue-light minhp-100">
+        <div class="container ph-56 pv-70">
+          <div class="text-center text-white pv-42 lead-ch">
+            <h1>Edita el formulario de postulación</h1>
+          </div>
+          <div id="progress-wizard">
+            <div class="step-panels">
+              <div id="step-panel-1" class="step-panel step-panel-form active text-white bg-blue-darker p-14">
+                <div class="custom-frame minh-630 pbp-14">
+	              {exp:member:custom_profile_data}						    
+									{embed="includes/query" miembro="{member_id}"}
+								{/exp:member:custom_profile_data}					
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  {/if}
+
+{embed="includes/footer"}

@@ -1,0 +1,12 @@
+<ul class="grid-list grid-list-centered grid-list-3 grid-list-1-xs lead-ch beca-categories-list mb-ch-21">
+	{exp:channel:entries dynamic="off" channel="categorias_de_la_beca" limit="10" sort="asc"}
+		<li class="bg-blue-op">
+		  <div class="custom-frame bg-blue-op title">
+		    <h3 class="h3 light">{title}</h3>
+		  </div>
+		  <div class="description">
+		    <h4 class="unlead light">{descripcion_de_la_categoria}</h4>
+		  </div>
+		</li>
+	{/exp:channel:entries}
+</ul>

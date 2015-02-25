@@ -56,7 +56,7 @@
             <div id="progress-wizard">
               <!-- Step Counters -->
               <ul class="grid-list grid-list-3 grid-list-centered step-counters lead-ch light">
-                <li data-panel-ref="step-panel-1">
+                <li data-panel-ref="step-panel-1" class="active">
                   <h3 class="pv-49">Bases de<br>postulación</h3>
                 </li>
                 <li data-panel-ref="step-panel-2" class="active">
@@ -69,14 +69,30 @@
               <!-- Step panels -->
               <div class="step-panels">
                 <div id="step-panel-2" class="step-panel active bg-blue-darker p-14">
-                  <div class="text-white custom-frame minh-630">
-                    <div class="text-center">
-                      <h1>Step panel 2</h1>
+                  <form action="" class="form-custom">
+                    <div class="text-white custom-frame minh-630">
+                      <div class="text-center">
+                        <h1><em>Crea tu cuenta</em></h1>
+                      </div>
+                      <div class="ph-70-sm pv-42-sm pv-21-xs">
+                          <div class="form-group">
+                            <label for="Usuario" class="sr-only">Usuario</label>
+                            <input type="text" class="form-control input-xl" placeholder="Usuario">
+                          </div>
+                          <div class="form-group">
+                            <label for="Contraseña" class="sr-only">Contraseña</label>
+                            <input type="password" class="form-control input-xl" placeholder="Contraseña">
+                          </div>
+                           <div class="form-group">
+                            <label for="Confirma contraseña" class="sr-only">Confirma contraseña</label>
+                            <input type="password" class="form-control input-xl" placeholder="Confirma contraseña">
+                          </div>
+                      </div>
+                      <div class="step-actions text-center">
+                        <button class="next btn btn-xxl btn-outline btn-gray-lighter">Continuar</button>
+                      </div>
                     </div>
-                    <div class="step-actions text-center">
-                      <button class="next btn btn-xxl btn-outline btn-gray-lighter">Continuar</button>
-                    </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>

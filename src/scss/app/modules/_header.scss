@@ -9,6 +9,7 @@ header,
 	width: 100%;
 	padding: 0 $container-fluid;
 	min-height: $header-height-control;
+	background-color: rgba($brand-primary, 0.3);
 	.left,
 	.center,
 	.right {
@@ -42,5 +43,5 @@ nav a {
 }
 
 .header-internas {
-	background: rgba($brand-primary, 0.7);
+	background-color: rgba($brand-primary, 0.7);
 }

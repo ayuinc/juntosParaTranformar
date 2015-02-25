@@ -313,8 +313,11 @@ th {
     display: none;
   }
 
-  .btn > .caret,
-  .dropup > .btn > .caret {
+  .btn > .caret, .step-panel-form form button > .caret,
+  .step-panel-form form input[type="submit"] > .caret,
+  .dropup > .btn > .caret,
+  .step-panel-form form .dropup > button > .caret,
+  .step-panel-form form .dropup > input[type="submit"] > .caret {
     border-top-color: #000 !important;
   }
 
@@ -357,7 +360,7 @@ body {
   font-family: "telefonica_textregular", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857;
-  color: #333333;
+  color: #085A6B;
   background-color: #fff;
 }
 
@@ -846,7 +849,7 @@ address {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1168px;
+    width: 968px;
   }
 }
 
@@ -1784,17 +1787,17 @@ output {
   padding-top: 7px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #eeeeee;
 }
 
-.form-control {
+.form-control, .step-panel-form form input[type="text"], .step-panel-form form input[type="email"], .step-panel-form form input[type="search"], .step-panel-form form input[type="date"], .step-panel-form form input[type="password"], .step-panel-form form select, .step-panel-form form textarea {
   display: block;
   width: 100%;
   height: 34px;
   padding: 6px 12px;
   font-size: 14px;
   line-height: 1.42857;
-  color: #555555;
+  color: #eeeeee;
   background-color: #fff;
   background-image: none;
   border: 1px solid #ccc;
@@ -1805,29 +1808,29 @@ output {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
-.form-control:focus {
-  border-color: #66afe9;
+.form-control:focus, .step-panel-form form input[type="text"]:focus, .step-panel-form form input[type="email"]:focus, .step-panel-form form input[type="search"]:focus, .step-panel-form form input[type="date"]:focus, .step-panel-form form input[type="password"]:focus, .step-panel-form form select:focus, .step-panel-form form textarea:focus {
+  border-color: #eeeeee;
   outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(238, 238, 238, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px rgba(238, 238, 238, 0.6);
 }
-.form-control::-moz-placeholder {
+.form-control::-moz-placeholder, .step-panel-form form input[type="text"]::-moz-placeholder, .step-panel-form form input[type="email"]::-moz-placeholder, .step-panel-form form input[type="search"]::-moz-placeholder, .step-panel-form form input[type="date"]::-moz-placeholder, .step-panel-form form input[type="password"]::-moz-placeholder, .step-panel-form form select::-moz-placeholder, .step-panel-form form textarea::-moz-placeholder {
   color: #999;
   opacity: 1;
 }
-.form-control:-ms-input-placeholder {
+.form-control:-ms-input-placeholder, .step-panel-form form input[type="text"]:-ms-input-placeholder, .step-panel-form form input[type="email"]:-ms-input-placeholder, .step-panel-form form input[type="search"]:-ms-input-placeholder, .step-panel-form form input[type="date"]:-ms-input-placeholder, .step-panel-form form input[type="password"]:-ms-input-placeholder, .step-panel-form form select:-ms-input-placeholder, .step-panel-form form textarea:-ms-input-placeholder {
   color: #999;
 }
-.form-control::-webkit-input-placeholder {
+.form-control::-webkit-input-placeholder, .step-panel-form form input[type="text"]::-webkit-input-placeholder, .step-panel-form form input[type="email"]::-webkit-input-placeholder, .step-panel-form form input[type="search"]::-webkit-input-placeholder, .step-panel-form form input[type="date"]::-webkit-input-placeholder, .step-panel-form form input[type="password"]::-webkit-input-placeholder, .step-panel-form form select::-webkit-input-placeholder, .step-panel-form form textarea::-webkit-input-placeholder {
   color: #999;
 }
-.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+.form-control[disabled], .step-panel-form form input[disabled][type="text"], .step-panel-form form input[disabled][type="email"], .step-panel-form form input[disabled][type="search"], .step-panel-form form input[disabled][type="date"], .step-panel-form form input[disabled][type="password"], .step-panel-form form select[disabled], .step-panel-form form textarea[disabled], .form-control[readonly], .step-panel-form form input[readonly][type="text"], .step-panel-form form input[readonly][type="email"], .step-panel-form form input[readonly][type="search"], .step-panel-form form input[readonly][type="date"], .step-panel-form form input[readonly][type="password"], .step-panel-form form select[readonly], .step-panel-form form textarea[readonly], fieldset[disabled] .form-control, fieldset[disabled] .step-panel-form form input[type="text"], .step-panel-form form fieldset[disabled] input[type="text"], fieldset[disabled] .step-panel-form form input[type="email"], .step-panel-form form fieldset[disabled] input[type="email"], fieldset[disabled] .step-panel-form form input[type="search"], .step-panel-form form fieldset[disabled] input[type="search"], fieldset[disabled] .step-panel-form form input[type="date"], .step-panel-form form fieldset[disabled] input[type="date"], fieldset[disabled] .step-panel-form form input[type="password"], .step-panel-form form fieldset[disabled] input[type="password"], fieldset[disabled] .step-panel-form form select, .step-panel-form form fieldset[disabled] select, fieldset[disabled] .step-panel-form form textarea, .step-panel-form form fieldset[disabled] textarea {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 
-textarea.form-control {
+textarea.form-control, .step-panel-form form textarea {
   height: auto;
 }
 
@@ -1958,19 +1961,21 @@ select[multiple].input-sm {
   height: auto;
 }
 
-.form-group-sm .form-control {
+.form-group-sm .form-control, .form-group-sm .step-panel-form form input[type="text"], .step-panel-form form .form-group-sm input[type="text"], .form-group-sm .step-panel-form form input[type="email"], .step-panel-form form .form-group-sm input[type="email"], .form-group-sm .step-panel-form form input[type="search"], .step-panel-form form .form-group-sm input[type="search"], .form-group-sm .step-panel-form form input[type="date"], .step-panel-form form .form-group-sm input[type="date"], .form-group-sm .step-panel-form form input[type="password"], .step-panel-form form .form-group-sm input[type="password"], .form-group-sm .step-panel-form form select, .step-panel-form form .form-group-sm select, .form-group-sm .step-panel-form form textarea, .step-panel-form form .form-group-sm textarea {
   height: 30px;
   padding: 5px 10px;
   font-size: 12px;
   line-height: 1.5;
   border-radius: 3px;
 }
-.form-group-sm select.form-control {
+.form-group-sm select.form-control, .form-group-sm .step-panel-form form select, .step-panel-form form .form-group-sm select {
   height: 30px;
   line-height: 30px;
 }
-.form-group-sm textarea.form-control,
-.form-group-sm select[multiple].form-control {
+.form-group-sm textarea.form-control, .form-group-sm .step-panel-form form textarea, .step-panel-form form .form-group-sm textarea,
+.form-group-sm select[multiple].form-control,
+.form-group-sm .step-panel-form form select[multiple],
+.step-panel-form form .form-group-sm select[multiple] {
   height: auto;
 }
 .form-group-sm .form-control-static {
@@ -1998,19 +2003,21 @@ select[multiple].input-lg {
   height: auto;
 }
 
-.form-group-lg .form-control {
+.form-group-lg .form-control, .form-group-lg .step-panel-form form input[type="text"], .step-panel-form form .form-group-lg input[type="text"], .form-group-lg .step-panel-form form input[type="email"], .step-panel-form form .form-group-lg input[type="email"], .form-group-lg .step-panel-form form input[type="search"], .step-panel-form form .form-group-lg input[type="search"], .form-group-lg .step-panel-form form input[type="date"], .step-panel-form form .form-group-lg input[type="date"], .form-group-lg .step-panel-form form input[type="password"], .step-panel-form form .form-group-lg input[type="password"], .form-group-lg .step-panel-form form select, .step-panel-form form .form-group-lg select, .form-group-lg .step-panel-form form textarea, .step-panel-form form .form-group-lg textarea {
   height: 46px;
   padding: 10px 16px;
   font-size: 18px;
   line-height: 1.33333;
   border-radius: 6px;
 }
-.form-group-lg select.form-control {
+.form-group-lg select.form-control, .form-group-lg .step-panel-form form select, .step-panel-form form .form-group-lg select {
   height: 46px;
   line-height: 46px;
 }
-.form-group-lg textarea.form-control,
-.form-group-lg select[multiple].form-control {
+.form-group-lg textarea.form-control, .form-group-lg .step-panel-form form textarea, .step-panel-form form .form-group-lg textarea,
+.form-group-lg select[multiple].form-control,
+.form-group-lg .step-panel-form form select[multiple],
+.step-panel-form form .form-group-lg select[multiple] {
   height: auto;
 }
 .form-group-lg .form-control-static {
@@ -2023,7 +2030,7 @@ select[multiple].input-lg {
 .has-feedback {
   position: relative;
 }
-.has-feedback .form-control {
+.has-feedback .form-control, .has-feedback .step-panel-form form input[type="text"], .step-panel-form form .has-feedback input[type="text"], .has-feedback .step-panel-form form input[type="email"], .step-panel-form form .has-feedback input[type="email"], .has-feedback .step-panel-form form input[type="search"], .step-panel-form form .has-feedback input[type="search"], .has-feedback .step-panel-form form input[type="date"], .step-panel-form form .has-feedback input[type="date"], .has-feedback .step-panel-form form input[type="password"], .step-panel-form form .has-feedback input[type="password"], .has-feedback .step-panel-form form select, .step-panel-form form .has-feedback select, .has-feedback .step-panel-form form textarea, .step-panel-form form .has-feedback textarea {
   padding-right: 42.5px;
 }
 
@@ -2060,15 +2067,15 @@ select[multiple].input-lg {
 .has-success .checkbox-inline, .has-success.radio label, .has-success.checkbox label, .has-success.radio-inline label, .has-success.checkbox-inline label {
   color: #3c763d;
 }
-.has-success .form-control {
+.has-success .form-control, .has-success .step-panel-form form input[type="text"], .step-panel-form form .has-success input[type="text"], .has-success .step-panel-form form input[type="email"], .step-panel-form form .has-success input[type="email"], .has-success .step-panel-form form input[type="search"], .step-panel-form form .has-success input[type="search"], .has-success .step-panel-form form input[type="date"], .step-panel-form form .has-success input[type="date"], .has-success .step-panel-form form input[type="password"], .step-panel-form form .has-success input[type="password"], .has-success .step-panel-form form select, .step-panel-form form .has-success select, .has-success .step-panel-form form textarea, .step-panel-form form .has-success textarea {
   border-color: #3c763d;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-success .form-control:focus {
+.has-success .form-control:focus, .has-success .step-panel-form form input[type="text"]:focus, .step-panel-form form .has-success input[type="text"]:focus, .has-success .step-panel-form form input[type="email"]:focus, .step-panel-form form .has-success input[type="email"]:focus, .has-success .step-panel-form form input[type="search"]:focus, .step-panel-form form .has-success input[type="search"]:focus, .has-success .step-panel-form form input[type="date"]:focus, .step-panel-form form .has-success input[type="date"]:focus, .has-success .step-panel-form form input[type="password"]:focus, .step-panel-form form .has-success input[type="password"]:focus, .has-success .step-panel-form form select:focus, .step-panel-form form .has-success select:focus, .has-success .step-panel-form form textarea:focus, .step-panel-form form .has-success textarea:focus {
   border-color: #2b542c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #67b168;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #67b168;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #67b168;
 }
 .has-success .input-group-addon {
   color: #3c763d;
@@ -2087,15 +2094,15 @@ select[multiple].input-lg {
 .has-warning .checkbox-inline, .has-warning.radio label, .has-warning.checkbox label, .has-warning.radio-inline label, .has-warning.checkbox-inline label {
   color: #8a6d3b;
 }
-.has-warning .form-control {
+.has-warning .form-control, .has-warning .step-panel-form form input[type="text"], .step-panel-form form .has-warning input[type="text"], .has-warning .step-panel-form form input[type="email"], .step-panel-form form .has-warning input[type="email"], .has-warning .step-panel-form form input[type="search"], .step-panel-form form .has-warning input[type="search"], .has-warning .step-panel-form form input[type="date"], .step-panel-form form .has-warning input[type="date"], .has-warning .step-panel-form form input[type="password"], .step-panel-form form .has-warning input[type="password"], .has-warning .step-panel-form form select, .step-panel-form form .has-warning select, .has-warning .step-panel-form form textarea, .step-panel-form form .has-warning textarea {
   border-color: #8a6d3b;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-warning .form-control:focus {
+.has-warning .form-control:focus, .has-warning .step-panel-form form input[type="text"]:focus, .step-panel-form form .has-warning input[type="text"]:focus, .has-warning .step-panel-form form input[type="email"]:focus, .step-panel-form form .has-warning input[type="email"]:focus, .has-warning .step-panel-form form input[type="search"]:focus, .step-panel-form form .has-warning input[type="search"]:focus, .has-warning .step-panel-form form input[type="date"]:focus, .step-panel-form form .has-warning input[type="date"]:focus, .has-warning .step-panel-form form input[type="password"]:focus, .step-panel-form form .has-warning input[type="password"]:focus, .has-warning .step-panel-form form select:focus, .step-panel-form form .has-warning select:focus, .has-warning .step-panel-form form textarea:focus, .step-panel-form form .has-warning textarea:focus {
   border-color: #66512c;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #c0a16b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #c0a16b;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #c0a16b;
 }
 .has-warning .input-group-addon {
   color: #8a6d3b;
@@ -2114,15 +2121,15 @@ select[multiple].input-lg {
 .has-error .checkbox-inline, .has-error.radio label, .has-error.checkbox label, .has-error.radio-inline label, .has-error.checkbox-inline label {
   color: #a94442;
 }
-.has-error .form-control {
+.has-error .form-control, .has-error .step-panel-form form input[type="text"], .step-panel-form form .has-error input[type="text"], .has-error .step-panel-form form input[type="email"], .step-panel-form form .has-error input[type="email"], .has-error .step-panel-form form input[type="search"], .step-panel-form form .has-error input[type="search"], .has-error .step-panel-form form input[type="date"], .step-panel-form form .has-error input[type="date"], .has-error .step-panel-form form input[type="password"], .step-panel-form form .has-error input[type="password"], .has-error .step-panel-form form select, .step-panel-form form .has-error select, .has-error .step-panel-form form textarea, .step-panel-form form .has-error textarea {
   border-color: #a94442;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
 }
-.has-error .form-control:focus {
+.has-error .form-control:focus, .has-error .step-panel-form form input[type="text"]:focus, .step-panel-form form .has-error input[type="text"]:focus, .has-error .step-panel-form form input[type="email"]:focus, .step-panel-form form .has-error input[type="email"]:focus, .has-error .step-panel-form form input[type="search"]:focus, .step-panel-form form .has-error input[type="search"]:focus, .has-error .step-panel-form form input[type="date"]:focus, .step-panel-form form .has-error input[type="date"]:focus, .has-error .step-panel-form form input[type="password"]:focus, .step-panel-form form .has-error input[type="password"]:focus, .has-error .step-panel-form form select:focus, .step-panel-form form .has-error select:focus, .has-error .step-panel-form form textarea:focus, .step-panel-form form .has-error textarea:focus {
   border-color: #843534;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 3px #ce8483;
 }
 .has-error .input-group-addon {
   color: #a94442;
@@ -2144,7 +2151,7 @@ select[multiple].input-lg {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
-  color: #737373;
+  color: #11bee2;
 }
 
 @media (min-width: 768px) {
@@ -2153,7 +2160,7 @@ select[multiple].input-lg {
     margin-bottom: 0;
     vertical-align: middle;
   }
-  .form-inline .form-control {
+  .form-inline .form-control, .form-inline .step-panel-form form input[type="text"], .step-panel-form form .form-inline input[type="text"], .form-inline .step-panel-form form input[type="email"], .step-panel-form form .form-inline input[type="email"], .form-inline .step-panel-form form input[type="search"], .step-panel-form form .form-inline input[type="search"], .form-inline .step-panel-form form input[type="date"], .step-panel-form form .form-inline input[type="date"], .form-inline .step-panel-form form input[type="password"], .step-panel-form form .form-inline input[type="password"], .form-inline .step-panel-form form select, .step-panel-form form .form-inline select, .form-inline .step-panel-form form textarea, .step-panel-form form .form-inline textarea {
     display: inline-block;
     width: auto;
     vertical-align: middle;
@@ -2167,10 +2174,24 @@ select[multiple].input-lg {
   }
   .form-inline .input-group .input-group-addon,
   .form-inline .input-group .input-group-btn,
-  .form-inline .input-group .form-control {
+  .form-inline .input-group .form-control,
+  .form-inline .input-group .step-panel-form form input[type="text"],
+  .step-panel-form form .form-inline .input-group input[type="text"],
+  .form-inline .input-group .step-panel-form form input[type="email"],
+  .step-panel-form form .form-inline .input-group input[type="email"],
+  .form-inline .input-group .step-panel-form form input[type="search"],
+  .step-panel-form form .form-inline .input-group input[type="search"],
+  .form-inline .input-group .step-panel-form form input[type="date"],
+  .step-panel-form form .form-inline .input-group input[type="date"],
+  .form-inline .input-group .step-panel-form form input[type="password"],
+  .step-panel-form form .form-inline .input-group input[type="password"],
+  .form-inline .input-group .step-panel-form form select,
+  .step-panel-form form .form-inline .input-group select,
+  .form-inline .input-group .step-panel-form form textarea,
+  .step-panel-form form .form-inline .input-group textarea {
     width: auto;
   }
-  .form-inline .input-group > .form-control {
+  .form-inline .input-group > .form-control, .form-inline .step-panel-form form .input-group > input[type="text"], .step-panel-form form .form-inline .input-group > input[type="text"], .form-inline .step-panel-form form .input-group > input[type="email"], .step-panel-form form .form-inline .input-group > input[type="email"], .form-inline .step-panel-form form .input-group > input[type="search"], .step-panel-form form .form-inline .input-group > input[type="search"], .form-inline .step-panel-form form .input-group > input[type="date"], .step-panel-form form .form-inline .input-group > input[type="date"], .form-inline .step-panel-form form .input-group > input[type="password"], .step-panel-form form .form-inline .input-group > input[type="password"], .form-inline .step-panel-form form .input-group > select, .step-panel-form form .form-inline .input-group > select, .form-inline .step-panel-form form .input-group > textarea, .step-panel-form form .form-inline .input-group > textarea {
     width: 100%;
   }
   .form-inline .control-label {
@@ -2242,7 +2263,8 @@ select[multiple].input-lg {
   }
 }
 
-.btn {
+.btn, .step-panel-form form button,
+.step-panel-form form input[type="submit"] {
   display: inline-block;
   margin-bottom: 0;
   font-weight: normal;
@@ -2262,22 +2284,37 @@ select[multiple].input-lg {
   -ms-user-select: none;
   user-select: none;
 }
-.btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
+.btn:focus, .step-panel-form form button:focus,
+.step-panel-form form input[type="submit"]:focus, .btn.focus, .step-panel-form form button.focus,
+.step-panel-form form input.focus[type="submit"], .btn:active:focus, .step-panel-form form button:active:focus,
+.step-panel-form form input[type="submit"]:active:focus, .btn:active.focus, .step-panel-form form button:active.focus,
+.step-panel-form form input[type="submit"]:active.focus, .btn.active:focus, .step-panel-form form button.active:focus,
+.step-panel-form form input.active[type="submit"]:focus, .btn.active.focus, .step-panel-form form button.active.focus,
+.step-panel-form form input.active.focus[type="submit"] {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
-.btn:hover, .btn:focus, .btn.focus {
+.btn:hover, .step-panel-form form button:hover,
+.step-panel-form form input[type="submit"]:hover, .btn:focus, .step-panel-form form button:focus,
+.step-panel-form form input[type="submit"]:focus, .btn.focus, .step-panel-form form button.focus,
+.step-panel-form form input.focus[type="submit"] {
   color: #333;
   text-decoration: none;
 }
-.btn:active, .btn.active {
+.btn:active, .step-panel-form form button:active,
+.step-panel-form form input[type="submit"]:active, .btn.active, .step-panel-form form button.active,
+.step-panel-form form input.active[type="submit"] {
   outline: 0;
   background-image: none;
   -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 }
-.btn.disabled, .btn[disabled], fieldset[disabled] .btn {
+.btn.disabled, .step-panel-form form button.disabled,
+.step-panel-form form input.disabled[type="submit"], .btn[disabled], .step-panel-form form button[disabled],
+.step-panel-form form input[disabled][type="submit"], fieldset[disabled] .btn, fieldset[disabled] .step-panel-form form button, .step-panel-form form fieldset[disabled] button,
+fieldset[disabled] .step-panel-form form input[type="submit"],
+.step-panel-form form fieldset[disabled] input[type="submit"] {
   cursor: not-allowed;
   pointer-events: none;
   opacity: 0.65;
@@ -2286,24 +2323,59 @@ select[multiple].input-lg {
   box-shadow: none;
 }
 
-.btn-default {
+.btn-default, .step-panel-form form button,
+.step-panel-form form input[type="submit"] {
   color: #333;
   background-color: #fff;
   border-color: #ccc;
 }
-.btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:hover, .step-panel-form form button:hover,
+.step-panel-form form input[type="submit"]:hover, .btn-default:focus, .step-panel-form form button:focus,
+.step-panel-form form input[type="submit"]:focus, .btn-default.focus, .step-panel-form form button.focus,
+.step-panel-form form input.focus[type="submit"], .btn-default:active, .step-panel-form form button:active,
+.step-panel-form form input[type="submit"]:active, .btn-default.active, .step-panel-form form button.active,
+.step-panel-form form input.active[type="submit"], .open > .btn-default.dropdown-toggle, .step-panel-form form .open > button.dropdown-toggle,
+.step-panel-form form .open > input.dropdown-toggle[type="submit"] {
   color: #333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
-.btn-default:active, .btn-default.active, .open > .btn-default.dropdown-toggle {
+.btn-default:active, .step-panel-form form button:active,
+.step-panel-form form input[type="submit"]:active, .btn-default.active, .step-panel-form form button.active,
+.step-panel-form form input.active[type="submit"], .open > .btn-default.dropdown-toggle, .step-panel-form form .open > button.dropdown-toggle,
+.step-panel-form form .open > input.dropdown-toggle[type="submit"] {
   background-image: none;
 }
-.btn-default.disabled, .btn-default.disabled:hover, .btn-default.disabled:focus, .btn-default.disabled.focus, .btn-default.disabled:active, .btn-default.disabled.active, .btn-default[disabled], .btn-default[disabled]:hover, .btn-default[disabled]:focus, .btn-default[disabled].focus, .btn-default[disabled]:active, .btn-default[disabled].active, fieldset[disabled] .btn-default, fieldset[disabled] .btn-default:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .btn-default:active, fieldset[disabled] .btn-default.active {
+.btn-default.disabled, .step-panel-form form button.disabled,
+.step-panel-form form input.disabled[type="submit"], .btn-default.disabled:hover, .step-panel-form form button.disabled:hover,
+.step-panel-form form input.disabled[type="submit"]:hover, .btn-default.disabled:focus, .step-panel-form form button.disabled:focus,
+.step-panel-form form input.disabled[type="submit"]:focus, .btn-default.disabled.focus, .step-panel-form form button.disabled.focus,
+.step-panel-form form input.disabled.focus[type="submit"], .btn-default.disabled:active, .step-panel-form form button.disabled:active,
+.step-panel-form form input.disabled[type="submit"]:active, .btn-default.disabled.active, .step-panel-form form button.disabled.active,
+.step-panel-form form input.disabled.active[type="submit"], .btn-default[disabled], .step-panel-form form button[disabled],
+.step-panel-form form input[disabled][type="submit"], .btn-default[disabled]:hover, .step-panel-form form button[disabled]:hover,
+.step-panel-form form input[disabled][type="submit"]:hover, .btn-default[disabled]:focus, .step-panel-form form button[disabled]:focus,
+.step-panel-form form input[disabled][type="submit"]:focus, .btn-default[disabled].focus, .step-panel-form form button[disabled].focus,
+.step-panel-form form input[disabled].focus[type="submit"], .btn-default[disabled]:active, .step-panel-form form button[disabled]:active,
+.step-panel-form form input[disabled][type="submit"]:active, .btn-default[disabled].active, .step-panel-form form button[disabled].active,
+.step-panel-form form input[disabled].active[type="submit"], fieldset[disabled] .btn-default, fieldset[disabled] .step-panel-form form button, .step-panel-form form fieldset[disabled] button,
+fieldset[disabled] .step-panel-form form input[type="submit"],
+.step-panel-form form fieldset[disabled] input[type="submit"], fieldset[disabled] .btn-default:hover, fieldset[disabled] .step-panel-form form button:hover, .step-panel-form form fieldset[disabled] button:hover,
+fieldset[disabled] .step-panel-form form input[type="submit"]:hover,
+.step-panel-form form fieldset[disabled] input[type="submit"]:hover, fieldset[disabled] .btn-default:focus, fieldset[disabled] .step-panel-form form button:focus, .step-panel-form form fieldset[disabled] button:focus,
+fieldset[disabled] .step-panel-form form input[type="submit"]:focus,
+.step-panel-form form fieldset[disabled] input[type="submit"]:focus, fieldset[disabled] .btn-default.focus, fieldset[disabled] .step-panel-form form button.focus, .step-panel-form form fieldset[disabled] button.focus,
+fieldset[disabled] .step-panel-form form input.focus[type="submit"],
+.step-panel-form form fieldset[disabled] input.focus[type="submit"], fieldset[disabled] .btn-default:active, fieldset[disabled] .step-panel-form form button:active, .step-panel-form form fieldset[disabled] button:active,
+fieldset[disabled] .step-panel-form form input[type="submit"]:active,
+.step-panel-form form fieldset[disabled] input[type="submit"]:active, fieldset[disabled] .btn-default.active, fieldset[disabled] .step-panel-form form button.active, .step-panel-form form fieldset[disabled] button.active,
+fieldset[disabled] .step-panel-form form input.active[type="submit"],
+.step-panel-form form fieldset[disabled] input.active[type="submit"] {
   background-color: #fff;
   border-color: #ccc;
 }
-.btn-default .badge {
+.btn-default .badge, .step-panel-form form button .badge,
+.step-panel-form form input[type="submit"] .badge {
   color: #fff;
   background-color: #333;
 }
@@ -2398,23 +2470,23 @@ select[multiple].input-lg {
 
 .btn-danger {
   color: #fff;
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #fb6533;
+  border-color: #fb521a;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger.focus, .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
   color: #fff;
-  background-color: #c9302c;
-  border-color: #ac2925;
+  background-color: #f64105;
+  border-color: #d33804;
 }
 .btn-danger:active, .btn-danger.active, .open > .btn-danger.dropdown-toggle {
   background-image: none;
 }
 .btn-danger.disabled, .btn-danger.disabled:hover, .btn-danger.disabled:focus, .btn-danger.disabled.focus, .btn-danger.disabled:active, .btn-danger.disabled.active, .btn-danger[disabled], .btn-danger[disabled]:hover, .btn-danger[disabled]:focus, .btn-danger[disabled].focus, .btn-danger[disabled]:active, .btn-danger[disabled].active, fieldset[disabled] .btn-danger, fieldset[disabled] .btn-danger:hover, fieldset[disabled] .btn-danger:focus, fieldset[disabled] .btn-danger.focus, fieldset[disabled] .btn-danger:active, fieldset[disabled] .btn-danger.active {
-  background-color: #d9534f;
-  border-color: #d43f3a;
+  background-color: #fb6533;
+  border-color: #fb521a;
 }
 .btn-danger .badge {
-  color: #d9534f;
+  color: #fb6533;
   background-color: #fff;
 }
 
@@ -3373,7 +3445,7 @@ body::-webkit-scrollbar {
 
 .beca-categories-list > li {
   position: relative;
-  min-height: 490px;
+  min-height: 420px;
 }
 .beca-categories-list > li > div {
   position: absolute;
@@ -3433,6 +3505,39 @@ body::-webkit-scrollbar {
 }
 .beca-categories-list > li:hover .title {
   z-index: 20;
+}
+
+.custom-quotes:before, .custom-quotes:after {
+  font-family: Flaticon;
+}
+.custom-quotes:before {
+  content: "\e002";
+  margin-right: 7px;
+}
+.custom-quotes:after {
+  content: "\e006";
+  margin-left: 7px;
+}
+
+.jurado-blocks .overlay,
+.jurado-blocks .custom-frame {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.jurado-blocks .overlay {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(8, 90, 107, 0.3);
+}
+.jurado-blocks [class*="col-"]:hover .overlay {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  background-color: rgba(8, 90, 107, 0.5);
 }
 
 /* PROJECT ESPECIFIC FONTS */
@@ -3667,42 +3772,50 @@ html {
 }
 
 /* TEXT IN REMS */
+.lead {
+  margin: 0;
+}
+
 p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px;
+  font-size: 1.64286rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   p.lead, .p.lead, span.lead, em.lead, strong.lead, label.lead, a.lead, i.lead, ul.lead, ol.lead, li.lead {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 19px;
+    font-size: 1.35714rem;
     line-height: 1.2;
   }
 }
 
 .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px;
+  font-size: 1.64286rem;
   line-height: 1.3;
+}
+.lead-ch p.unlead, .lead-ch .p.unlead, .lead-ch span.unlead, .lead-ch em.unlead, .lead-ch strong.unlead, .lead-ch label.unlead, .lead-ch a.unlead, .lead-ch i.unlead, .lead-ch ul.unlead, .lead-ch ol.unlead, .lead-ch li.unlead {
+  font-size: 14px;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch p, .lead-ch .p, .lead-ch span, .lead-ch em, .lead-ch strong, .lead-ch label, .lead-ch a, .lead-ch i, .lead-ch ul, .lead-ch ol, .lead-ch li {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 19px;
+    font-size: 1.35714rem;
     line-height: 1.2;
   }
 }
@@ -3711,21 +3824,21 @@ h1 {
   font-size: 2.57143rem;
 }
 h1.lead {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px;
+  font-size: 3.21429rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h1.lead {
-    font-size: 39px !important;
-    font-size: 2.78571rem !important;
+    font-size: 39px;
+    font-size: 2.78571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h1.lead {
-    font-size: 41px !important;
-    font-size: 2.92857rem !important;
+    font-size: 41px;
+    font-size: 2.92857rem;
     line-height: 1.2;
   }
 }
@@ -3734,21 +3847,21 @@ h2 {
   font-size: 2.14286rem;
 }
 h2.lead {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px;
+  font-size: 2.78571rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h2.lead {
-    font-size: 33px !important;
-    font-size: 2.35714rem !important;
+    font-size: 33px;
+    font-size: 2.35714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h2.lead {
-    font-size: 35px !important;
-    font-size: 2.5rem !important;
+    font-size: 35px;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 }
@@ -3757,21 +3870,21 @@ h3 {
   font-size: 1.71429rem;
 }
 h3.lead {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px;
+  font-size: 2.35714rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h3.lead {
-    font-size: 27px !important;
-    font-size: 1.92857rem !important;
+    font-size: 27px;
+    font-size: 1.92857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h3.lead {
-    font-size: 29px !important;
-    font-size: 2.07143rem !important;
+    font-size: 29px;
+    font-size: 2.07143rem;
     line-height: 1.2;
   }
 }
@@ -3780,21 +3893,21 @@ h4 {
   font-size: 1.28571rem;
 }
 h4.lead {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px;
+  font-size: 1.92857rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h4.lead {
-    font-size: 21px !important;
-    font-size: 1.5rem !important;
+    font-size: 21px;
+    font-size: 1.5rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h4.lead {
-    font-size: 23px !important;
-    font-size: 1.64286rem !important;
+    font-size: 23px;
+    font-size: 1.64286rem;
     line-height: 1.2;
   }
 }
@@ -3803,21 +3916,21 @@ h5 {
   font-size: 1rem;
 }
 h5.lead {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px;
+  font-size: 1.64286rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h5.lead {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h5.lead {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 19px;
+    font-size: 1.35714rem;
     line-height: 1.2;
   }
 }
@@ -3826,21 +3939,21 @@ h6 {
   font-size: 0.85714rem;
 }
 h6.lead {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px;
+  font-size: 1.5rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   h6.lead {
-    font-size: 15px !important;
-    font-size: 1.07143rem !important;
+    font-size: 15px;
+    font-size: 1.07143rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   h6.lead {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.2;
   }
 }
@@ -3849,21 +3962,21 @@ h6.lead {
   font-size: 2.57143rem;
 }
 .h1.lead {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px;
+  font-size: 3.21429rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h1.lead {
-    font-size: 39px !important;
-    font-size: 2.78571rem !important;
+    font-size: 39px;
+    font-size: 2.78571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .h1.lead {
-    font-size: 41px !important;
-    font-size: 2.92857rem !important;
+    font-size: 41px;
+    font-size: 2.92857rem;
     line-height: 1.2;
   }
 }
@@ -3872,21 +3985,21 @@ h6.lead {
   font-size: 2.14286rem;
 }
 .h2.lead {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px;
+  font-size: 2.78571rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h2.lead {
-    font-size: 33px !important;
-    font-size: 2.35714rem !important;
+    font-size: 33px;
+    font-size: 2.35714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .h2.lead {
-    font-size: 35px !important;
-    font-size: 2.5rem !important;
+    font-size: 35px;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 }
@@ -3895,21 +4008,21 @@ h6.lead {
   font-size: 1.71429rem;
 }
 .h3.lead {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px;
+  font-size: 2.35714rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h3.lead {
-    font-size: 27px !important;
-    font-size: 1.92857rem !important;
+    font-size: 27px;
+    font-size: 1.92857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .h3.lead {
-    font-size: 29px !important;
-    font-size: 2.07143rem !important;
+    font-size: 29px;
+    font-size: 2.07143rem;
     line-height: 1.2;
   }
 }
@@ -3918,21 +4031,21 @@ h6.lead {
   font-size: 1.28571rem;
 }
 .h4.lead {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px;
+  font-size: 1.92857rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h4.lead {
-    font-size: 21px !important;
-    font-size: 1.5rem !important;
+    font-size: 21px;
+    font-size: 1.5rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .h4.lead {
-    font-size: 23px !important;
-    font-size: 1.64286rem !important;
+    font-size: 23px;
+    font-size: 1.64286rem;
     line-height: 1.2;
   }
 }
@@ -3941,21 +4054,21 @@ h6.lead {
   font-size: 1rem;
 }
 .h5.lead {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px;
+  font-size: 1.64286rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h5.lead {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .h5.lead {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 19px;
+    font-size: 1.35714rem;
     line-height: 1.2;
   }
 }
@@ -3964,437 +4077,557 @@ h6.lead {
   font-size: 0.85714rem;
 }
 .h6.lead {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px;
+  font-size: 1.5rem;
   line-height: 1.3;
 }
 @media only screen and (max-width: 480px) {
   .h6.lead {
-    font-size: 15px !important;
-    font-size: 1.07143rem !important;
+    font-size: 15px;
+    font-size: 1.07143rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .h6.lead {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.2;
   }
 }
 
 .lead-ch h1 {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px;
+  font-size: 3.21429rem;
 }
 .lead-ch h1 em, .lead-ch h1 a, .lead-ch h1 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch h1.unlead {
+  font-size: 36px;
+  font-size: 2.57143rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h1 {
-    font-size: 39px !important;
-    font-size: 2.78571rem !important;
+    font-size: 39px;
+    font-size: 2.78571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch h1 {
-    font-size: 41px !important;
-    font-size: 2.92857rem !important;
+    font-size: 41px;
+    font-size: 2.92857rem;
     line-height: 1.2;
   }
 }
 .lead-ch h2 {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px;
+  font-size: 2.78571rem;
 }
 .lead-ch h2 em, .lead-ch h2 a, .lead-ch h2 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch h2.unlead {
+  font-size: 30px;
+  font-size: 2.14286rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h2 {
-    font-size: 33px !important;
-    font-size: 2.35714rem !important;
+    font-size: 33px;
+    font-size: 2.35714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch h2 {
-    font-size: 35px !important;
-    font-size: 2.5rem !important;
+    font-size: 35px;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 }
 .lead-ch h3 {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px;
+  font-size: 2.35714rem;
 }
 .lead-ch h3 em, .lead-ch h3 a, .lead-ch h3 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch h3.unlead {
+  font-size: 24px;
+  font-size: 1.71429rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h3 {
-    font-size: 27px !important;
-    font-size: 1.92857rem !important;
+    font-size: 27px;
+    font-size: 1.92857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch h3 {
-    font-size: 29px !important;
-    font-size: 2.07143rem !important;
+    font-size: 29px;
+    font-size: 2.07143rem;
     line-height: 1.2;
   }
 }
 .lead-ch h4 {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px;
+  font-size: 1.92857rem;
 }
 .lead-ch h4 em, .lead-ch h4 a, .lead-ch h4 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch h4.unlead {
+  font-size: 18px;
+  font-size: 1.28571rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h4 {
-    font-size: 21px !important;
-    font-size: 1.5rem !important;
+    font-size: 21px;
+    font-size: 1.5rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch h4 {
-    font-size: 23px !important;
-    font-size: 1.64286rem !important;
+    font-size: 23px;
+    font-size: 1.64286rem;
     line-height: 1.2;
   }
 }
 .lead-ch h5 {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px;
+  font-size: 1.64286rem;
 }
 .lead-ch h5 em, .lead-ch h5 a, .lead-ch h5 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch h5.unlead {
+  font-size: 14px;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h5 {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch h5 {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 19px;
+    font-size: 1.35714rem;
     line-height: 1.2;
   }
 }
 .lead-ch h6 {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px;
+  font-size: 1.5rem;
 }
 .lead-ch h6 em, .lead-ch h6 a, .lead-ch h6 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch h6.unlead {
+  font-size: 12px;
+  font-size: 0.85714rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch h6 {
-    font-size: 15px !important;
-    font-size: 1.07143rem !important;
+    font-size: 15px;
+    font-size: 1.07143rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch h6 {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.2;
   }
 }
 
 .lead-ch .h1 {
-  font-size: 50px !important;
-  font-size: 3.57143rem !important;
+  font-size: 45px;
+  font-size: 3.21429rem;
 }
 .lead-ch .h1 em, .lead-ch .h1 a, .lead-ch .h1 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch .h1.unlead {
+  font-size: 36px;
+  font-size: 2.57143rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h1 {
-    font-size: 39px !important;
-    font-size: 2.78571rem !important;
+    font-size: 39px;
+    font-size: 2.78571rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch .h1 {
-    font-size: 41px !important;
-    font-size: 2.92857rem !important;
+    font-size: 41px;
+    font-size: 2.92857rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h2 {
-  font-size: 44px !important;
-  font-size: 3.14286rem !important;
+  font-size: 39px;
+  font-size: 2.78571rem;
 }
 .lead-ch .h2 em, .lead-ch .h2 a, .lead-ch .h2 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch .h2.unlead {
+  font-size: 30px;
+  font-size: 2.14286rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h2 {
-    font-size: 33px !important;
-    font-size: 2.35714rem !important;
+    font-size: 33px;
+    font-size: 2.35714rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch .h2 {
-    font-size: 35px !important;
-    font-size: 2.5rem !important;
+    font-size: 35px;
+    font-size: 2.5rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h3 {
-  font-size: 38px !important;
-  font-size: 2.71429rem !important;
+  font-size: 33px;
+  font-size: 2.35714rem;
 }
 .lead-ch .h3 em, .lead-ch .h3 a, .lead-ch .h3 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch .h3.unlead {
+  font-size: 24px;
+  font-size: 1.71429rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h3 {
-    font-size: 27px !important;
-    font-size: 1.92857rem !important;
+    font-size: 27px;
+    font-size: 1.92857rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch .h3 {
-    font-size: 29px !important;
-    font-size: 2.07143rem !important;
+    font-size: 29px;
+    font-size: 2.07143rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h4 {
-  font-size: 32px !important;
-  font-size: 2.28571rem !important;
+  font-size: 27px;
+  font-size: 1.92857rem;
 }
 .lead-ch .h4 em, .lead-ch .h4 a, .lead-ch .h4 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch .h4.unlead {
+  font-size: 18px;
+  font-size: 1.28571rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h4 {
-    font-size: 21px !important;
-    font-size: 1.5rem !important;
+    font-size: 21px;
+    font-size: 1.5rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch .h4 {
-    font-size: 23px !important;
-    font-size: 1.64286rem !important;
+    font-size: 23px;
+    font-size: 1.64286rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h5 {
-  font-size: 28px !important;
-  font-size: 2rem !important;
+  font-size: 23px;
+  font-size: 1.64286rem;
 }
 .lead-ch .h5 em, .lead-ch .h5 a, .lead-ch .h5 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch .h5.unlead {
+  font-size: 14px;
+  font-size: 1rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h5 {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch .h5 {
-    font-size: 19px !important;
-    font-size: 1.35714rem !important;
+    font-size: 19px;
+    font-size: 1.35714rem;
     line-height: 1.2;
   }
 }
 .lead-ch .h6 {
-  font-size: 26px !important;
-  font-size: 1.85714rem !important;
+  font-size: 21px;
+  font-size: 1.5rem;
 }
 .lead-ch .h6 em, .lead-ch .h6 a, .lead-ch .h6 span {
-  font-size: inherit !important;
+  font-size: inherit;
+}
+.lead-ch .h6.unlead {
+  font-size: 12px;
+  font-size: 0.85714rem;
 }
 @media only screen and (max-width: 480px) {
   .lead-ch .h6 {
-    font-size: 15px !important;
-    font-size: 1.07143rem !important;
+    font-size: 15px;
+    font-size: 1.07143rem;
     line-height: 1.1;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .lead-ch .h6 {
-    font-size: 17px !important;
-    font-size: 1.21429rem !important;
+    font-size: 17px;
+    font-size: 1.21429rem;
     line-height: 1.2;
   }
 }
 
 @media only screen and (max-width: 480px) {
   .h1-xs {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important;
+    font-size: 36px;
+    font-size: 2.57143rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .h1-sm {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important;
+    font-size: 36px;
+    font-size: 2.57143rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .h1-md {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important;
+    font-size: 36px;
+    font-size: 2.57143rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .h1-lg {
-    font-size: 36px !important;
-    font-size: 2.57143rem !important;
+    font-size: 36px;
+    font-size: 2.57143rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .h2-xs {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important;
+    font-size: 30px;
+    font-size: 2.14286rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .h2-sm {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important;
+    font-size: 30px;
+    font-size: 2.14286rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .h2-md {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important;
+    font-size: 30px;
+    font-size: 2.14286rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .h2-lg {
-    font-size: 30px !important;
-    font-size: 2.14286rem !important;
+    font-size: 30px;
+    font-size: 2.14286rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .h3-xs {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important;
+    font-size: 24px;
+    font-size: 1.71429rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .h3-sm {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important;
+    font-size: 24px;
+    font-size: 1.71429rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .h3-md {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important;
+    font-size: 24px;
+    font-size: 1.71429rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .h3-lg {
-    font-size: 24px !important;
-    font-size: 1.71429rem !important;
+    font-size: 24px;
+    font-size: 1.71429rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .h4-xs {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important;
+    font-size: 18px;
+    font-size: 1.28571rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .h4-sm {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important;
+    font-size: 18px;
+    font-size: 1.28571rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .h4-md {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important;
+    font-size: 18px;
+    font-size: 1.28571rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .h4-lg {
-    font-size: 18px !important;
-    font-size: 1.28571rem !important;
+    font-size: 18px;
+    font-size: 1.28571rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .h5-xs {
-    font-size: 14px !important;
-    font-size: 1rem !important;
+    font-size: 14px;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .h5-sm {
-    font-size: 14px !important;
-    font-size: 1rem !important;
+    font-size: 14px;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .h5-md {
-    font-size: 14px !important;
-    font-size: 1rem !important;
+    font-size: 14px;
+    font-size: 1rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .h5-lg {
-    font-size: 14px !important;
-    font-size: 1rem !important;
+    font-size: 14px;
+    font-size: 1rem;
   }
 }
 @media only screen and (max-width: 480px) {
   .h6-xs {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important;
+    font-size: 12px;
+    font-size: 0.85714rem;
   }
 }
 @media only screen and (min-width: 768px) {
   .h6-sm {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important;
+    font-size: 12px;
+    font-size: 0.85714rem;
   }
 }
 @media only screen and (min-width: 992px) {
   .h6-md {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important;
+    font-size: 12px;
+    font-size: 0.85714rem;
   }
 }
 @media only screen and (min-width: 1200px) {
   .h6-lg {
-    font-size: 12px !important;
-    font-size: 0.85714rem !important;
+    font-size: 12px;
+    font-size: 0.85714rem;
   }
 }
 /* ICON FONTS */
+@font-face {
+  font-family: "Flaticon";
+  src: url("../icons/flaticon.eot");
+  src: url("../icons/flaticon.eot#iefix") format("embedded-opentype"), url("../icons/flaticon.woff") format("woff"), url("../icons/flaticon.ttf") format("truetype"), url("../icons/flaticon.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before,
+[class^="icon-"]:after, [class*=" icon-"]:after {
+  font-family: Flaticon;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-envelope:before {
+  content: "\e000";
+}
+
+.icon-facebook:before {
+  content: "\e001";
+}
+
+.icon-quote-left:before {
+  content: "\e002";
+}
+
+.icon-arrow-left:before {
+  content: "\e003";
+}
+
+.icon-location:before {
+  content: "\e004";
+}
+
+.icon-pdf:before {
+  content: "\e005";
+}
+
+.icon-quote-right:before {
+  content: "\e006";
+}
+
+.icon-arrow-right:before {
+  content: "\e007";
+}
+
+.icon-smartphone:before {
+  content: "\e008";
+}
+
+.icon-twitter:before {
+  content: "\e009";
+}
+
 a.btn.form-control,
 button.btn.form-control,
-input[type="submit"].btn.form-control {
+.step-panel-form form button.form-control,
+input[type="submit"].btn.form-control,
+.step-panel-form form input[type="submit"][type="text"],
+.step-panel-form form input[type="submit"][type="email"],
+.step-panel-form form input[type="submit"][type="search"],
+.step-panel-form form input[type="submit"][type="date"],
+.step-panel-form form input[type="submit"][type="password"],
+.step-panel-form form input[type="submit"].form-control {
   height: auto;
 }
 a.btn.borderless,
 button.btn.borderless,
-input[type="submit"].btn.borderless {
+.step-panel-form form button.borderless,
+input[type="submit"].btn.borderless,
+.step-panel-form form input[type="submit"].borderless {
   border-radius: 0 !important;
 }
 a.btn.btn-xl,
 button.btn.btn-xl,
-input[type="submit"].btn.btn-xl {
+.step-panel-form form button,
+input[type="submit"].btn.btn-xl,
+.step-panel-form form input[type="submit"] {
   font-size: 24px;
   font-size: 1.71429rem;
   padding: 12px 21px;
@@ -4402,7 +4635,9 @@ input[type="submit"].btn.btn-xl {
 }
 a.btn.btn-xxl,
 button.btn.btn-xxl,
-input[type="submit"].btn.btn-xxl {
+.step-panel-form form button.btn-xxl,
+input[type="submit"].btn.btn-xxl,
+.step-panel-form form input[type="submit"].btn-xxl {
   font-size: 36px;
   font-size: 2.57143rem;
   padding: 14px 24px;
@@ -4412,342 +4647,594 @@ input[type="submit"].btn.btn-xxl {
 }
 a.btn.btn-xs,
 button.btn.btn-xs,
-input[type="submit"].btn.btn-xs {
+.step-panel-form form button.btn-xs,
+input[type="submit"].btn.btn-xs,
+.step-panel-form form input[type="submit"].btn-xs {
   font-size: 12px !important;
 }
 a.btn.btn-facebook,
 button.btn.btn-facebook,
-input[type="submit"].btn.btn-facebook {
+.step-panel-form form button.btn-facebook,
+input[type="submit"].btn.btn-facebook,
+.step-panel-form form input[type="submit"].btn-facebook {
   background: #3B5998;
   color: white;
 }
 a.btn.btn-facebook:hover,
 button.btn.btn-facebook:hover,
-input[type="submit"].btn.btn-facebook:hover {
+.step-panel-form form button.btn-facebook:hover,
+input[type="submit"].btn.btn-facebook:hover,
+.step-panel-form form input[type="submit"].btn-facebook:hover {
   background: #273b65;
 }
 a.btn.btn-twitter,
 button.btn.btn-twitter,
-input[type="submit"].btn.btn-twitter {
+.step-panel-form form button.btn-twitter,
+input[type="submit"].btn.btn-twitter,
+.step-panel-form form input[type="submit"].btn-twitter {
   background: #34CCFE;
   color: white;
 }
 a.btn.btn-twitter:hover,
 button.btn.btn-twitter:hover,
-input[type="submit"].btn.btn-twitter:hover {
+.step-panel-form form button.btn-twitter:hover,
+input[type="submit"].btn.btn-twitter:hover,
+.step-panel-form form input[type="submit"].btn-twitter:hover {
   background: #01b0e9;
 }
 a.btn.btn-pinterest,
 button.btn.btn-pinterest,
-input[type="submit"].btn.btn-pinterest {
+.step-panel-form form button.btn-pinterest,
+input[type="submit"].btn.btn-pinterest,
+.step-panel-form form input[type="submit"].btn-pinterest {
   background: #D02420;
   color: white;
 }
 a.btn.btn-pinterest:hover,
 button.btn.btn-pinterest:hover,
-input[type="submit"].btn.btn-pinterest:hover {
+.step-panel-form form button.btn-pinterest:hover,
+input[type="submit"].btn.btn-pinterest:hover,
+.step-panel-form form input[type="submit"].btn-pinterest:hover {
   background: #921916;
 }
 a.btn.btn-google-plus,
 button.btn.btn-google-plus,
-input[type="submit"].btn.btn-google-plus {
+.step-panel-form form button.btn-google-plus,
+input[type="submit"].btn.btn-google-plus,
+.step-panel-form form input[type="submit"].btn-google-plus {
   background: #DC4335;
   color: white;
 }
 a.btn.btn-google-plus:hover,
 button.btn.btn-google-plus:hover,
-input[type="submit"].btn.btn-google-plus:hover {
+.step-panel-form form button.btn-google-plus:hover,
+input[type="submit"].btn.btn-google-plus:hover,
+.step-panel-form form input[type="submit"].btn-google-plus:hover {
   background: #ac2a1e;
 }
 a.btn.btn-youtube,
 button.btn.btn-youtube,
-input[type="submit"].btn.btn-youtube {
+.step-panel-form form button.btn-youtube,
+input[type="submit"].btn.btn-youtube,
+.step-panel-form form input[type="submit"].btn-youtube {
   background: #F23030;
   color: white;
 }
 a.btn.btn-youtube:hover,
 button.btn.btn-youtube:hover,
-input[type="submit"].btn.btn-youtube:hover {
+.step-panel-form form button.btn-youtube:hover,
+input[type="submit"].btn.btn-youtube:hover,
+.step-panel-form form input[type="submit"].btn-youtube:hover {
   background: #ce0d0d;
 }
 a.btn.btn-instagram,
 button.btn.btn-instagram,
-input[type="submit"].btn.btn-instagram {
+.step-panel-form form button.btn-instagram,
+input[type="submit"].btn.btn-instagram,
+.step-panel-form form input[type="submit"].btn-instagram {
   background: #4187FB;
   color: white;
 }
 a.btn.btn-instagram:hover,
 button.btn.btn-instagram:hover,
-input[type="submit"].btn.btn-instagram:hover {
+.step-panel-form form button.btn-instagram:hover,
+input[type="submit"].btn.btn-instagram:hover,
+.step-panel-form form input[type="submit"].btn-instagram:hover {
   background: #055df0;
 }
 a.btn.btn-linkedin,
 button.btn.btn-linkedin,
-input[type="submit"].btn.btn-linkedin {
+.step-panel-form form button.btn-linkedin,
+input[type="submit"].btn.btn-linkedin,
+.step-panel-form form input[type="submit"].btn-linkedin {
   background: #1C87BD;
   color: white;
 }
 a.btn.btn-linkedin:hover,
 button.btn.btn-linkedin:hover,
-input[type="submit"].btn.btn-linkedin:hover {
+.step-panel-form form button.btn-linkedin:hover,
+input[type="submit"].btn.btn-linkedin:hover,
+.step-panel-form form input[type="submit"].btn-linkedin:hover {
   background: #135b7f;
 }
 
 a.btn.btn-primary.btn-outline,
 button.btn.btn-primary.btn-outline,
-input[type="submit"].btn.btn-primary.btn-outline {
+.step-panel-form form button.btn-primary,
+input[type="submit"].btn.btn-primary.btn-outline,
+.step-panel-form form input[type="submit"].btn-primary {
   background: none;
-  border: 2px solid #0faecf;
+  border: 2px solid #085A6B;
   border-radius: 4px;
-  color: #0faecf;
+  color: #085A6B;
 }
 a.btn.btn-primary.btn-outline:hover,
 button.btn.btn-primary.btn-outline:hover,
-input[type="submit"].btn.btn-primary.btn-outline:hover {
+.step-panel-form form button.btn-primary:hover,
+input[type="submit"].btn.btn-primary.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-primary:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #085A6B;
-  color: #085A6B;
+  border: 2px solid #021216;
+  color: #021216;
 }
 a.btn.btn-success.btn-outline,
 button.btn.btn-success.btn-outline,
-input[type="submit"].btn.btn-success.btn-outline {
+.step-panel-form form button.btn-success,
+input[type="submit"].btn.btn-success.btn-outline,
+.step-panel-form form input[type="submit"].btn-success {
   background: none;
-  border: 2px solid #a7d8a7;
+  border: 2px solid #5cb85c;
   border-radius: 4px;
-  color: #a7d8a7;
+  color: #5cb85c;
 }
 a.btn.btn-success.btn-outline:hover,
 button.btn.btn-success.btn-outline:hover,
-input[type="submit"].btn.btn-success.btn-outline:hover {
+.step-panel-form form button.btn-success:hover,
+input[type="submit"].btn.btn-success.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-success:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #5cb85c;
-  color: #5cb85c;
+  border: 2px solid #388038;
+  color: #388038;
 }
 a.btn.btn-info.btn-outline,
 button.btn.btn-info.btn-outline,
-input[type="submit"].btn.btn-info.btn-outline {
+.step-panel-form form button.btn-info,
+input[type="submit"].btn.btn-info.btn-outline,
+.step-panel-form form input[type="submit"].btn-info {
   background: none;
-  border: 2px solid #45effe;
+  border: 2px solid #01C6D7;
   border-radius: 4px;
-  color: #45effe;
+  color: #01C6D7;
 }
 a.btn.btn-info.btn-outline:hover,
 button.btn.btn-info.btn-outline:hover,
-input[type="submit"].btn.btn-info.btn-outline:hover {
+.step-panel-form form button.btn-info:hover,
+input[type="submit"].btn.btn-info.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-info:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #01C6D7;
-  color: #01C6D7;
+  border: 2px solid #01727c;
+  color: #01727c;
 }
 a.btn.btn-warning.btn-outline,
 button.btn.btn-warning.btn-outline,
-input[type="submit"].btn.btn-warning.btn-outline {
+.step-panel-form form button.btn-warning,
+input[type="submit"].btn.btn-warning.btn-outline,
+.step-panel-form form input[type="submit"].btn-warning {
   background: none;
-  border: 2px solid #f8dbb1;
+  border: 2px solid #f0ad4e;
   border-radius: 4px;
-  color: #f8dbb1;
+  color: #f0ad4e;
 }
 a.btn.btn-warning.btn-outline:hover,
 button.btn.btn-warning.btn-outline:hover,
-input[type="submit"].btn.btn-warning.btn-outline:hover {
+.step-panel-form form button.btn-warning:hover,
+input[type="submit"].btn.btn-warning.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-warning:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #f0ad4e;
-  color: #f0ad4e;
+  border: 2px solid #d18212;
+  color: #d18212;
 }
 a.btn.btn-danger.btn-outline,
 button.btn.btn-danger.btn-outline,
-input[type="submit"].btn.btn-danger.btn-outline {
+.step-panel-form form button.btn-danger,
+input[type="submit"].btn.btn-danger.btn-outline,
+.step-panel-form form input[type="submit"].btn-danger {
   background: none;
-  border: 2px solid #eca9a7;
+  border: 2px solid #fb6533;
   border-radius: 4px;
-  color: #eca9a7;
+  color: #fb6533;
 }
 a.btn.btn-danger.btn-outline:hover,
 button.btn.btn-danger.btn-outline:hover,
-input[type="submit"].btn.btn-danger.btn-outline:hover {
+.step-panel-form form button.btn-danger:hover,
+input[type="submit"].btn.btn-danger.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-danger:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #d9534f;
-  color: #d9534f;
+  border: 2px solid #ce3704;
+  color: #ce3704;
 }
 a.btn.btn-blue-darker.btn-outline,
 button.btn.btn-blue-darker.btn-outline,
-input[type="submit"].btn.btn-blue-darker.btn-outline {
+.step-panel-form form button.btn-blue-darker,
+input[type="submit"].btn.btn-blue-darker.btn-outline,
+.step-panel-form form input[type="submit"].btn-blue-darker {
   background: none;
-  border: 2px solid #02afd5;
+  border: 2px solid #01586B;
   border-radius: 4px;
-  color: #02afd5;
+  color: #01586B;
 }
 a.btn.btn-blue-darker.btn-outline:hover,
 button.btn.btn-blue-darker.btn-outline:hover,
-input[type="submit"].btn.btn-blue-darker.btn-outline:hover {
+.step-panel-form form button.btn-blue-darker:hover,
+input[type="submit"].btn.btn-blue-darker.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-blue-darker:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #01586B;
-  color: #01586B;
+  border: 2px solid #000d10;
+  color: #000d10;
 }
 a.btn.btn-blue-dark.btn-outline,
 button.btn.btn-blue-dark.btn-outline,
-input[type="submit"].btn.btn-blue-dark.btn-outline {
+.step-panel-form form button.btn-blue-dark,
+input[type="submit"].btn.btn-blue-dark.btn-outline,
+.step-panel-form form input[type="submit"].btn-blue-dark {
   background: none;
-  border: 2px solid #6fdce5;
+  border: 2px solid #24B9C5;
   border-radius: 4px;
-  color: #6fdce5;
+  color: #24B9C5;
 }
 a.btn.btn-blue-dark.btn-outline:hover,
 button.btn.btn-blue-dark.btn-outline:hover,
-input[type="submit"].btn.btn-blue-dark.btn-outline:hover {
+.step-panel-form form button.btn-blue-dark:hover,
+input[type="submit"].btn.btn-blue-dark.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-blue-dark:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #24B9C5;
-  color: #24B9C5;
+  border: 2px solid #167077;
+  color: #167077;
 }
 a.btn.btn-blue.btn-outline,
 button.btn.btn-blue.btn-outline,
-input[type="submit"].btn.btn-blue.btn-outline {
+.step-panel-form form button.btn-blue,
+input[type="submit"].btn.btn-blue.btn-outline,
+.step-panel-form form input[type="submit"].btn-blue {
   background: none;
-  border: 2px solid #4bd5e8;
+  border: 2px solid #179FB1;
   border-radius: 4px;
-  color: #4bd5e8;
+  color: #179FB1;
 }
 a.btn.btn-blue.btn-outline:hover,
 button.btn.btn-blue.btn-outline:hover,
-input[type="submit"].btn.btn-blue.btn-outline:hover {
+.step-panel-form form button.btn-blue:hover,
+input[type="submit"].btn.btn-blue.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-blue:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #179FB1;
-  color: #179FB1;
+  border: 2px solid #0c5660;
+  color: #0c5660;
 }
 a.btn.btn-blue-light.btn-outline,
 button.btn.btn-blue-light.btn-outline,
-input[type="submit"].btn.btn-blue-light.btn-outline {
+.step-panel-form form button.btn-blue-light,
+input[type="submit"].btn.btn-blue-light.btn-outline,
+.step-panel-form form input[type="submit"].btn-blue-light {
   background: none;
-  border: 2px solid #6edae5;
+  border: 2px solid #23B6C5;
   border-radius: 4px;
-  color: #6edae5;
+  color: #23B6C5;
 }
 a.btn.btn-blue-light.btn-outline:hover,
 button.btn.btn-blue-light.btn-outline:hover,
-input[type="submit"].btn.btn-blue-light.btn-outline:hover {
+.step-panel-form form button.btn-blue-light:hover,
+input[type="submit"].btn.btn-blue-light.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-blue-light:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #23B6C5;
-  color: #23B6C5;
+  border: 2px solid #156e77;
+  color: #156e77;
 }
 a.btn.btn-blue-lighter.btn-outline,
 button.btn.btn-blue-lighter.btn-outline,
-input[type="submit"].btn.btn-blue-lighter.btn-outline {
+.step-panel-form form button.btn-blue-lighter,
+input[type="submit"].btn.btn-blue-lighter.btn-outline,
+.step-panel-form form input[type="submit"].btn-blue-lighter {
   background: none;
-  border: 2px solid #45effe;
+  border: 2px solid #01C6D7;
   border-radius: 4px;
-  color: #45effe;
+  color: #01C6D7;
 }
 a.btn.btn-blue-lighter.btn-outline:hover,
 button.btn.btn-blue-lighter.btn-outline:hover,
-input[type="submit"].btn.btn-blue-lighter.btn-outline:hover {
+.step-panel-form form button.btn-blue-lighter:hover,
+input[type="submit"].btn.btn-blue-lighter.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-blue-lighter:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #01C6D7;
-  color: #01C6D7;
+  border: 2px solid #01727c;
+  color: #01727c;
 }
 a.btn.btn-gray-darker.btn-outline,
 button.btn.btn-gray-darker.btn-outline,
-input[type="submit"].btn.btn-gray-darker.btn-outline {
+.step-panel-form form button.btn-gray-darker,
+input[type="submit"].btn.btn-gray-darker.btn-outline,
+.step-panel-form form input[type="submit"].btn-gray-darker {
   background: none;
-  border: 2px solid #585858;
+  border: 2px solid #222222;
   border-radius: 4px;
-  color: #585858;
+  color: #222222;
 }
 a.btn.btn-gray-darker.btn-outline:hover,
 button.btn.btn-gray-darker.btn-outline:hover,
-input[type="submit"].btn.btn-gray-darker.btn-outline:hover {
+.step-panel-form form button.btn-gray-darker:hover,
+input[type="submit"].btn.btn-gray-darker.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-gray-darker:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #222222;
-  color: #222222;
+  border: 2px solid black;
+  color: black;
 }
 a.btn.btn-gray-dark.btn-outline,
 button.btn.btn-gray-dark.btn-outline,
-input[type="submit"].btn.btn-gray-dark.btn-outline {
+.step-panel-form form button.btn-gray-dark,
+input[type="submit"].btn.btn-gray-dark.btn-outline,
+.step-panel-form form input[type="submit"].btn-gray-dark {
   background: none;
-  border: 2px solid dimgray;
+  border: 2px solid #333333;
   border-radius: 4px;
-  color: dimgray;
+  color: #333333;
 }
 a.btn.btn-gray-dark.btn-outline:hover,
 button.btn.btn-gray-dark.btn-outline:hover,
-input[type="submit"].btn.btn-gray-dark.btn-outline:hover {
+.step-panel-form form button.btn-gray-dark:hover,
+input[type="submit"].btn.btn-gray-dark.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-gray-dark:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #333333;
-  color: #333333;
+  border: 2px solid #050505;
+  color: #050505;
 }
 a.btn.btn-gray.btn-outline,
 button.btn.btn-gray.btn-outline,
-input[type="submit"].btn.btn-gray.btn-outline {
+.step-panel-form form button.btn-gray,
+input[type="submit"].btn.btn-gray.btn-outline,
+.step-panel-form form input[type="submit"].btn-gray {
   background: none;
-  border: 2px solid #8b8b8b;
+  border: 2px solid #555555;
   border-radius: 4px;
-  color: #8b8b8b;
+  color: #555555;
 }
 a.btn.btn-gray.btn-outline:hover,
 button.btn.btn-gray.btn-outline:hover,
-input[type="submit"].btn.btn-gray.btn-outline:hover {
+.step-panel-form form button.btn-gray:hover,
+input[type="submit"].btn.btn-gray.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-gray:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #555555;
-  color: #555555;
+  border: 2px solid #282828;
+  color: #282828;
 }
 a.btn.btn-gray-light.btn-outline,
 button.btn.btn-gray-light.btn-outline,
-input[type="submit"].btn.btn-gray-light.btn-outline {
+.step-panel-form form button.btn-gray-light,
+input[type="submit"].btn.btn-gray-light.btn-outline,
+.step-panel-form form input[type="submit"].btn-gray-light {
   background: none;
-  border: 2px solid #adadad;
+  border: 2px solid #777777;
   border-radius: 4px;
-  color: #adadad;
+  color: #777777;
 }
 a.btn.btn-gray-light.btn-outline:hover,
 button.btn.btn-gray-light.btn-outline:hover,
-input[type="submit"].btn.btn-gray-light.btn-outline:hover {
+.step-panel-form form button.btn-gray-light:hover,
+input[type="submit"].btn.btn-gray-light.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-gray-light:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #777777;
-  color: #777777;
+  border: 2px solid #494949;
+  color: #494949;
 }
 a.btn.btn-gray-lighter.btn-outline,
 button.btn.btn-gray-lighter.btn-outline,
-input[type="submit"].btn.btn-gray-lighter.btn-outline {
+.step-panel-form form button.btn-gray-lighter,
+input[type="submit"].btn.btn-gray-lighter.btn-outline,
+.step-panel-form form input[type="submit"].btn-gray-lighter {
   background: none;
-  border: 2px solid white;
+  border: 2px solid #eeeeee;
   border-radius: 4px;
-  color: white;
+  color: #eeeeee;
 }
 a.btn.btn-gray-lighter.btn-outline:hover,
 button.btn.btn-gray-lighter.btn-outline:hover,
-input[type="submit"].btn.btn-gray-lighter.btn-outline:hover {
+.step-panel-form form button.btn-gray-lighter:hover,
+input[type="submit"].btn.btn-gray-lighter.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-gray-lighter:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #eeeeee;
-  color: #eeeeee;
+  border: 2px solid #c1c1c1;
+  color: #c1c1c1;
 }
 a.btn.btn-white.btn-outline,
 button.btn.btn-white.btn-outline,
-input[type="submit"].btn.btn-white.btn-outline {
+.step-panel-form form button.btn-white,
+input[type="submit"].btn.btn-white.btn-outline,
+.step-panel-form form input[type="submit"].btn-white {
   background: none;
-  border: 2px solid white;
+  border: 2px solid #fff;
   border-radius: 4px;
-  color: white;
+  color: #fff;
 }
 a.btn.btn-white.btn-outline:hover,
 button.btn.btn-white.btn-outline:hover,
-input[type="submit"].btn.btn-white.btn-outline:hover {
+.step-panel-form form button.btn-white:hover,
+input[type="submit"].btn.btn-white.btn-outline:hover,
+.step-panel-form form input[type="submit"].btn-white:hover {
   background: none;
   border-radius: 4px;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #d1d1d1;
+  color: #d1d1d1;
+}
+
+.select-override, .step-panel-form form select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: relative;
+  text-indent: 1px;
+  text-overflow: "";
+}
+.select-override.input-lg, .step-panel-form form select.input-lg {
+  line-height: 28px;
+}
+
+/* Custom Forms */
+input[type="text"].input-xl,
+input[type="email"].input-xl,
+input[type="password"].input-xl {
+  height: 56px;
+  height: 4rem;
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+textarea {
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+.form-custom input[type="text"],
+.form-custom input[type="email"],
+.form-custom input[type="password"],
+.form-custom textarea {
+  background-color: transparent;
+  font-family: 'telefonica_headline_lightRg' !important;
+  font-style: normal;
+}
+.form-custom input[type="text"]::-webkit-input-placeholder,
+.form-custom input[type="email"]::-webkit-input-placeholder,
+.form-custom input[type="password"]::-webkit-input-placeholder,
+.form-custom textarea::-webkit-input-placeholder {
+  color: white;
+}
+.form-custom input[type="text"]::-moz-placeholder,
+.form-custom input[type="email"]::-moz-placeholder,
+.form-custom input[type="password"]::-moz-placeholder,
+.form-custom textarea::-moz-placeholder {
+  color: white;
+}
+.form-custom input[type="text"]:-moz-placeholder,
+.form-custom input[type="email"]:-moz-placeholder,
+.form-custom input[type="password"]:-moz-placeholder,
+.form-custom textarea:-moz-placeholder {
+  color: white;
+}
+.form-custom input[type="text"]:-ms-input-placeholder,
+.form-custom input[type="email"]:-ms-input-placeholder,
+.form-custom input[type="password"]:-ms-input-placeholder,
+.form-custom textarea:-ms-input-placeholder {
+  color: white;
+}
+
+.step-panel-form form input[type="text"] {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="text"]::-webkit-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="text"]::-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="text"]:-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="text"]:-ms-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="email"] {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="email"]::-webkit-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="email"]::-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="email"]:-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="email"]:-ms-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="search"] {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="search"]::-webkit-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="search"]::-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="search"]:-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="search"]:-ms-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="date"] {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="date"]::-webkit-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="date"]::-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="date"]:-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="date"]:-ms-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="password"] {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="password"]::-webkit-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="password"]::-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="password"]:-moz-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form input[type="password"]:-ms-input-placeholder {
+  color: #085A6B !important;
+}
+.step-panel-form form select {
+  color: #085A6B !important;
+}
+.step-panel-form form select[multiple] {
+  height: auto;
+}
+.step-panel-form form textarea {
+  color: #085A6B !important;
+}
+.step-panel-form form textarea::-webkit-input-placeholder {
+  color: #085A6B;
+}
+.step-panel-form form textarea::-moz-placeholder {
+  color: #085A6B;
+}
+.step-panel-form form textarea:-moz-placeholder {
+  color: #085A6B;
+}
+.step-panel-form form textarea:-ms-input-placeholder {
+  color: #085A6B;
 }
 
 header,
@@ -4783,6 +5270,7 @@ header,
   width: 100%;
   padding: 0 14px;
   min-height: 70px;
+  background-color: rgba(8, 90, 107, 0.3);
 }
 header h1, header h2, header h3, header h4, header h5, header h6,
 header .h1, header .h2, header .h3, header .h4, header .h5, header .h6,
@@ -4864,7 +5352,7 @@ nav a {
 }
 
 .header-internas {
-  background: rgba(8, 90, 107, 0.7);
+  background-color: rgba(8, 90, 107, 0.7);
 }
 
 .videocover {
@@ -5001,7 +5489,7 @@ img.flipped {
 .step-counters li:before {
   position: absolute;
   top: 5px;
-  left: 48%;
+  left: 49%;
   content: counter(step);
   counter-increment: step;
   z-index: 30;
@@ -5009,6 +5497,7 @@ img.flipped {
   color: #23B6C5;
   font-family: 'telefonica_textregular' !important;
   font-style: normal;
+  font-size: 28px;
 }
 .step-counters li:after {
   content: "";

@@ -44,7 +44,7 @@ html {
 }
 
 /* TEXT IN REMS */
-$text-in-rems-md-up: 14;
+$text-in-rems-md-up: 9;
 $line-height-md-up: 1.3;
 $text-in-rems-sm-only: 5;
 $line-height-sm-only: 1.2;
@@ -87,41 +87,49 @@ $text-elements-list:
   "ol",
   "li";
 
+.lead {
+  margin: 0;
+}
+
 // LEAD TEXT ELEMENTS
 #{$text-elements-list} {
   &.lead {
-    font-size: $font-size-base + $text-in-rems-md-up !important;
-    font-size: rem($font-size-base + $text-in-rems-md-up) !important;
+    font-size: $font-size-base + $text-in-rems-md-up ;
+    font-size: rem($font-size-base + $text-in-rems-md-up) ;
     line-height: $line-height-md-up;
   }
   @media #{$xs-only} {
     &.lead {
-      font-size: $font-size-base + $text-in-rems-xs-only !important;
-      font-size: rem($font-size-base + $text-in-rems-xs-only) !important;
+      font-size: $font-size-base + $text-in-rems-xs-only ;
+      font-size: rem($font-size-base + $text-in-rems-xs-only) ;
       line-height: $line-height-xs-only;
     }
   }
   @media #{$sm-only} {
     &.lead {
-      font-size: $font-size-base + $text-in-rems-sm-only !important;
-      font-size: rem($font-size-base + $text-in-rems-sm-only) !important;
+      font-size: $font-size-base + $text-in-rems-sm-only ;
+      font-size: rem($font-size-base + $text-in-rems-sm-only) ;
       line-height: $line-height-sm-only;
     }
   }
 }
 .lead-ch {
   #{$text-elements-list} {
-    font-size: $font-size-base + $text-in-rems-md-up !important;
-    font-size: rem($font-size-base + $text-in-rems-md-up) !important;
+    font-size: $font-size-base + $text-in-rems-md-up ;
+    font-size: rem($font-size-base + $text-in-rems-md-up) ;
     line-height: $line-height-md-up;
+    &.unlead {
+      font-size: $font-size-base;
+      font-size: rem($font-size-base);
+    }
     @media #{$xs-only} {
-      font-size: $font-size-base + $text-in-rems-xs-only !important;
-      font-size: rem($font-size-base + $text-in-rems-xs-only) !important;
+      font-size: $font-size-base + $text-in-rems-xs-only ;
+      font-size: rem($font-size-base + $text-in-rems-xs-only) ;
       line-height: $line-height-xs-only;
     }
     @media #{$sm-only} {
-      font-size: $font-size-base + $text-in-rems-sm-only !important;
-      font-size: rem($font-size-base + $text-in-rems-sm-only) !important;
+      font-size: $font-size-base + $text-in-rems-sm-only ;
+      font-size: rem($font-size-base + $text-in-rems-sm-only) ;
       line-height: $line-height-sm-only;
     }
   }
@@ -132,21 +140,21 @@ $text-elements-list:
   #{nth($headings-list, $i)} {
     font-size: #{rem(nth($font-size-list, $i))};
     &.lead {
-      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
-      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
+      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} ;
+      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} ;
       line-height: $line-height-md-up;
     }
     @media #{$xs-only} {
       &.lead {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} ;
         line-height: $line-height-xs-only;
       }
     }
     @media #{$sm-only} {
       &.lead {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} ;
         line-height: $line-height-sm-only;
       }
     }
@@ -156,21 +164,21 @@ $text-elements-list:
   #{nth($headings-class-list, $i)} {
     font-size: #{rem(nth($font-size-list, $i))};
     &.lead {
-      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
-      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
+      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} ;
+      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} ;
       line-height: $line-height-md-up;
     }
     @media #{$xs-only} {
       &.lead {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} ;
         line-height: $line-height-xs-only;
       }
     }
     @media #{$sm-only} {
       &.lead {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} ;
         line-height: $line-height-sm-only;
       }
     }
@@ -181,19 +189,23 @@ $text-elements-list:
 .lead-ch {
   @for $i from 1 through length($headings-list) {
     #{nth($headings-list, $i)} {
-      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
-      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
+      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} ;
+      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} ;
       em, a, span {
-        font-size: inherit !important;
+        font-size: inherit ;
+      }
+      &.unlead {
+        font-size: #{nth($font-size-list, $i)};
+        font-size: #{rem(nth($font-size-list, $i))};
       }
       @media #{$xs-only} {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} ;
         line-height: $line-height-xs-only;
       }
       @media #{$sm-only} {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} ;
         line-height: $line-height-sm-only;
       }
     }
@@ -202,19 +214,23 @@ $text-elements-list:
 .lead-ch {
   @for $i from 1 through length($headings-class-list) {
     #{nth($headings-class-list, $i)} {
-      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} !important;
-      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} !important;
+      font-size: #{nth($font-size-list, $i) + $text-in-rems-md-up} ;
+      font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-md-up)} ;
       em, a, span {
-        font-size: inherit !important;
+        font-size: inherit ;
+      }
+      &.unlead {
+        font-size: #{nth($font-size-list, $i)};
+        font-size: #{rem(nth($font-size-list, $i))};
       }
       @media #{$xs-only} {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-xs-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-xs-only)} ;
         line-height: $line-height-xs-only;
       }
       @media #{$sm-only} {
-        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} !important;
-        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} !important;
+        font-size: #{nth($font-size-list, $i) + $text-in-rems-sm-only} ;
+        font-size: #{rem(nth($font-size-list, $i) + $text-in-rems-sm-only)} ;
         line-height: $line-height-sm-only;
       }
     }
@@ -246,8 +262,8 @@ $text-elements-list:
   @for $k from 1 through length($breakpoints-sufix-list) {
     @media #{nth($media-control-list, $k)} {
       #{nth($headings-class-list, $i)}-#{nth($breakpoints-sufix-list, $k)} {
-        font-size: #{nth($font-size-list, $i)} !important;
-        font-size: #{rem(nth($font-size-list, $i))} !important;
+        font-size: #{nth($font-size-list, $i)} ;
+        font-size: #{rem(nth($font-size-list, $i))} ;
       }
     }
   }

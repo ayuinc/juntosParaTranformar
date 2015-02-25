@@ -341,7 +341,7 @@ module.exports = function (grunt) {
     // 'concat:dev',
     'connect:livereload',
     'uglify',
-    'open',
+    // 'open',
     'watch'
   ]);
 

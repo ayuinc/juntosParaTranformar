@@ -29,13 +29,14 @@
 			}
 		}
 		&:before {
-			@include position(absolute, 5px null null 48%);
+			@include position(absolute, 5px null null 49%);
 			content: counter(step);
 			counter-increment: step;
 			z-index: 30;
 			margin-bottom: 21px;
 			color: $blue-light;
 			@include book;
+			font-size: 28px;
 		}
 		&:after {
 			content: "";
