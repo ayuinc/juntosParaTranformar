@@ -3448,12 +3448,6 @@ body::-webkit-scrollbar {
   min-height: 420px;
 }
 .beca-categories-list > li > div {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -3487,24 +3481,9 @@ body::-webkit-scrollbar {
   align-items: center;
   -ms-flex-align: center;
 }
-.beca-categories-list > li .title {
-  z-index: 30;
-}
 .beca-categories-list > li .description {
-  z-index: 20;
   background-color: #085A6B;
   padding: 14px;
-  opacity: 0;
-}
-.beca-categories-list > li:hover {
-  cursor: pointer;
-}
-.beca-categories-list > li:hover .description {
-  z-index: 30;
-  opacity: 1;
-}
-.beca-categories-list > li:hover .title {
-  z-index: 20;
 }
 
 .custom-quotes:before, .custom-quotes:after {
@@ -5270,7 +5249,7 @@ header,
   width: 100%;
   padding: 0 14px;
   min-height: 70px;
-  background-color: rgba(8, 90, 107, 0.3);
+  background-color: rgba(8, 90, 107, 0.9);
 }
 header h1, header h2, header h3, header h4, header h5, header h6,
 header .h1, header .h2, header .h3, header .h4, header .h5, header .h6,

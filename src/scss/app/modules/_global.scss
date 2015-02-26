@@ -136,29 +136,29 @@ $video-bg-height: 491px;
 		position: relative;
 		min-height: 420px;
 		> div {
-			@include position(absolute, 0 0 0 0);
-			width: 100%;
+			// @include position(absolute, 0 0 0 0);
+			// width: 100%;
 			@include flex-middle-center;			
 		}
 		.title {
-			z-index: 30;
+			// z-index: 30;
 		}
 		.description {
-			z-index: 20;
+			// z-index: 20;
 			background-color: $brand-primary;
 			padding: $container-fluid;
-			opacity: 0;
+			// opacity: 0;
 		}
-		&:hover {
-			cursor: pointer;
-			.description {
-				z-index: 30;
-				opacity: 1;
-			}
-			.title {
-				z-index: 20;
-			}
-		}
+		// &:hover {
+		// 	cursor: pointer;
+		// 	.description {
+		// 		z-index: 30;
+		// 		opacity: 1;
+		// 	}
+		// 	.title {
+		// 		z-index: 20;
+		// 	}
+		// }
 	}
 }
 
