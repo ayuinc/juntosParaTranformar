@@ -7,6 +7,9 @@ style.min.css
 style.unprefixed.css
 style.prefixed.css
 
+## VIDEO
+video/**
+
 ## Node.js
 lib-cov
 *.seed
