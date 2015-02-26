@@ -3446,8 +3446,6 @@ body::-webkit-scrollbar {
 .beca-categories-list > li {
   position: relative;
   min-height: 420px;
-}
-.beca-categories-list > li > div {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -3482,7 +3480,6 @@ body::-webkit-scrollbar {
   -ms-flex-align: center;
 }
 .beca-categories-list > li .description {
-  background-color: #085A6B;
   padding: 14px;
 }
 

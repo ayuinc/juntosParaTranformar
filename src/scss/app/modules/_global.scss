@@ -135,17 +135,17 @@ $video-bg-height: 491px;
 	> li {
 		position: relative;
 		min-height: 420px;
+		@include flex-middle-center;			
 		> div {
 			// @include position(absolute, 0 0 0 0);
 			// width: 100%;
-			@include flex-middle-center;			
 		}
 		.title {
 			// z-index: 30;
 		}
 		.description {
 			// z-index: 20;
-			background-color: $brand-primary;
+			// background-color: $brand-primary;
 			padding: $container-fluid;
 			// opacity: 0;
 		}
