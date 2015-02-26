@@ -135,10 +135,10 @@ $video-bg-height: 491px;
 	> li {
 		position: relative;
 		min-height: 420px;
-		@include flex-middle-center;			
 		> div {
-			// @include position(absolute, 0 0 0 0);
-			// width: 100%;
+			@include flex-middle-center;			
+			@include position(absolute, 0 0 0 0);
+			width: 100%;
 		}
 		.title {
 			// z-index: 30;
