@@ -1,8 +1,8 @@
-{exp:channel:entries channel="beneficios_para_los_ganadores" limit="5" dynamic="off"}
 	<div class="text-blue-dark light">
 	  <div class="container ph-70-sm">
-	    <h3>{title}</h3>
+		  <h3>Los beneficios son:</h3>
+			{exp:channel:entries channel="beneficios_para_los_ganadores" limit="5" dynamic="off"}
 	    <p>{descripcion_del_beneficio}</p>
+			{/exp:channel:entries}
 	  </div>
 	</div>
-{/exp:channel:entries}
