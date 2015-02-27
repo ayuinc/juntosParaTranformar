@@ -10,6 +10,9 @@ style.prefixed.css
 ## VIDEO
 video/**
 
+## IMAGES
+images
+
 ## Node.js
 lib-cov
 *.seed
