@@ -192,9 +192,30 @@ $video-bg-height: 491px;
 		&:hover {
 			.overlay {
 				@include transition(all 0.2s ease-in-out);
-				background-color: rgba($brand-primary, 0.5);
+				background-color: rgba($brand-primary, 0.7);
+			}
+			.jurado-block {
+				@include transition(all 0.2s ease-in-out);
+				@include transform(translateY(-91%));
+				height: auto;
+			}
+			.jurado-description {
+				@include transition(all 0.5s ease-in-out);
+				opacity: 1;
 			}
 		}
+	}
+	.jurado-block {
+		@include transition(all 0.2s ease-in-out);
+		@include transform(translateY(0%));
+		height: 105px;
+	}
+	.jurado-description {
+		@include transition(all 0.5s ease-in-out);
+		opacity: 0;
+	}
+	.jurado-description {
+		
 	}
 }
 

@@ -3521,7 +3521,41 @@ body::-webkit-scrollbar {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: rgba(8, 90, 107, 0.5);
+  background-color: rgba(8, 90, 107, 0.7);
+}
+.jurado-blocks [class*="col-"]:hover .jurado-block {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(-91%);
+  -moz-transform: translateY(-91%);
+  -ms-transform: translateY(-91%);
+  -o-transform: translateY(-91%);
+  transform: translateY(-91%);
+  height: auto;
+}
+.jurado-blocks [class*="col-"]:hover .jurado-description {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 1;
+}
+.jurado-blocks .jurado-block {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(0%);
+  -moz-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  -o-transform: translateY(0%);
+  transform: translateY(0%);
+  height: 105px;
+}
+.jurado-blocks .jurado-description {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
 }
 
 /* PROJECT ESPECIFIC FONTS */
