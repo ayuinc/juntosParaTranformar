@@ -187,7 +187,7 @@ $video-bg-height: 491px;
 	.overlay {
 		@include transition(all 0.2s ease-in-out);
 		background-color: rgba($brand-primary, 0.3);
-		padding: 42px 0;
+		padding: 42px $container-fluid;
 	}
 	[class*="col-"] {
 		&:hover {
@@ -210,6 +210,7 @@ $video-bg-height: 491px;
 		@include transition(all 0.2s ease-in-out);
 		@include transform(translateY(0%));
 		height: 105px;
+		overflow: hidden;
 	}
 	.jurado-description {
 		@include transition(all 0.5s ease-in-out);

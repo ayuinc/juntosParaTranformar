@@ -3516,7 +3516,7 @@ body::-webkit-scrollbar {
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   background-color: rgba(8, 90, 107, 0.3);
-  padding: 42px 0;
+  padding: 42px 14px;
 }
 .jurado-blocks [class*="col-"]:hover .overlay {
   -webkit-transition: all 0.2s ease-in-out;
@@ -3551,6 +3551,7 @@ body::-webkit-scrollbar {
   -o-transform: translateY(0%);
   transform: translateY(0%);
   height: 105px;
+  overflow: hidden;
 }
 .jurado-blocks .jurado-description {
   -webkit-transition: all 0.5s ease-in-out;
