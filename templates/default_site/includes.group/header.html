@@ -17,7 +17,13 @@
             <span class="text-white lead">|</span>
             <a href="{site_url}jurado">Jurado</a>
             <span class="text-white lead">|</span>
-            {if logged_out}
+            {if segment_1==""}
+            <a href="{site_url}#becarios">Becarios</a>
+            {if:else}
+            <a href="{site_url}beca/becarios">Becarios</a>
+            {/if}
+            {if logged_in}
+            <span class="text-white lead">|</span>
             <a href="{site_url}postula/ingresa">Edita tu postulación</a>
             {/if}
           </span>
