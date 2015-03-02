@@ -3,41 +3,43 @@
 {if:else}
 <header class="header pv-7 header-internas">
 {/if}
-  <div class="left col-sm-3 col-xs-4">
-    <a href="{site_url}"><img src="{site_url}app/assets/img/logo-gaston-telefonica.png" alt="{site_title}" width="110"></a>
-  </div>
-  <div class="center col-sm-3 hidden-xs normalize-text">
-    <p>Becas Juntos para Transformar</p>
-  </div>
-  <div class="right col-sm-6 col-xs-8 hidden-xs">
-    <div class="row">
-      <div class="col-sm-10 minh-70 flex-middle">
-        <nav class="text-white text-right pv-14 ml-ch-7">
-          <a href="{site_url}">Inicio</a>
-          <span class="text-white">|</span>
-          <a href="{site_url}beca">La Beca</a>
-          <span class="text-white">|</span>
-          <a href="{site_url}jurado">Jurado</a>
-          <span class="text-white">|</span>
-          <!-- <a href="{site_url}testimonios">Testimonios</a> -->
-          <!-- <span class="text-white">|</span> -->
-          {if segment_1==""}
-          <a href="#becarios">Beneficiarios</a>
-          {if:else}
-          <a href="{site_url}beca/becarios">Beneficiarios</a>
+  <div class="container-fluid">
+    <div class="left">
+      <a href="{site_url}"><img src="{site_url}app/assets/img/logo-gaston-telefonica.png" alt="{site_title}" width="110"></a>
+    </div>
+    <div class="center hidden-xs">
+      <p class="text-white">Becas Juntos para Transformar</p>
+    </div>
+    <div class="right hidden-xs">
+      <div class="row">
+        <div class="col-sm-10 minh-70 flex-middle">
+          <nav class="text-white text-right pv-14 ml-ch-7">
+            <a href="{site_url}">Inicio</a>
+            <span class="text-white">|</span>
+            <a href="{site_url}beca">La Beca</a>
+            <span class="text-white">|</span>
+            <a href="{site_url}jurado">Jurado</a>
+            <span class="text-white">|</span>
+            <!-- <a href="{site_url}testimonios">Testimonios</a> -->
+            <!-- <span class="text-white">|</span> -->
+            {if segment_1==""}
+            <a href="#becarios">Beneficiarios</a>
+            {if:else}
+            <a href="{site_url}beca/becarios">Beneficiarios</a>
+            {/if}
+            {if logged_in}
+            <span class="text-white">|</span>
+            <a href="{site_url}postula/ingresa">Edita tu postulación</a>
+            {/if}
+          </nav>
+        </div>
+        <div class="col-sm-2 text-right minh-70 flex-middle">
+  	      {if logged_in}
+  	      <a href="{path='logout'}" class="ml-14 btn btn-outline btn-lg btn-gray-lighter">Salir</a>
+  	      {if:else}
+          <a href="{site_url}postula" class="ml-14 btn btn-outline btn-lg btn-gray-lighter">Postula</a>
           {/if}
-          {if logged_in}
-          <span class="text-white">|</span>
-          <a href="{site_url}postula/ingresa">Edita tu postulación</a>
-          {/if}
-        </nav>
-      </div>
-      <div class="col-sm-2 text-right minh-70 flex-middle">
-	      {if logged_in}
-	      <a href="{path='logout'}" class="ml-14 btn btn-outline btn-lg btn-gray-lighter">Salir</a>
-	      {if:else}
-        <a href="{site_url}postula" class="ml-14 btn btn-outline btn-lg btn-gray-lighter">Postula</a>
-        {/if}
+        </div>
       </div>
     </div>
   </div>

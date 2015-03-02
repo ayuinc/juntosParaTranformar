@@ -3,13 +3,15 @@ header,
 	// @include position(absolute, 0 0 null 0);
 	@include position(fixed, 0 0 null 0);
 	z-index: 1000;
-	@include flex-space-between;
 	@include normalize-text;
 	@include clearfix;
 	width: 100%;
 	padding: 0 $container-fluid;
 	min-height: $header-height-control;
 	background-color: rgba($brand-primary, 0.9);
+	.container-fluid {
+		@include flex-space-between;
+	}
 	.left,
 	.center,
 	.right {
