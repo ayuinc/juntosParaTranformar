@@ -136,19 +136,15 @@ $video-bg-height: 491px;
 		position: relative;
 		min-height: 420px;
 		> div {
+		}
+		.title {
+		}
+		.description {
 			@include flex-middle-center;			
 			@include position(absolute, 0 0 0 0);
 			width: 100%;
-		}
-		.title {
-			// z-index: 30;
-		}
-		.description {
-			// z-index: 20;
-			position: relative;
-			// background-color: $brand-primary;
+			// position: relative;
 			padding: $container-fluid;
-			// opacity: 0;
 		}
 		.given-by {
 			@include position(absolute, null 0 0 0);
@@ -157,16 +153,6 @@ $video-bg-height: 491px;
 			color: white;
 			text-align: center;
 		}
-		// &:hover {
-		// 	cursor: pointer;
-		// 	.description {
-		// 		z-index: 30;
-		// 		opacity: 1;
-		// 	}
-		// 	.title {
-		// 		z-index: 20;
-		// 	}
-		// }
 	}
 }
 

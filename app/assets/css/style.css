@@ -3447,7 +3447,7 @@ body::-webkit-scrollbar {
   position: relative;
   min-height: 420px;
 }
-.beca-categories-list > li > div {
+.beca-categories-list > li .description {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -3486,9 +3486,6 @@ body::-webkit-scrollbar {
   bottom: 0;
   left: 0;
   width: 100%;
-}
-.beca-categories-list > li .description {
-  position: relative;
   padding: 14px;
 }
 .beca-categories-list > li .given-by {
