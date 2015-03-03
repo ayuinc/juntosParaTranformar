@@ -1,15 +1,15 @@
-<ul class="grid-list grid-list-4 isotope-grid grid-list-1-xs text-center">
+<ul class="grid-list grid-list-centered grid-list-2 isotope-grid grid-list-1-xs text-center">
 {exp:channel:entries channel="aliados" limit="21" dynamic="off"}
   <li>
     <div>
     {imagen_aliado limit="1"}
-      <img src="{image:url:small}" alt="" style="width: 112px; height: auto; " class="img-circle" alt="{nombre_del_juez}">
+      <img src="{image:url:small}" alt="{title}" class="img-responsive">
     {/imagen_aliado}
     </div>
-    <div>
-      <h3>{nombre_del_aliado}</h3>
+    <!-- <div>
+      <h3>{title}</h3>
       <span class="text-blue-light h4">{titulo_del_aliado}</span>
-    </div>
+    </div> -->
   </li>
 {/exp:channel:entries}
 </ul>
