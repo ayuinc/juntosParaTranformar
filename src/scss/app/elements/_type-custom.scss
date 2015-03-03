@@ -96,9 +96,10 @@ a.not-underline {
 // END:TEXT GRADIENTS
 
 // LINE HEIGHTS
-.lh-sm {line-height: rem(19px);}
-.lh-md {line-height: rem(21px);}
-.lh-lg {line-height: rem(28px);}
+$line-height-control: 21px;
+.lh-sm {line-height: rem($line-height-control - 2); !important}
+.lh-md {line-height: rem($line-height-control); !important}
+.lh-lg {line-height: rem($line-height-control + 2); !important}
 
 /* CHILDREN FONT WEIGHT APPLY */
 // @for $i from 1 through length($text-elements-list) {

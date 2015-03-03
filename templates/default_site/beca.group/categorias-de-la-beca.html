@@ -1,11 +1,13 @@
-<ul class="grid-list grid-list-centered grid-list-3 grid-list-1-xs lead-ch beca-categories-list mb-ch-21">
+<ul class="grid-list grid-list-centered grid-list-3 grid-list-1-xs lead-ch beca-categories-list mb-ch-21 last-child-wide">
 	{exp:channel:entries dynamic="off" channel="categorias_de_la_beca" limit="10" sort="asc"}
 		<li class="bg-primary-op">
 		  <div class="description">
 		    <h3 class="h3 light pv-21">{title}</h3>
 		    <h4 class="unlead light">{descripcion_de_la_categoria}</h4>
 		    <div class="given-by">
-		    	<em class="unlead">{beca_entregada_por}</em>
+		    	<p class="unlead lh-sm">
+		    		<em class="unlead">{beca_entregada_por}</em>
+		    	</p>
 		    </div>
 		  </div>
 		</li>
