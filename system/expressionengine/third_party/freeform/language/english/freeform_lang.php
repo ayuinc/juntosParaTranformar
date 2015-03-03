@@ -1968,7 +1968,7 @@ Here are the details:
 "No duplicate postings are allowed for this form.",
 
 'required_field_missing' =>
-"Required field missing input",
+"Los campos obligatorios entrada faltante",
 
 'fields_do_not_match' =>
 "The following required matching fields do not match: ",
@@ -1992,7 +1992,7 @@ Here are the details:
 "Number exceeds allowed maximum",
 
 'max_length_exceeded' =>
-"Maximum field length of %num% exceeded.",
+"Longitud máxima del campo de %num% superó.",
 
 'field_settings_error' =>
 "Options for this field type had errors.",

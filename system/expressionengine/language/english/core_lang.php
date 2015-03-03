@@ -85,7 +85,7 @@ $lang = array(
 'Click here if you are not redirected automatically',
 
 'return_to_previous' =>
-'Return to Previous Page',
+'Volver a la página anterior',
 
 'not_available' =>
 'Not available',
@@ -113,7 +113,7 @@ $lang = array(
 'The URL you submitted is not valid.',
 
 'submission_error' =>
-'The form you submitted contained the following errors',
+'La forma que ha enviado contenía los siguientes errores',
 
 'general_error' =>
 'The following errors were encountered',
