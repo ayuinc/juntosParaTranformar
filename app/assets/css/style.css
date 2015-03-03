@@ -3488,7 +3488,18 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 .beca-categories-list > li .description {
+  position: relative;
   padding: 14px;
+}
+.beca-categories-list > li .given-by {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 14px;
+  color: white;
+  text-align: center;
 }
 
 .custom-quotes:before, .custom-quotes:after {

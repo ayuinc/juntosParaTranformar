@@ -145,9 +145,17 @@ $video-bg-height: 491px;
 		}
 		.description {
 			// z-index: 20;
+			position: relative;
 			// background-color: $brand-primary;
 			padding: $container-fluid;
 			// opacity: 0;
+		}
+		.given-by {
+			@include position(absolute, null 0 0 0);
+			width: 100%;
+			padding: $container-fluid;
+			color: white;
+			text-align: center;
 		}
 		// &:hover {
 		// 	cursor: pointer;
