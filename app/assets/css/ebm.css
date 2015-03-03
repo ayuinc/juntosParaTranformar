@@ -24423,7 +24423,7 @@ ul.grid-list.grid-list-right > li {
 ul.grid-list.grid-list-anchors > li a {
   display: block;
 }
-ul.grid-list.last-child-wide > li {
+ul.grid-list.last-child-wide > li:last-child {
   width: 100%;
 }
 

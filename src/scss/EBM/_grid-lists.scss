@@ -55,7 +55,9 @@ ul.grid-list {
 	}
 	&.last-child-wide {
 		> li {
-			width: 100%;
+			&:last-child {
+				width: 100%;
+			}
 		}
 	}
 }

@@ -3741,15 +3741,15 @@ a.not-underline:hover {
   }
 }
 .lh-sm {
-  line-height: 1.1875rem;
+  line-height: 1.1875rem !important;
 }
 
 .lh-md {
-  line-height: 1.3125rem;
+  line-height: 1.3125rem !important;
 }
 
 .lh-lg {
-  line-height: 1.4375rem;
+  line-height: 1.4375rem !important;
 }
 
 /* CHILDREN FONT WEIGHT APPLY */
