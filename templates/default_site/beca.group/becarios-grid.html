@@ -1,7 +1,7 @@
 <h3 class="text-blue-light pv-21 mt-42"><em>Categoría Cocina</em></h3>
 {exp:channel:entries channel="perfil_de_los_becarios" category="1" dynamic="off" sort="asc"}
   {if count % 2 == 0}
-  <div class="clearfix p-ch-0 normalize-text">
+  <div class="clearfix p-ch-0">
     <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
       <div class="text-center">
         <span class="icon-arrow-right h1 block mb-14"></span>
@@ -31,7 +31,7 @@
     </div>
   </div>
   {if:else}
-  <div class="clearfix p-ch-0 normalize-text">
+  <div class="clearfix p-ch-0">
     {imagen_del_becario}
     <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url})">
     {/imagen_del_becario}
@@ -65,7 +65,7 @@
 <h3 class="text-blue-light pv-21 mt-42"><em>Categoría Servicios</em></h3>
 {exp:channel:entries channel="perfil_de_los_becarios" category="2" dynamic="off" sort="asc"}
   {if count % 2 == 0}
-  <div class="clearfix p-ch-0 normalize-text">
+  <div class="clearfix p-ch-0">
     <div class="col-sm-6 relative minh-420 bg-blue flex-middle-center text-white">
       <div class="text-center">
         <span class="icon-arrow-right h1 block mb-14"></span>
@@ -95,7 +95,7 @@
     </div>
   </div>
   {if:else}
-  <div class="clearfix p-ch-0 normalize-text">
+  <div class="clearfix p-ch-0">
     {imagen_del_becario}
     <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url})">
     {/imagen_del_becario}
