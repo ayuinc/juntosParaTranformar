@@ -191,7 +191,7 @@ $video-bg-height: 491px;
 			}
 			.jurado-block {
 				@include transition(all 0.2s ease-in-out);
-				@include transform(translateY(-91%));
+				@include transform(translateY(-84%));
 				height: auto;
 			}
 			.jurado-description {
