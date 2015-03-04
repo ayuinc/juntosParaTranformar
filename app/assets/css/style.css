@@ -7,6 +7,7 @@
  * Copyright 2015. MIT licensed.
  */
 
+@charset "UTF-8";
 /*
 
   Ayu Consulting Frontend Boilerplate - @MadeByGus
@@ -5263,6 +5264,13 @@ textarea {
 }
 .step-panel-form form textarea:-ms-input-placeholder {
   color: #085A6B;
+}
+
+#freeform_que_otra_beca_pasantia_has_ganado_y_en_que_ano:after,
+#freeform_en_que_pais_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_paises_por_orden_de_preferencia:after,
+#freeform_en_que_restaurante_establecimiento_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_lugares_por_orden_de_preferencia:after {
+  content: "Máximo 100 caracteres";
+  font-size: 12px;
 }
 
 header,
