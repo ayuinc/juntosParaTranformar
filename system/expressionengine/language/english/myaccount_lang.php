@@ -405,31 +405,31 @@ $lang = array(
 'The email you submitted is not valid',
 
 'missing_username' =>
-'You must submit a username',
+'Usted debe enviar un nombre de usuario',
 
 'invalid_characters_in_username' =>
-'Username contains illegal characters.',
+'Nombre de usuario contiene caracteres inválidos.',
 
 'missing_password' =>
-'You must submit a password',
+'Usted debe presentar una contraseña',
 
 'missing_current_password' =>
-'In order to make changes you must submit the current password',
+'Con el fin de hacer cambios debe enviar la contraseña actual',
 
 'password_in_dictionary' =>
-'You are not allowed to use a word found in a dictionary as a password',
+'No se le permite utilizar una palabra que se encuentra en un diccionario como contraseña',
 
 'not_secure_password' =>
-'Password must contain at least one uppercase character, one lowercase character and one number',
+'La contraseña debe contener al menos un carácter en mayúscula, una minúscula y un número',
 
 'invalid_password' =>
-'The password you submitted was not correct',
+'La contraseña que indicó que no era correcto',
 
 'missing_email' =>
-'You must submit an email address',
+'Usted debe presentar una dirección de correo electrónico',
 
 'banned_email' =>
-'The email address you submitted is banned',
+'La dirección de correo electrónico que ha enviado está prohibida',
 
 'missmatched_passwords' =>
 'The password and password confirmation do not match',
@@ -444,19 +444,19 @@ $lang = array(
 'Usernames and passwords cannot be over 32 characters in length',
 
 'username_taken' =>
-'The username you chose is not available',
+'El nombre de usuario que eligió no está disponible',
 
 'screen_name_taken' =>
-'The screen name you chose is not available',
+'El nombre de usuario que ha elegido no está disponible',
 
 'email_taken' =>
-'The email you chose is not available',
+'La dirección de correo electrónico que usted eligió no está disponible',
 
 'valid_user_email' =>
-'The email you chose is not valid',
+'El correo electrónico ha elegido no es válido',
 
 'password_based_on_username' =>
-'The password cannot be based on the username',
+'La contraseña no puede basarse en el nombre de usuario',
 
 'username_changed' =>
 'Username was changed to:',
