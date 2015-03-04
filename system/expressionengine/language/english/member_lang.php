@@ -427,7 +427,7 @@ $lang = array(
 'Member Registration',
 
 'mbr_forgotten_password' =>
-'Request password reset',
+'Una solicitud de restablecimiento de contraseña',
 
 'mbr_memberlist' =>
 'Member List',
@@ -531,7 +531,7 @@ content associated with your account will also be deleted.',
 'Confirm Email Address',
 
 'mbr_your_email' =>
-'Your Email Address',
+'Su Dirección De Correo Electrónico',
 
 'mbr_email_short' =>
 'Email',
@@ -627,7 +627,7 @@ content associated with your account will also be deleted.',
 'Most Recent Comment',
 
 'mbr_submit' =>
-'Submit',
+'Enviar',
 
 'mbr_join_date' =>
 'Join Date',
@@ -727,7 +727,7 @@ We reserve the right to remove, edit, or move any messages for any reason.',
 'Descending',
 
 'mbr_back_to_login' =>
-'Back to Login',
+'Volver a inicio',
 
 'mbr_back_to_main' =>
 'Back to Main',
