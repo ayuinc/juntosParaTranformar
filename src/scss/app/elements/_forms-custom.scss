@@ -81,13 +81,13 @@ $inputs-list:
 }
 
 
-.ff_composer {
-	h3 {
-		&:after {
-			content: "Campos marcados con '*' son obligatorios";
-			display: block;
-			font-size: 12px;
-			margin-top: 7px;
-		}
-	}
-}
+// .ff_composer {
+// 	h3 {
+// 		&:after {
+// 			content: "Campos marcados con '*' son obligatorios";
+// 			display: block;
+// 			font-size: 12px;
+// 			margin-top: 7px;
+// 		}
+// 	}
+// }
