@@ -1,0 +1,46 @@
+{embed="includes/head"}
+	{if logged_in}
+		{redirect='postula/formulario-edicion'}	 
+	{/if}
+	{if logged_out} 
+  <div class="site-content">
+		{embed="includes/header"}
+      <div class="bg-blue-light minhp-100">
+        <div class="container ph-56 pv-70">
+          <div class="text-center text-white pv-42 lead-ch">
+            <h1>Olvidaste tu contraseña</h1>
+          </div>
+          <div id="progress-wizard">
+            <div class="step-panels">
+              <div id="step-panel-1" class="step-panel step-panel-form active bg-blue-darker p-14">
+                  <div class="custom-frame minh-530 pbp-14">
+                    <div class="lead-ch p-ch-white">
+											<p>Introduce tu dirección de correo electrónico registraste y recibirás un correo electrónico con instrucciones para restablecer tu contraseña.</p>
+											 
+											{exp:user:forgot_password
+											    password_reset_template="user/reset_password/%id%"
+											    password_reset_email_subject="Password Reset Request"
+											    password_reset_email_template=".user_inc/password_reset_email_template"
+											    return="user/thanks"
+											}
+											 
+											<p>
+											    <label for="email">
+											        Correo Electrónico <span class="required">*</span>
+											    </label>
+											    <input type="text" name="email" id="email" />
+											</p>
+											<p>
+											    <input type="submit" name="submit" value="Enviar" />
+											</p>
+											 
+											{/exp:user:forgot_password}											           
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+			{/if}
+{embed="includes/footer"}
