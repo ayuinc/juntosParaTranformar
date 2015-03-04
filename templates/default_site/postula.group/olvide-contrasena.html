@@ -15,36 +15,29 @@
               <div id="step-panel-1" class="step-panel step-panel-form active bg-blue-darker p-14">
                   <div class="custom-frame minh-530 pbp-14">
                     <div class="lead-ch p-ch-white">
-											{exp:member:login_form return="postula/formulario-edicion" form_name="login"}
-											<fieldset class="signin">
-				        				<div class="text-white p-42-sm">
-													<!--<h3 class="text-center mb-35">Ingresa a tu cuenta</h3>-->
-													<div class="form-group">
-													  <label class="control-label thin" for="user">Usuario</label>  
-													  <div class="">
-													  <input id="user" name="username" type="text" placeholder="" class="form-control input-md" required="">
-													  </div>
-													</div>
-													<div class="form-group">
-													  <label class="control-label thin" for="password">Contraseña</label>
-													  <div class="">
-													    <input id="password" name="password" type="password" placeholder="" class="form-control input-md" required="">
-													  </div>
-													</div>
-													<div class="form-group">
-													  <label class="control-label thin" for="submit"></label>
-													  <div class="text-center">
-													    <button class="btn btn-outline btn-xl btn-gray-lighter" type="submit">INGRESAR</button>
-													  </div>
-													</div>
-														<div class="form-group text-center">
-														  <div class="">
-														    <p>¿No tienes cuenta? <a href="{site_url}postula" class="thin" id="crea-boton">Creala aquí</a> <a href="{path='member/forgot_password'}">¿Olvidaste tu contraseña?</a></p>
-														  </div>
-														</div>
-												</div>	
-											</fieldset>
-											{/exp:member:login_form}											           
+											<h2>Forgot Password?</h2>
+											<p>
+											    Si ha olvidado su contraseña, introduce tu dirección de correo electrónico registraste y recibirás un correo electrónico con instrucciones para restablecer tu contraseña.
+											</p>
+											 
+											{exp:user:forgot_password
+											    password_reset_template="user/reset_password/%id%"
+											    password_reset_email_subject="Password Reset Request"
+											    password_reset_email_template=".user_inc/password_reset_email_template"
+											    return="user/thanks"
+											}
+											 
+											<p>
+											    <label for="email">
+											        Correo Electrónico <span class="required">*</span>
+											    </label>
+											    <input type="text" name="email" id="email" />
+											</p>
+											<p>
+											    <input type="submit" name="submit" value="Enviar" />
+											</p>
+											 
+											{/exp:user:forgot_password}											           
                     </div>
                   </div>
               </div>
