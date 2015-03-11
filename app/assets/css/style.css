@@ -3435,6 +3435,11 @@ body::-webkit-scrollbar {
   border-width: 56px;
   position: relative;
 }
+@media only screen and (max-width: 768px) {
+  .custom-frame {
+    border-width: 7px;
+  }
+}
 
 .box-share {
   position: absolute;
@@ -5269,6 +5274,7 @@ textarea {
 .textarea-wrapper:after {
   content: "Máximo 100 caracteres";
   font-size: 12px;
+  display: block;
 }
 
 header,
@@ -5282,6 +5288,15 @@ header,
   padding: 0 14px;
   min-height: 70px;
   background-color: rgba(8, 90, 107, 0.9);
+}
+@media only screen and (max-width: 768px) {
+  header,
+  .header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
 }
 header h1, header h2, header h3, header h4, header h5, header h6,
 header .h1, header .h2, header .h3, header .h4, header .h5, header .h6,
