@@ -122,6 +122,9 @@ $video-bg-height: 491px;
 	@include border-image(url(../img/frame.png) 21% repeat);
 	border-width: 56px;
 	position: relative;
+	@media #{$sm-down} {
+		border-width: 7px;
+	}
 }
 
 // BOX SHARE 
@@ -216,8 +219,9 @@ $video-bg-height: 491px;
 }
 
 
-
-
-
-
-
+// FORMS breakpoints
+.size1of2 {
+	@media #{$sm-down} {
+		float: none;
+	}
+}
