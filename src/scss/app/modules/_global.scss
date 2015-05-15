@@ -222,6 +222,7 @@ $video-bg-height: 491px;
 // FORMS breakpoints
 .size1of2 {
 	@media #{$sm-down} {
-		float: none;
+		float: none !important;
+		width: 100% !important;
 	}
 }
