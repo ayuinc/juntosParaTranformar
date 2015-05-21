@@ -332,16 +332,16 @@ module.exports = function (grunt) {
    */
   grunt.registerTask('default', [
     'coffee:dev',
-    // 'sass:ebm',
+    'sass:ebm',
     'sass:dev',
     // 'bower:dev',
     // 'autoprefixer:dev',
     // 'cssmin:dev',
     // 'jshint',
     // 'concat:dev',
-    // 'connect:livereload',
+    'connect:livereload',
     'uglify',
-    // 'open',
+    'open',
     'watch'
   ]);
 
