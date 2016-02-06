@@ -10,27 +10,22 @@
         </div>
       </div>
       <div class="container-sm">
-	      {exp:channel:entries channel="blog" limit="10"}
+	      {exp:channel:entries channel="blog" limit="1"}
 	        <div class="text-justify pb-42">
-		        <a href="{site_url}blog/interna/{url_title}">
-			        <h3 class="text-blue-light">{title}</h3>
-		        </a>
+			      <h3 class="text-blue-light">{title}</h3>
 		        <small>{entry_date format="%j de %F %Y"}</small>
 		        <div class="pv-14">
 			        {blog_imagen}
 	          	<img src="{image:url:large}" alt="{title}" width="100%">
 	          	{/blog_imagen}
 		        </div>
-	          <p class="text-gray-dark">{blog_descripcion}</p>
-	          <div class="pt-7 text-blue-light">
-	          	<a href="{site_url}blog/interna/{url_title}">Lee más →</a>
-	          </div>
+	          <div class="text-gray-dark">
+		          {blog_contenido}
+		        </div>
 	        </div>
-			    {paginate}
-						<div class="pv-35">
-				      <p>Página {current_page} de {total_pages} páginas {pagination_links}</p>
-						</div>
-			    {/paginate}        
+					<div class="pv-35">
+						<div id="disqus_thread"></div>
+					</div>       
         {/exp:channel:entries}
       </div>      
     </div>
