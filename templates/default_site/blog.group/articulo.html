@@ -1,0 +1,38 @@
+{embed="includes/head"}
+
+
+  <div class="site-content">
+    {embed="includes/header"}
+    <div class="bg-white minh-420 pv-70 normalize-text flex-middle-center">
+      <div class="container pt-70 pb-35">
+        <div class="text-center lead-ch">
+          <h1 class="light">Blog</h1>
+        </div>
+      </div>
+      <div class="container-sm">
+	      {exp:channel:entries channel="blog" limit="10"}
+	        <div class="text-justify pb-42">
+		        <a href="{site_url}blog/interna/{url_title}">
+			        <h3 class="text-blue-light">{title}</h3>
+		        </a>
+		        <small>{entry_date format="%j de %F %Y"}</small>
+		        <div class="pv-14">
+			        {blog_imagen}
+	          	<img src="{image:url:large}" alt="{title}" width="100%">
+	          	{/blog_imagen}
+		        </div>
+	          <p class="text-gray-dark">{blog_descripcion}</p>
+	          <div class="pt-7 text-blue-light">
+	          	<a href="{site_url}blog/interna/{url_title}">Lee más →</a>
+	          </div>
+	        </div>
+			    {paginate}
+						<div class="pv-35">
+				      <p>Página {current_page} de {total_pages} páginas {pagination_links}</p>
+						</div>
+			    {/paginate}        
+        {/exp:channel:entries}
+      </div>      
+    </div>
+
+{embed="includes/footer"}
