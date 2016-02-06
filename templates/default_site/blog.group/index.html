@@ -9,14 +9,17 @@
           <h1 class="light">Blog</h1>
         </div>
       </div>
-      <div class="container pv-70">
-        <div class="text-justify">
-	        <h3>Titulo del post</h3>
-	        <small>12 de Junio del 2016</small>
+      <div class="container">
+        <div class="text-justify pv-21">
+	        <h3>{title}</h3>
+	        <small>{entry_date format="%d de %m %Y"}</small>
 	        <div class="pv-35">
-          	<img src="" alt="">
+		        {blog_imagen}
+          	<img src="{image:url:large}" alt="{title}">
+          	{/blog_imagen}
 	        </div>
           <p>;lsdkf;laksdf;laks</p>
+          <a href="{site_url}blog/interna/{url_title}">Lee más →</a>
         </div>
       </div>      
     </div>
