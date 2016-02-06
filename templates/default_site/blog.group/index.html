@@ -12,7 +12,9 @@
       <div class="container-sm">
 	      {exp:channel:entries channel="blog" limit="10"}
 	        <div class="text-justify pv-21">
-		        <h3>{title}</h3>
+		        <a href="{site_url}blog/interna/{url_title}">
+			        <h3>{title}</h3>
+		        </a>
 		        <small>{entry_date format="%d de %m %Y"}</small>
 		        <div class="pv-35">
 			        {blog_imagen}
@@ -20,9 +22,7 @@
 	          	{/blog_imagen}
 		        </div>
 	          <p>{blog_descripcion}</p>
-	          <p>
-		          <a href="{site_url}blog/interna/{url_title}">Lee más →</a>
-	          </p>
+	          <a href="{site_url}blog/interna/{url_title}">Lee más →</a>
 	        </div>
 			    {paginate}
 						<div>
