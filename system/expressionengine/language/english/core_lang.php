@@ -299,71 +299,71 @@ and email %s to report the link that generated this message.',
 'PM',
 
 'Sun' =>
-'Sun',
+'Dom',
 
 'Mon' =>
-'Mon',
+'Lun',
 
 'Tue' =>
-'Tue',
+'Mar',
 
 'Wed' =>
-'Wed',
+'Mie',
 
 'Thu' =>
-'Thu',
+'Jue',
 
 'Fri' =>
-'Fri',
+'Vie',
 
 'Sat' =>
-'Sat',
+'Sab',
 
 'Su' =>
-'S',
+'D',
 
 'Mo' =>
-'M',
+'L',
 
 'Tu' =>
-'T',
+'M',
 
 'We' =>
-'W',
+'M',
 
 'Th' =>
-'T',
+'J',
 
 'Fr' =>
-'F',
+'V',
 
 'Sa' =>
 'S',
 
 'Sunday' =>
-'Sunday',
+'Domingo',
 
 'Monday' =>
-'Monday',
+'Lunes',
 
 'Tuesday' =>
-'Tuesday',
+'Martes',
 
 'Wednesday' =>
-'Wednesday',
+'Miércoles',
 
 'Thursday' =>
-'Thursday',
+'Jueves',
 
 'Friday' =>
-'Friday',
+'Viernes',
 
 'Saturday' =>
-'Saturday',
+'Sábado',
 
 
 'Jan' =>
-'Jan',
+'Ene',
 
 'Feb' =>
 'Feb',
@@ -384,7 +384,7 @@ and email %s to report the link that generated this message.',
 'Jul',
 
 'Aug' =>
-'Aug',
+'Ago',
 
 'Sep' =>
 'Sep',
@@ -396,43 +396,43 @@ and email %s to report the link that generated this message.',
 'Nov',
 
 'Dec' =>
-'Dec',
+'Dic',
 
 'January' =>
-'January',
+'Enero',
 
 'February' =>
-'February',
+'Febrero',
 
 'March' =>
-'March',
+'Marzo',
 
 'April' =>
 'April',
 
 'May_l' =>
-'May',
+'Mayo',
 
 'June' =>
-'June',
+'Junio',
 
 'July' =>
-'July',
+'Julio',
 
 'August' =>
-'August',
+'Agosto',
 
 'September' =>
-'September',
+'Septiembre',
 
 'October' =>
-'October',
+'Octubre',
 
 'November' =>
-'November',
+'Noviembre',
 
 'December' =>
-'December',
+'Dicembre',
 
 
 'UM12'		=>	'(UTC -12:00) Baker/Howland Island',
