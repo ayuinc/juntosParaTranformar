@@ -4501,5 +4501,9 @@ div.cronograma {
 .blog-contenido p {
   padding-bottom: 14px;
   color: #333333; }
+.blog-contenido blockquote {
+  padding: 21px;
+  font-size: 18px;
+  color: #555555; }
 
 /*# sourceMappingURL=style.css.map */
