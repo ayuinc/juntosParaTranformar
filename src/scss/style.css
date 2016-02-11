@@ -4502,8 +4502,9 @@ div.cronograma {
   padding-bottom: 14px;
   color: #333333; }
 .blog-contenido blockquote {
+  margin-top: 35px;
   padding: 21px;
   font-size: 18px;
-  color: #555555; }
+  color: #777777; }
 
 /*# sourceMappingURL=style.css.map */
