@@ -4498,6 +4498,16 @@ div.papa-contenedor:hover .descripcion-categoria {
 div.cronograma {
   padding: 14px 56px; }
 
+.blog-contenido h1 {
+  padding-bottom: 14px; }
+.blog-contenido h2 {
+  padding-bottom: 14px; }
+.blog-contenido h3 {
+  padding-bottom: 14px; }
+.blog-contenido h4 {
+  padding-bottom: 7px; }
+.blog-contenido h5 {
+  padding-bottom: 7px; }
 .blog-contenido p {
   padding-bottom: 14px;
   color: #333333; }
