@@ -15,12 +15,26 @@
 			      <h3 class="text-blue-light">{title}</h3>
 		        <small class="text-gray-dark">{entry_date format="%j de %F, %Y"}</small>
 		        <div class="pv-14">
-			        {blog_imagen}
-	          	<img src="{image:url:large}" alt="{title}" width="100%">
-	          	{/blog_imagen}
+			        {if blog_video!=''}
+			        	<iframe width="720" height="380" src="https://www.youtube.com/embed/{blog_video}?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+			        {if:else}
+				        {blog_imagen}
+		          	<img src="{image:url:large}" alt="{title}" width="100%">
+		          	{/blog_imagen}
+	          	{/if}
 		        </div>
 	          <div class="text-gray-dark blog-contenido">
 		          {blog_contenido}
+		        </div>
+		        <div class="row">
+			        {autor}
+			        <div class="col-sm-1">
+				        <img="{autor_autor_imagen}" width="100%">
+			        </div>
+			        <div class="col-sm-11">
+				        {autor_title}
+			        </div>
+			        {/autor}
 		        </div>
 	        </div>
 					<div class="pv-35">
