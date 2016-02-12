@@ -12,16 +12,13 @@
             <h3 class="light step-wizard-instructions">Postula en <span class="h1">2</span> simples pasos</h3>
           </div>
           <div id="progress-wizard">
-            <!-- Step Counters -->
 						{embed="postula/step-counters"}
-            <!-- Step panels -->
             <div class="step-panels">
               <div id="step-panel-1" class="step-panel step-panel-form active bg-blue-darker p-14">
                   <div class="custom-frame minh-630 pbp-14">
                     <div class="text-center lead-ch p-ch-white">
 	                    {exp:channel:entries channel="postula"}
                       <h1 class="text-blue-light pv-42">Crea una cuenta<br><span class="unlead">¿Ya tienes cuenta?</span> <a href="{site_url}postula/ingresa" class="unlead underline">Edita tu postulación</a> <a href="{path='member/forgot_password'}" class="unlead underline">¿Olvidaste tu contraseña?</a></h1>
-                      <!--<h4 class="text-center text-white">Bases de postulación</h4>-->
                       <p>{intro_bases_de_postulacion}</p>
                       {/exp:channel:entries}
                     </div>
