@@ -15,20 +15,20 @@
       <div class="row">
         <div class="col-sm-12 minh-70 flex-middle">
           <nav class="text-white text-right pv-14 ml-ch-7">
-            <a href="{site_url}">Sobre las becas</a>
+            <a href="{site_url}">Home</a>
             <span class="text-white">|</span>
-            <a href="{site_url}beca">Becas</a>
+            <a href="{site_url}beca">Sobre las becas</a>
             <span class="text-white">|</span>
             <a href="{site_url}jurado">Jurado</a>
             <span class="text-white">|</span>
             {if segment_1==""}
-            <a href="#becarios">Beneficiarios</a>
+            <a href="#becarios">Becarios</a>
             {if:else}
-            <a href="{site_url}beca/becarios">Beneficiarios</a>
+            <a href="{site_url}beca/becarios">Becarios</a>
             {/if}
             {if logged_in}
-            <span class="text-white">|</span>
-            <a href="{site_url}postula/ingresa">Postulación</a>
+            <!-- <span class="text-white">|</span>
+            <a href="{site_url}postula/ingresa">Postulación</a> -->
             {/if}
           </nav>
         </div>
