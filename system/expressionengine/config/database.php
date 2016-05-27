@@ -5,8 +5,8 @@ $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
 $db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = '';
-$db['expressionengine']['database'] = 'juntosparatransformar';
+$db['expressionengine']['password'] = 'HdmB37b0';
+$db['expressionengine']['database'] = 'juntos_db';
 $db['expressionengine']['dbdriver'] = 'mysql';
 $db['expressionengine']['pconnect'] = FALSE;
 $db['expressionengine']['dbprefix'] = 'exp_';
