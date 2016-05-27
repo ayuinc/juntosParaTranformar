@@ -1,7 +1,6 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 define('SITE_NAME', 'becas');
-
-$base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+base_url = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
 $base_url .= "://".$_SERVER['HTTP_HOST'].'/'.SITE_NAME.'/';
 //$base_url .= "://".$_SERVER['HTTP_HOST'].'/';
 $admin_url  = $base_url . '/admin.php';
@@ -216,4 +215,8 @@ $config['rewrite_short_tags'] = TRUE;
 /* Location: ./system/expressionengine/config/config.php */
 
 $config['email_newline'] = "\r\n"; 
+<<<<<<< HEAD
 $config['email_crlf'] = "\r\n";
+=======
+$config['email_crlf'] = "\r\n";
+>>>>>>> master
