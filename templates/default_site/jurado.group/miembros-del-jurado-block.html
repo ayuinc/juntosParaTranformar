@@ -15,6 +15,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -30,6 +31,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -45,6 +47,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -60,6 +63,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -76,7 +80,24 @@
 </div>
 	<div class="minhp-70 clearfix jurado-blocks">
 {exp:channel:entries channel="miembros_del_jurado" category="5" limit="10" dynamic="off"}
-		{if absolute_results == 1}
+			{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-3 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="lead-ch jurado-block">
+	          <div class="jurado-title">
+		          <h3 style="font-size: 22px !important;">{title}</h3>
+		         </div>
+		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
+		         		<p class="unlead">{resena_del_juez}</p>
+		         </div>
+	        </div>
+	      </div>
+	    </div>
+
+
+		<!--{if absolute_results == 1}
 			{imagen_miembro_del_jurado limit="1"}
 			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
 			{/imagen_miembro_del_jurado}
@@ -86,6 +107,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -101,6 +123,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -116,12 +139,13 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
 	      </div>
 	    </div>
-		{/if}
+		{/if}-->
 {/exp:channel:entries}
 	</div>
 
@@ -142,6 +166,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -157,6 +182,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -172,6 +198,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -198,6 +225,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -228,6 +256,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -254,6 +283,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -269,6 +299,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -284,6 +315,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -310,6 +342,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -325,6 +358,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
@@ -340,6 +374,7 @@
 		          <h3 style="font-size: 22px !important;">{title}</h3>
 		         </div>
 		         <div class="jurado-description text-left ph-21">
+			          <h4 class="light pv-7">{titulo_del_juez}</h4>
 		         		<p class="unlead">{resena_del_juez}</p>
 		         </div>
 	        </div>
