@@ -79,7 +79,7 @@
   </div>
 </div>
 	<div class="minhp-70 clearfix jurado-blocks">
-{exp:channel:entries channel="miembros_del_jurado" category="5" limit="10" dynamic="off"}
+		{exp:channel:entries channel="miembros_del_jurado" category="5" limit="10" dynamic="off"}
 			{imagen_miembro_del_jurado limit="1"}
 			<div class="col-sm-3 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
 			{/imagen_miembro_del_jurado}
@@ -95,58 +95,7 @@
 	        </div>
 	      </div>
 	    </div>
-
-
-		<!--{if absolute_results == 1}
-			{imagen_miembro_del_jurado limit="1"}
-			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
-			{/imagen_miembro_del_jurado}
-	      <div class="overlay flex-middle-end text-center text-white">
-	        <div class="lead-ch jurado-block">
-	          <div class="jurado-title">
-		          <h3 style="font-size: 22px !important;">{title}</h3>
-		         </div>
-		         <div class="jurado-description text-left ph-21">
-			          <p class="medium unlead">{titulo_del_juez}</p>
-		         		<p class="unlead">{resena_del_juez}</p>
-		         </div>
-	        </div>
-	      </div>
-	    </div>
-		{if:elseif absolute_results == 2}
-			{imagen_miembro_del_jurado limit="1"}
-			<div class="col-sm-6 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
-			{/imagen_miembro_del_jurado}
-	      <div class="overlay flex-middle-end text-center text-white">
-	        <div class="lead-ch jurado-block">
-	          <div class="jurado-title">
-		          <h3 style="font-size: 22px !important;">{title}</h3>
-		         </div>
-		         <div class="jurado-description text-left ph-21">
-			          <p class="medium unlead">{titulo_del_juez}</p>
-		         		<p class="unlead">{resena_del_juez}</p>
-		         </div>
-	        </div>
-	      </div>
-	    </div>
-		{if:else}
-			{imagen_miembro_del_jurado limit="1"}
-			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
-			{/imagen_miembro_del_jurado}
-	      <div class="overlay flex-middle-end text-center text-white">
-	        <div class="lead-ch jurado-block">
-	          <div class="jurado-title">
-		          <h3 style="font-size: 22px !important;">{title}</h3>
-		         </div>
-		         <div class="jurado-description text-left ph-21">
-			          <p class="medium unlead">{titulo_del_juez}</p>
-		         		<p class="unlead">{resena_del_juez}</p>
-		         </div>
-	        </div>
-	      </div>
-	    </div>
-		{/if}-->
-{/exp:channel:entries}
+		{/exp:channel:entries}
 	</div>
 
 <div class="pv-70 normalize-text text-center text-blue-light">
@@ -330,8 +279,8 @@
     <h3 class="lead"><em>Categoría Sommelier</em></h3>
   </div>
 </div>
-	<div class="minhp-70 clearfix jurado-blocks">
-{exp:channel:entries channel="miembros_del_jurado" category="9" limit="10" dynamic="off"}
+<div class="minhp-70 clearfix jurado-blocks">
+	{exp:channel:entries channel="miembros_del_jurado" category="9" limit="10" dynamic="off"}
 		{if absolute_results == 1}
 			{imagen_miembro_del_jurado limit="1"}
 			<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
@@ -381,5 +330,108 @@
 	      </div>
 	    </div>
 		{/if}
-{/exp:channel:entries}
-	</div>
+	{/exp:channel:entries}
+</div>
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h3 class="lead"><em>Jurados del Programa de Becas 2015</em></h3>
+  </div>
+</div>
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h4 class="lead">Cocina</h4>
+  </div>
+</div>
+<div class="minhp-70 clearfix jurado-blocks">
+	{exp:channel:entries channel="miembros_del_jurado" category="11" limit="11" dynamic="off"}
+		{imagen_miembro_del_jurado limit="1"}
+		<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+		{/imagen_miembro_del_jurado}
+      <div class="overlay flex-middle-end text-center text-white">
+        <div class="lead-ch jurado-block">
+          <div class="jurado-title">
+	          <h3 style="font-size: 22px !important;">{title}</h3>
+	         </div>
+	         <div class="jurado-description text-left ph-21">
+		          <p class="medium unlead">{titulo_del_juez}</p>
+	         		<p class="unlead">{resena_del_juez}</p>
+	         </div>
+        </div>
+      </div>
+    </div>
+	{/exp:channel:entries}
+</div>
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h4 class="lead">Pastelería</h4>
+  </div>
+</div>
+<div class="minhp-70 clearfix jurado-blocks">
+	{exp:channel:entries channel="miembros_del_jurado" category="12" limit="12" dynamic="off"}
+		{imagen_miembro_del_jurado limit="1"}
+		<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+		{/imagen_miembro_del_jurado}
+      <div class="overlay flex-middle-end text-center text-white">
+        <div class="lead-ch jurado-block">
+          <div class="jurado-title">
+	          <h3 style="font-size: 22px !important;">{title}</h3>
+	         </div>
+	         <div class="jurado-description text-left ph-21">
+		          <p class="medium unlead">{titulo_del_juez}</p>
+	         		<p class="unlead">{resena_del_juez}</p>
+	         </div>
+        </div>
+      </div>
+    </div>
+	{/exp:channel:entries}
+</div>
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h4 class="lead">Bar</h4>
+  </div>
+</div>
+<div class="minhp-70 clearfix jurado-blocks">
+	{exp:channel:entries channel="miembros_del_jurado" category="13" limit="12" dynamic="off"}
+		{imagen_miembro_del_jurado limit="1"}
+		<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+		{/imagen_miembro_del_jurado}
+      <div class="overlay flex-middle-end text-center text-white">
+        <div class="lead-ch jurado-block">
+          <div class="jurado-title">
+	          <h3 style="font-size: 22px !important;">{title}</h3>
+	         </div>
+	         <div class="jurado-description text-left ph-21">
+		          <p class="medium unlead">{titulo_del_juez}</p>
+	         		<p class="unlead">{resena_del_juez}</p>
+	         </div>
+        </div>
+      </div>
+    </div>
+	{/exp:channel:entries}
+</div>
+<div class="pv-70 normalize-text text-center text-blue-light">
+  <div class="container">
+    <h4 class="lead">Sommelier</h4>
+  </div>
+</div>
+<div class="minhp-70 clearfix jurado-blocks">
+	{exp:channel:entries channel="miembros_del_jurado" category="14" limit="12" dynamic="off"}
+		{imagen_miembro_del_jurado limit="1"}
+		<div class="col-sm-12 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+		{/imagen_miembro_del_jurado}
+      <div class="overlay flex-middle-end text-center text-white">
+        <div class="lead-ch jurado-block">
+          <div class="jurado-title">
+	          <h3 style="font-size: 22px !important;">{title}</h3>
+	         </div>
+	         <div class="jurado-description text-left ph-21">
+		          <p class="medium unlead">{titulo_del_juez}</p>
+	         		<p class="unlead">{resena_del_juez}</p>
+	         </div>
+        </div>
+      </div>
+    </div>
+	{/exp:channel:entries}
+</div>
+
+
