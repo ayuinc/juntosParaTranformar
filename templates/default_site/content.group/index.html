@@ -1,46 +1,46 @@
 {embed="includes/head"}
 
-  {exp:channel:entries channel="home"}
+{exp:channel:entries channel="home"}
 
-  <div class="hero-unit minhp-100 video-bg">
-    {embed="includes/header"}
-    <video
-      id="videocover"
-      autoplay
-      loop
-      class="video-js videocover vjs-default-skin"
-      controls="false"
-      muted
-      preload="auto">
-        <source src="{site_url}app/assets/video/MAKING_V3_NO_AUDIO.mp4" type="video/mp4">
-        <source src="{site_url}app/assets/video/MAKING_V3_NO_AUDIO.ogv" type="video/ogv">
-        <source src="{site_url}app/assets/video/MAKING_V3_NO_AUDIO.webmhd.webm" type="video/webm">
+<div class="hero-unit minhp-100 video-bg">
+  {embed="includes/header"}
+  <video
+  id="videocover"
+  autoplay
+  loop
+  class="video-js videocover vjs-default-skin"
+  controls="false"
+  muted
+  preload="auto">
+  <source src="{site_url}app/assets/video/MAKING_V3_NO_AUDIO.mp4" type="video/mp4">
+    <source src="{site_url}app/assets/video/MAKING_V3_NO_AUDIO.ogv" type="video/ogv">
+      <source src="{site_url}app/assets/video/MAKING_V3_NO_AUDIO.webmhd.webm" type="video/webm">
         <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
-    </video>
-    <div class="video-overlay flex-middle-end text-white">
-      <div class="container-sm pt-70 text-center mb-ch-35 hero-text-shadow on-scroll relative pb-28-sm ph-70-sm">
-        <div>
-          <h1 class="mb-7 pt-49 lead">Gastón Acurio<br> &amp; Telefónica</h1>
-          <h3 class="m-0 p-0">Juntos para transformar</h3>
-        </div>
-        <p class="lead light">{intro_home}</p>
+      </video>
+      <div class="video-overlay flex-middle-end text-white">
+        <div class="container-sm pt-70 text-center mb-ch-35 hero-text-shadow on-scroll relative pb-28-sm ph-70-sm">
+          <div>
+            <h1 class="mb-7 pt-49 lead">Gastón Acurio<br> &amp; Telefónica</h1>
+            <h3 class="m-0 p-0">Juntos para transformar</h3>
+          </div>
+          <p class="lead light">{intro_home}</p>
 
-        <div class="pv-21 flex-middle-center">
-          <a id="videoTrigger-home" class="tcon tcon-vid--play tcon-vid--play-home sublime" role="button" aria-label="play video" href="#vxjQJom5Q7E" data-youtube-id="vxjQJom5Q7E">
+          <div class="pv-21 flex-middle-center">
+            <a id="videoTrigger-home" class="tcon tcon-vid--play tcon-vid--play-home sublime" role="button" aria-label="play video" href="#vxjQJom5Q7E" data-youtube-id="vxjQJom5Q7E">
 
-          <span class="tcon-visuallyhidden">play video</span>
-        </a>
-        <video id="vxjQJom5Q7E" 
-              width="768" 
-              height="560"
-              style="display:none" 
-              data-uid="vxjQJom5Q7E" 
-              data-youtube-id="vxjQJom5Q7E" 
-              preload="none">
-        </video>
-        <script>
-          $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger-home');$('.tcon-vid--play-home').click(function(e){lbx.open();});sublime('videoTrigger-home').on('didClose', function(lbx) {$('.tcon-vid--play-home').removeClass('tcon-transform');});});});
-        </script>
+              <span class="tcon-visuallyhidden">play video</span>
+            </a>
+            <video id="vxjQJom5Q7E" 
+            width="768" 
+            height="560"
+            style="display:none" 
+            data-uid="vxjQJom5Q7E" 
+            data-youtube-id="vxjQJom5Q7E" 
+            preload="none">
+          </video>
+          <script>
+            $(document).ready(function(){sublime.ready(function(){var lbx = sublime.lightbox('videoTrigger-home');$('.tcon-vid--play-home').click(function(e){lbx.open();});sublime('videoTrigger-home').on('didClose', function(lbx) {$('.tcon-vid--play-home').removeClass('tcon-transform');});});});
+          </script>
         </div>
         <div class="">
           <a href="#content" class="h1 light" rel="nofollow">&or;</a>
@@ -84,7 +84,7 @@
             </div>
             {imagen_conoce_a_los_becarios limit="1"}
             <div class="col-sm-6 minh-420 bg-img-block flex-middle-center text-center" style="background-image: url({image:url})" data-href="{site_url}beca/becarios">
-            {/imagen_conoce_a_los_becarios}
+              {/imagen_conoce_a_los_becarios}
             </div>
           </div>
           <div class="clearfix p-ch-0 normalize-text">
@@ -110,24 +110,24 @@
       <div class="container-fluid pv-21">
         <div class="custom-frame text-white minh-140 flex-middle-center">
           <div class="container text-center pv-70 lead-ch">
-	          <h3 class="custom-quotes">{home_titulo_mas_sobre_la_alianza}</h3>
-            <p class="pv-42">{home_mas_sobre_la_alianza}</p>
-            <a href="http://juntosparatransformarperu.com/" target="_blank" class="btn btn-outline btn-xl btn-gray-lighter unlead"> Más sobre la alianza</a>
-          </div>
-        </div>
+           <h3 class="custom-quotes">{home_titulo_mas_sobre_la_alianza}</h3>
+           <p class="pv-42">{home_mas_sobre_la_alianza}</p>
+           <a href="http://juntosparatransformarperu.com/" target="_blank" class="btn btn-outline btn-xl btn-gray-lighter unlead"> Más sobre la alianza</a>
+         </div>
+       </div>
+     </div>
+   </div>
+   <div class="bg-white pv-70 minhp-100 flex-middle-center">
+    <div class="container">
+      <div class="lead-ch normalize-text text-center mb-42">
+        <h3>Aliados</h3>
+        <h1><em>Juntos para transformar</em></h1>
+        <p class="pv-21 light">{home_aliados}</p>
       </div>
+      {embed="includes/aliados"}
     </div>
-    <div class="bg-white pv-70 minhp-100 flex-middle-center">
-      <div class="container">
-        <div class="lead-ch normalize-text text-center mb-42">
-          <h3>Aliados</h3>
-          <h1><em>Juntos para transformar</em></h1>
-          <p class="pv-21 light">{home_aliados}</p>
-        </div>
-        {embed="includes/aliados"}
-      </div>
-    </div>
+  </div>
 
   {/exp:channel:entries}
 
-{embed="includes/footer"}
+  {embed="includes/footer"}
