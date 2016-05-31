@@ -21,14 +21,14 @@
             <span class="text-white">|</span>
             <a href="{site_url}jurado">Jurado</a>
             <span class="text-white">|</span>
-            {if segment_1==""}
+            {if segment_1=="" OR segment_1=="content"}
             <a href="#becarios">Becarios</a>
             {if:else}
             <a href="{site_url}beca/becarios">Becarios</a>
             {/if}
             {if logged_in}
-            <!-- <span class="text-white">|</span>
-            <a href="{site_url}postula/ingresa">Postulación</a> -->
+            <span class="text-white">|</span>
+            <a href="{site_url}postula/ingresa">Postulación</a>
             {/if}
           </nav>
         </div>
