@@ -67,3 +67,8 @@
 
 
 @import "app/app"; 
+.oculto-xs>div>div>div>nav>a{
+  display: block !important;
+  height: auto;
+}
+

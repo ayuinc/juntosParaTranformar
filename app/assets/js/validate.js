@@ -47,3 +47,10 @@ $(document).ready(function() {
     });
 
 });
+
+$(document).ready(function() {
+  $(".menu-oculto-xs").click(function(e) {
+    e.preventDefault();
+    $(".oculto-xs").toggle();
+  });
+});
