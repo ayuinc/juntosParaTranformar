@@ -29,6 +29,9 @@
             {if logged_in}
             <span class="text-white">|</span>
             <a href="{site_url}postula/ingresa">Postulación</a>
+            {if:else}
+            <span class="text-white">|</span>
+            <a href="{site_url}postula/">Postula</a>
             {/if}
           </nav>
         </div>
@@ -57,7 +60,10 @@
                 {if logged_in}
                 <span class="text-white">|</span>
                 <a href="{site_url}postula/ingresa">Postulación</a>
-                {/if}
+		            {if:else}
+		            <span class="text-white">|</span>
+		            <a href="{site_url}postula/">Postula</a>
+		            {/if}
               </nav>
             </div>
           </div>
