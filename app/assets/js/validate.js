@@ -41,3 +41,6 @@ $(document).ready(function() {
     $(".oculto-xs").toggle();
   });
 });
+
+
+$('freeform_fecha_de_nacimiento').attr('type'="date");
