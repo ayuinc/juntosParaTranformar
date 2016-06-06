@@ -31,7 +31,7 @@ $(document).ready(function() {
       $("form>div.ff_composer>div:nth-child(5)").addClass("hidden");
     });
     $("#freeform_categoria_de_postulacion_1").click(function(){
-      $("form>div.ff_composer>div:nth-child(5)").adClass("hidden");
+      $("form>div.ff_composer>div:nth-child(5)").addClass("hidden");
     });
 });
 
