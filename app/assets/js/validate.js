@@ -43,4 +43,4 @@ $(document).ready(function() {
 });
 
 
-$('freeform_fecha_de_nacimiento').attr('type'="date");
+$('freeform_fecha_de_nacimiento').attr('type',"date");
