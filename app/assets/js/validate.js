@@ -24,28 +24,9 @@ $("button").click(function(){
     $("p").removeClass("intro");
 });
 $(document).ready(function() {
-    $("#freeform_categoria_de_postulacion_1").click(function(){
-      $("form>div.ff_composer>div:nth-child(5)").removeClass("hidden");
-    });
-    $("#freeform_categoria_de_postulacion_2").click(function(){
-      $("form>div.ff_composer>div:nth-child(5)").removeClass("hidden");
-    });
     $("#freeform_categoria_de_postulacion_3").click(function(){
       $("form>div.ff_composer>div:nth-child(5)").removeClass("hidden");
     });
-    $("#freeform_con_1").click(function(){
-      $("form>div.ff_composer>div:nth-child(6)").removeClass("hidden");
-    });
-    $("#freeform_con_1").click(function(){
-      $("form>div.ff_composer>div:nth-child(7)").removeClass("hidden");
-    });
-    $("#freeform_con_2").click(function(){
-      $("form>div.ff_composer>div:nth-child(7)").addClass("hidden");
-    });
-    $("#freeform_con_2").click(function(){
-      $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
-    });
-
 });
 
 $(document).ready(function() {
