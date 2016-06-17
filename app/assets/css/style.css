@@ -5279,7 +5279,7 @@ textarea {
 }
 
 .textarea-wrapper:after {
-  content: "M├íximo 100 caracteres";
+  content: "Maíximo 100 caracteres";
   font-size: 12px;
   display: block;
 }
