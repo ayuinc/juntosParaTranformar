@@ -142,9 +142,25 @@
 	        </div>
 	      </div>
 	    </div>
-		{if:else}
+		{if:elseif absolute_results == 3}
 			{imagen_miembro_del_jurado limit="1"}
 			<div class="col-sm-4 relative bg-img-block-top minh-630" style="background-image: url({image:url:large})">
+			{/imagen_miembro_del_jurado}
+	      <div class="overlay flex-middle-end text-center text-white">
+	        <div class="lead-ch jurado-block">
+	          <div class="jurado-title">
+		          <h3 style="font-size: 22px !important;">{title}</h3>
+		         </div>
+		         <div class="jurado-description text-left ph-21">
+			          <p class="medium unlead">{titulo_del_juez}</p>
+		         		<p class="unlead">{resena_del_juez}</p>
+		         </div>
+	        </div>
+	      </div>
+	    </div>
+	  {if:elseif absolute_results == 4}
+	  	{imagen_miembro_del_jurado limit="1"}
+			<div class="col-sm-3 relative bg-img-block-top bg-img-block-center-x minh-630" style="background-image: url({image:url:large})">
 			{/imagen_miembro_del_jurado}
 	      <div class="overlay flex-middle-end text-center text-white">
 	        <div class="lead-ch jurado-block">
