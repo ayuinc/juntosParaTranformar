@@ -49,3 +49,15 @@ $('#freeform_logros_exp').attr('maxlength', '100').parent().addClass('textarea-w
 $('#freeform_que_otra_beca_pasantia_has_ganado_y_en_que_ano').attr('maxlength', '100').parent().addClass('textarea-wrapper');
 $('#freeform_en_que_pais_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_paises_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
 $('#freeform_en_que_restaurante_establecimiento_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_lugares_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
+
+$('ff_composer').bind('change keyup', function() {
+
+    if($(this).validate().checkForm()) {
+
+        $('#unit size1of1').attr('disabled', false);
+
+    } else {
+
+        $('#unit size1of1').attr('disabled', true);
+
+    } });
