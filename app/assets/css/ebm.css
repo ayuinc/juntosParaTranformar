@@ -25,14 +25,21 @@
 /*========================================
 =          GLOBAL SUFIX DEFINITION      =
 ========================================*/
-div.text-white.light.clearfix.bg-blue-light.normalize-text:first-child {
-margin-left:0px!important;
-margin-right:0px!important;
-}
 .container-fluid {
   width: 100%;
 }
 
+/* 
+
+  Description: EBM or Easy Box Model allows you to easily edit your UI box model margins and paddings 
+  through the browser inspector "elements" tab and make your elements fit on their parent container without
+  recurring to your CSS too often.
+  
+  Author: @MadeByGus
+  Version: 0.5
+  GitHub: https://github.com/netpoe/EBM.git
+
+*/
 .p-0 {
   padding: 0px !important;
   padding: 0rem !important;
