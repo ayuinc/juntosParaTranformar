@@ -24,7 +24,7 @@ $("button").click(function(){
     $("p").removeClass("intro");
 });
 $(document).ready(function() {
-    $(".unit size1of1>p>input").addClass("hidden");
+    $(".line:nth-child(17)").addClass("hidden");
     $("#freeform_categoria_de_postulacion_3").click(function(){
       $("form>div.ff_composer>div:nth-child(5)").removeClass("hidden");
     });
@@ -35,7 +35,7 @@ $(document).ready(function() {
       $("form>div.ff_composer>div:nth-child(5)").addClass("hidden");
     });
     $("#freeform_acepto").click(function(){
-      $(".unit size1of1>p>input").removeClass("hidden");
+      $(".line:nth-child(17)").removeClass("hidden");
     });
 });
 
