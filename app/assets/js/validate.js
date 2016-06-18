@@ -24,7 +24,7 @@ $("button").click(function(){
     $("p").removeClass("intro");
 });
 $(document).ready(function() {
-		$("#freeform_acepto").checked;
+    $(".line:nth-child(17)").hide();
     $("#freeform_categoria_de_postulacion_3").click(function(){
       $("form>div.ff_composer>div:nth-child(5)").removeClass("hidden");
     });
