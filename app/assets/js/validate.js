@@ -52,7 +52,11 @@ $(document).ready(function() {
            $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');
      }
      $("#freeform_acepto_terminos_y_condiciones").click(function(){
-      ($("#freeform_acepto_terminos_y_condiciones").attr('value') ==='y')? $('input[name="acepto_terminos_y_condiciones"]').attr('value', ''): $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');
+      if ($("#freeform_acepto_terminos_y_condiciones").attr('value') ==='y') {
+        $('input[name="acepto_terminos_y_condiciones"]').attr('value', '');
+        $('input[name="acepto_terminos_y_condiciones"]').attr('checked', "");
+      }else {
+        $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');}
      });
 });
 
