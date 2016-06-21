@@ -46,7 +46,7 @@ $(document).ready(function() {
        $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
      });
     
-     if ($("#freeform_acepto_terminos_y_condiciones").attr('checked') === "checked"){
+     if ($("#freeform_acepto_terminos_y_condiciones").attr('checked') !== "checked"){
            $('input[name="acepto_terminos_y_condiciones"]').attr('value', '');
      }
      $("#freeform_acepto_terminos_y_condiciones").click(function(){
