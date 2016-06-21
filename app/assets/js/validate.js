@@ -47,6 +47,9 @@ $(document).ready(function() {
      });
     
      $('input[name="acepto_terminos_y_condiciones"]').attr('value', '');
+     $("#freeform_acepto_terminos_y_condiciones").click(function(){
+      $('input[name="acepto_terminos_y_condiciones"]').attr('value') ==='y')? $('input[name="acepto_terminos_y_condiciones"]').attr('value', ''): $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');
+     });
 });
 
 $(document).ready(function() {
