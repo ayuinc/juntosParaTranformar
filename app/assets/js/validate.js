@@ -45,6 +45,7 @@ $(document).ready(function() {
      $("#freeform_con_2").click(function(){
        $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
      });
+     $('#freeform_acepto>input')attr('value',"")
 });
 
 $(document).ready(function() {
