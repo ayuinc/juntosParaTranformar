@@ -706,7 +706,7 @@ We reserve the right to remove, edit, or move any messages for any reason.',
 'I agree to the terms of service',
 
 'mbr_terms_of_service_required' =>
-'Debe hacer clic en la casilla de verificación " de acuerdo con los términos de servicio ',
+'Debe hacer clic en la casilla de verificación " He leido y acepto las condiciones ',
 
 'mbr_emails_not_match' =>
 'The provided emails do not match',
