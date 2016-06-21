@@ -45,8 +45,8 @@ $(document).ready(function() {
      $("#freeform_con_2").click(function(){
        $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
      });
-     $('#freeform_acepto>input:nth-child(1)')attr('value',"");
-     $('#freeform_acepto>input:nth-child(2)')attr('value',"");
+     $('.unit size1of1>p>input:nth-child(1)')attr('value',"");
+     $('.unit size1of1>p>input:nth-child(2)')attr('value',"");
 });
 
 $(document).ready(function() {
