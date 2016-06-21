@@ -55,6 +55,7 @@ $(document).ready(function() {
 });
 
 $('#freeform_acepto>input')attr('value',"")
+
 $('#freeform_fecha_de_nacimiento,#freeform_fecha_de_inicio_dd-mm-yyyy,#freeform_fecha_de_termino_dd-mm-yyyy,#freeform_fecha_de_inicio,#freeform_fecha_de_termino_a_la_actualidad,#freeform_fecha_de_inicio_exp,#freeform_fecha_de_termino_a_la_actualidad_exp').attr('type',"date");
 
 $('#freeform_logros').attr('maxlength', '100').parent().addClass('textarea-wrapper');
@@ -64,3 +65,4 @@ $('#freeform_en_que_pais_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_paise
 $('#freeform_en_que_restaurante_establecimiento_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_lugares_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
 $("unit size1of1").addClass("hidden");
 
+$('#freeform_acepto>input')attr('value',"")
