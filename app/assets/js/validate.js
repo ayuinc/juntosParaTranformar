@@ -46,7 +46,9 @@ $(document).ready(function() {
        $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
      });
     
-     $('input[name="acepto_terminos_y_condiciones"]').attr('value', '');
+     if ($("#freeform_acepto_terminos_y_condiciones").attr('checked') !== "checked"){
+           $('input[name="acepto_terminos_y_condiciones"]').attr('value', '');
+     }
      $("#freeform_acepto_terminos_y_condiciones").click(function(){
       ($('input[name="acepto_terminos_y_condiciones"]').attr('value') ==='y')? $('input[name="acepto_terminos_y_condiciones"]').attr('value', ''): $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');
      });
