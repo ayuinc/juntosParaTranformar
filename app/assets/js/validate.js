@@ -38,6 +38,18 @@ $(document).ready(function() {
     $("#freeform_acepto").click(function(){
       $(".line:nth-child(17)").toggle();
     });
+     $("#freeform_con_1").click(function(){
+      $("form>div.ff_composer>div:nth-child(6)").removeClass("hidden");
+     });
+     $("#freeform_con_1").click(function(){
+       $("form>div.ff_composer>div:nth-child(7)").removeClass("hidden");
+     });
+     $("#freeform_con_2").click(function(){
+       $("form>div.ff_composer>div:nth-child(7)").addClass("hidden");
+     });
+     $("#freeform_con_2").click(function(){
+       $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
+     });
 });
 
 $(document).ready(function() {
