@@ -54,7 +54,7 @@ $(document).ready(function() {
   });
 });
 
-$('#freeform_acepto')attr('value',"")
+$('#freeform_acepto>#freeform_acepto')attr('value',"")
 $('#freeform_fecha_de_nacimiento,#freeform_fecha_de_inicio_dd-mm-yyyy,#freeform_fecha_de_termino_dd-mm-yyyy,#freeform_fecha_de_inicio,#freeform_fecha_de_termino_a_la_actualidad,#freeform_fecha_de_inicio_exp,#freeform_fecha_de_termino_a_la_actualidad_exp').attr('type',"date");
 
 $('#freeform_logros').attr('maxlength', '100').parent().addClass('textarea-wrapper');
