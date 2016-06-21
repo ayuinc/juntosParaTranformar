@@ -1,4 +1,5 @@
 {exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id='{embed:miembro}'"}
+  {entry_id}
 	{if entry_id!=''}
 	{exp:freeform:composer_edit
 	    entry_id="{entry_id}"
@@ -7,6 +8,6 @@
 	    return="postula/gracias"
 	}			
 	{if:else}
-		{redirect='postula/formulario'}cc
+		{redirect='postula/formulario'}
 	{/if}
 {/exp:query}
