@@ -47,6 +47,7 @@ $(document).ready(function() {
      });
      $('#freeform_acepto_terminos_y_condiciones>p>input:nth-child(1)')attr('value',"");
      $('#freeform_acepto_terminos_y_condiciones>p>input:nth-child(2)')attr('value',"");
+     $('#freeform_acepto_terminos_y_condiciones>p>input:nth-child(1)')setAttribute('value',"");
 });
 
 $(document).ready(function() {
