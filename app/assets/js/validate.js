@@ -45,8 +45,8 @@ $(document).ready(function() {
      $("#freeform_con_2").click(function(){
        $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
      });
-     $("#freeform_acepto_terminos_y_condiciones").attr("value","");
-     $("#freeform_acepto_terminos_y_condiciones").setAttribute('value', '');
+    
+     $("#freeform_acepto_terminos_y_condiciones").atrr('value', 'hola');
 });
 
 $(document).ready(function() {
