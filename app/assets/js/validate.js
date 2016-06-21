@@ -34,10 +34,6 @@ $(document).ready(function() {
     $("#freeform_categoria_de_postulacion_1").click(function(){
       $("form>div.ff_composer>div:nth-child(5)").addClass("hidden");
     });
-
-    $("#freeform_acepto").click(function(){
-      $(".line:nth-child(17)").toggle();
-    });
      $("#freeform_con_1").click(function(){
       $("form>div.ff_composer>div:nth-child(6)").removeClass("hidden");
      });
