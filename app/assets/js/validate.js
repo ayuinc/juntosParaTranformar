@@ -46,7 +46,7 @@ $(document).ready(function() {
        $("form>div.ff_composer>div:nth-child(6)").addClass("hidden");
      });
      $('#freeform_acepto_terminos_y_condiciones>p>input:nth-child(2)')attr('value',"");
-     $('#freeform_acepto_terminos_y_condiciones>p>input:nth-child(1)')getAttribute('value',"");
+     $('#freeform_acepto_terminos_y_condiciones>p>input:nth-child(1)')removeAttr('value',"");
 });
 
 $(document).ready(function() {
