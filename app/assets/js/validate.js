@@ -48,6 +48,8 @@ $(document).ready(function() {
     
      if ($("#freeform_acepto_terminos_y_condiciones").attr('checked') !== "checked"){
            $('input[name="acepto_terminos_y_condiciones"]').attr('value', '');
+     } else {
+           $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');
      }
      $("#freeform_acepto_terminos_y_condiciones").click(function(){
       ($("#freeform_acepto_terminos_y_condiciones").attr('value') ==='y')? $('input[name="acepto_terminos_y_condiciones"]').attr('value', ''): $('input[name="acepto_terminos_y_condiciones"]').attr('value', 'y');
