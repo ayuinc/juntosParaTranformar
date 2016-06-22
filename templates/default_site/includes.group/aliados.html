@@ -2,9 +2,13 @@
 {exp:channel:entries channel="aliados" limit="21" dynamic="off"}
   <li>
     <div>
+    {if web_del_aliado != ""}
     {imagen_aliado limit="1"}
     	<a href="{web_del_aliado}" target="_blank"><img src="{image:url}" alt="{title}" class="img-responsive" width="80%"></a>
     {/imagen_aliado}
+    {if:else}
+    	<img src="{image:url}" alt="{title}" class="img-responsive" width="80%">
+    {/if}
     </div>
   </li>
 {/exp:channel:entries}
