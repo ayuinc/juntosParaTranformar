@@ -22,7 +22,11 @@
           </div>
         </div>
       </div>
-			<script>
+				      
+  {/if}
+
+{embed="includes/footer"}
+<script>
                 $(document).ready(function(){
 									$("#freeform_categoria_de_postulacion_1").change(function(){
 									    $('#educacion').show();
@@ -254,7 +258,4 @@
                   $('#freeform_en_que_pais_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_paises_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
                   $('#freeform_en_que_restaurante_establecimiento_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_lugares_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
                 });				
-			</script>	      
-  {/if}
-
-{embed="includes/footer"}
+			</script>
