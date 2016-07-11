@@ -49,7 +49,7 @@
 									    $('label[for="freeform_ponderado_final_nota_en_numeros"]').show();
 									    $('label[for="freeform_nivel_academico_alcanzado"]').show();		
 									});
-									$("#freeform_categoria_de_postulacion_2").change(function(){
+									$("#freeform_categoria_de_postulacion_2").change(function(){ 
 									    $('#educacion').show();
 									    $('#educacion1').show();
 									    $('#freeform_nombre_de_la_institucion').show();
@@ -250,6 +250,17 @@
                   $('#freeform_que_otra_beca_pasantia_has_ganado_y_en_que_ano').attr('maxlength', '100').parent().addClass('textarea-wrapper');
                   $('#freeform_en_que_pais_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_paises_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
                   $('#freeform_en_que_restaurante_establecimiento_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_lugares_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
+
+                  
+                  $("input[id=freeform_he_terminado_y_quiero_enviar_mi_aplicacion]").click(function(){
+								    if($(this).is(':checked')) {
+					           addRequired();  
+					           $('input[value="Guardar"]').val('Enviar');
+					       		} else {
+					            removeRequired();  
+					            $('input[value="Enviar"]').val('Guardar');
+					       		}  
+								  });
                 });
                 </script>
                 </div>
@@ -264,4 +275,4 @@
 		color:red;
 	}
 </style>
-{embed="includes/footer"}
+{embed="includes/footer"} 
