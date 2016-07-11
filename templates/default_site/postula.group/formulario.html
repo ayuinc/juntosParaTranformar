@@ -270,12 +270,36 @@
 	$(document).ready(function(){
 		$("input[id=freeform_he_terminado_y_quiero_enviar_mi_aplicacion]").click(function(){
 	    if($(this).is(':checked')) {
-       addRequired();  
-       $('input[value="Guardar"]').val('Enviar');
+        addRequired();  
+        $('input[value="Guardar"]').val('Enviar');
    		} else {
         removeRequired();  
         $('input[value="Enviar"]').val('Guardar');
    		}  
 	  });
+	  function addRequired() {
+		  $(".ff_composer").find("input").each(function(index, element) { 
+		    if ($(element).attr("type") == "checkbox") { return true; }
+		    if ($(element).attr("name").indexOf("otro") >= 0) { return true; }
+		    if ($(element).attr("name").indexOf("link") >= 0) { return true; }
+		    if(!$(element).parent().parent().hasClass("hidden")) { 
+		      $(element).attr("required", "true"); 
+		    } 
+		  });
+		  $(".ff_composer").find("textarea").each(function(index, element) { 
+		    if(!$(element).parent().parent().hasClass("hidden")) { 
+		      $(element).attr("required", "true"); 
+		    } 
+		  });
+		} 
+
+		function removeRequired() {
+		  $(".ff_composer").find("input").each(function(index, element) { 
+		      $(element).removeAttr("required"); 
+		  });
+		  $(".ff_composer").find("textarea").each(function(index, element) { 
+		      $(element).removeAttr("required"); 
+		  });
+		}
 	});
 </script> 
