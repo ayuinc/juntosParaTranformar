@@ -283,7 +283,7 @@
     $('#freeform_que_otra_beca_pasantia_has_ganado_y_en_que_ano').attr('maxlength', '100').parent().addClass('textarea-wrapper');
     $('#freeform_en_que_pais_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_paises_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
     $('#freeform_en_que_restaurante_establecimiento_te_gustaria_realizar_tu_pasantia_puedes_nombrar_3_lugares_por_orden_de_preferencia').attr('maxlength', '100').parent().addClass('textarea-wrapper');
-    
+
     $("input[id=freeform_he_terminado_y_quiero_enviar_mi_aplicacion]").click(function(){
 	    if($(this).is(':checked')) {
         addRequired();  
@@ -296,10 +296,12 @@
 	  function addRequired() {
 		  $(".ff_composer").find("input").each(function(index, element) { 
 		    if ($(element).attr("type") == "checkbox") { return true; }
-		    if ($(element).attr("name").indexOf("otro") >= 0) { return true; }
+		    if ($(element).attr("name").indexOf("categoria_de_postulacion") >= 0) { return true; }
 		    if ($(element).attr("name").indexOf("link") >= 0) { return true; }
 		    if(!$(element).parent().parent().hasClass("hidden")) { 
-		      $(element).attr("required", "true"); 
+		      $(element).attr("required", "true");
+		      $("#freeform_con_1")attr("required", "false"); 
+		      $("#freeform_con_2")attr("required", "false"); 
 		    } 
 		  });
 		  $(".ff_composer").find("textarea").each(function(index, element) { 
