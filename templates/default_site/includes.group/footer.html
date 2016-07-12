@@ -300,8 +300,8 @@
 		    if ($(element).attr("name").indexOf("link") >= 0) { return true; }
 		    if(!$(element).parent().parent().hasClass("hidden")) { 
 		      $(element).attr("required", "true");
-		      $("#freeform_con_1")attr("required", "false"); 
-		      $("#freeform_con_2")attr("required", "false"); 
+		      $("#freeform_con_1").attr("required", "false"); 
+		      $("#freeform_con_2").attr("required", "false"); 
 		    } 
 		  });
 		  $(".ff_composer").find("textarea").each(function(index, element) { 
