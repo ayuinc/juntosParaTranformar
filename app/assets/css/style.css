@@ -5459,7 +5459,31 @@ nav a {
   left: 0;
   z-index: 10;
 }
-
+#pop-up {
+  @extend .video-overlay;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(0,0,0,0.7);
+  z-index: 100000;
+}
+.pop-up__container {
+  width: 450px;
+  height: 150px;
+  background: white;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border: 2px solid #085A6B;
+  border-radius: 3px;
+}
+.pop-up__container img {
+  position: absolute;
+}
+.pop-up__texto {
+  font-size: 17px;
+  font-weight: bold;
+}
 .video-placeholder {
   position: absolute;
   top: 0;
