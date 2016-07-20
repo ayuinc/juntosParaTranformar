@@ -1,19 +1,21 @@
-{exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id='{embed:miembro}'"}
-  
-	{if entry_id!=''}
-	{exp:freeform:composer_edit
-	    entry_id="{entry_id}"
-	    attr:class="form-postula"
-	    form_name="postulacion"
-	    composer_template_name="postulacion"
-	    return="postula/gracias"
-	}			
-	{if:else}
-		{redirect='postula/formulario'}
-	{/if}
-
-	{if no_results}
+<div id="form-edicion">
+	{exp:query sql="SELECT * FROM exp_freeform_form_entries_2 WHERE author_id='{embed:miembro}'"}
+	  
+		{if entry_id!=''}
+		{exp:freeform:composer_edit
+		    entry_id="{entry_id}"
+		    attr:class="form-postula"
+		    form_name="postulacion"
+		    composer_template_name="postulacion"
+		    return="postula/gracias"
+		}			
+		{if:else}
 			{redirect='postula/formulario'}
-	{/if}
+		{/if}
 
-{/exp:query}
+		{if no_results}
+				{redirect='postula/formulario'}
+		{/if}
+
+	{/exp:query}
+</div>

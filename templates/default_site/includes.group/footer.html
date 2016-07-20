@@ -288,7 +288,7 @@
 		    if($(this).is(':checked')) {
 	        addRequired();  
 	        $('input[value="Guardar"]').val('Enviar');
-	        $(".form-postula").attr("action", "http://becasjuntosparatransformar.com/postula/gracias-por-participar");
+	        $("#form-edicion").find("form").attr("action", "http://becasjuntosparatransformar.com/postula/gracias-por-participar");
 	        console.log("link cambiado");
 	   		} else {
 	        removeRequired();  
