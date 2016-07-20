@@ -5475,7 +5475,11 @@ nav a {
   height: 150px;
   background: white;
   position: absolute;
-  transform: translate(-50%, -50%);
+       transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+   -sm-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
   border: 2px solid #085A6B;
@@ -5483,6 +5487,9 @@ nav a {
 }
 .pop-up__container img {
   position: absolute;
+  top: -15px;
+  right: -15px;
+  cursor: pointer;
 }
 .pop-up__texto {
   font-size: 17px;
