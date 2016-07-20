@@ -289,9 +289,11 @@
 	        addRequired();  
 	        $('input[value="Guardar"]').val('Enviar');
 	        $(".form-postula").attr("action", "http://becasjuntosparatransformar.com/postula/gracias-por-participar");
+	        console.log("link cambiado");
 	   		} else {
 	        removeRequired();  
 	        $('input[value="Enviar"]').val('Guardar');
+	        $(".form-postula").attr("action", "http://becasjuntosparatransformar.com/postula/gracias");
 	   		}  
 		  });
 		  function addRequired() {

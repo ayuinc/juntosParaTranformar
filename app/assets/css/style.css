@@ -5467,7 +5467,7 @@ nav a {
   z-index: 10;
   position: fixed;
   width: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0,0,0,0.8);
   z-index: 100000;
 }
 .pop-up__container {
