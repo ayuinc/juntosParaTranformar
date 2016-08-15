@@ -3658,7 +3658,7 @@ a:hover, a:focus, a:active {
     text-align: left !important;
   }
   .pop-up__container {
-    width: 80%;
+    width: 80% !important;
   }
 }
 
@@ -3667,7 +3667,7 @@ a:hover, a:focus, a:active {
     text-align: left !important;
   }
   .pop-up__container {
-    width: 60%;
+    width: 60% !important;
   }
 }
 
