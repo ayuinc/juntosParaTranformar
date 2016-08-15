@@ -3657,11 +3657,17 @@ a:hover, a:focus, a:active {
   .text-left-xs {
     text-align: left !important;
   }
+  .pop-up__container {
+    width: 80%;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 768px) {
   .text-left-sm {
     text-align: left !important;
+  }
+  .pop-up__container {
+    width: 60%;
   }
 }
 
