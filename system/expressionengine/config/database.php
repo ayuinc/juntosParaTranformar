@@ -5,7 +5,7 @@ $active_record = TRUE;
 
 $db['expressionengine']['hostname'] = 'localhost';
 $db['expressionengine']['username'] = 'root';
-$db['expressionengine']['password'] = 'CBky7qrmNS';
+$db['expressionengine']['password'] = 'bRA2aspAtrac';
 $db['expressionengine']['database'] = 'juntosparatransformar';
 $db['expressionengine']['dbdriver'] = 'mysql';
 $db['expressionengine']['pconnect'] = FALSE;
